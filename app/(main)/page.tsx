@@ -1,11 +1,25 @@
 import Header from "@/components/shared/Header";
-import HomeSection from "./_components/HomeSection";
+import TitleSection from "./_components/TitleSection";
+import ServiceSection from "./_components/ServiceSection";
+import AdvantageSection from "./_components/AdvantageSection";
+import Footer from "@/components/shared/Footer";
+import ExampleSection from "./_components/ExampleSection";
+import RewiewSection from "./_components/RewiewSection";
+import AnswerSection from "./_components/AnswerSection";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <HomeSection />
+      <main className="text-neutral-900">
+        <TitleSection />
+        <ServiceSection />
+        <AdvantageSection />
+        <ExampleSection />
+        <RewiewSection />
+        <AnswerSection />
+      </main>
+      <Footer />
     </>
   );
 }

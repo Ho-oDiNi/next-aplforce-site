@@ -3,7 +3,7 @@ import HeaderBottom from "./HeaderBottom";
 
 const Header = () => {
   return (
-    <header className="text-neutral-900">
+    <header className="">
       <HeaderTop />
       <HeaderBottom />
     </header>

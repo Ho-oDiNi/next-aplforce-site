@@ -1,11 +1,14 @@
-import Image from "next/image";
+import FooterBottom from "./FooterBottom";
+import FooterMiddle from "./FooterMiddle";
+import FooterTop from "./FooterTop";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#EBEBEB] px-24 py-12 text-xl font-normal">
-      <div className="container mx-auto h-auto rounded-[26px] bg-white px-24 py-12">
-        <div className="flex justify-between"></div>
-      </div>
+    <footer className="text-white">
+      <FooterTop />
+      <hr className="w-full border-blue-800" />
+      <FooterMiddle />
+      <FooterBottom />
     </footer>
   );
 };
