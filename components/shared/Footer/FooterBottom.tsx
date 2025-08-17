@@ -1,8 +1,8 @@
 const FooterBottom = () => {
   return (
-    <div className="bg-slate-800 px-(--space-inside-x) py-6">
+    <div className=" bg-slate-800 px-(--space-inside-x) py-6">
       <div className="container mx-auto">
-        <p className="text-sm text-white/50 text-center">
+        <p className="text-sm text-foreground-secondary/50 text-center">
           Ремонт многоквартирных домов в Новосибирске недорого - профессиональные услуги по ремонту
           кровель, герметизации межпанельных швов, высотным работам методом промышленного
           альпинизма. Работаем в Новосибирске, Бердске, Академгородке и Новосибирской области.

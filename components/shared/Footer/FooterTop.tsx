@@ -6,17 +6,17 @@ const FooterTop = () => {
     <div className="bg-blue-900 px-(--space-inside-x) pt-14 pb-6">
       <div className="container mx-auto flex justify-between">
         <div className="flex flex-col gap-8">
-          <strong className="font-bold text-xl">Контакты</strong>
+          <strong>Контакты</strong>
           <address className="flex not-italic flex-col gap-4">
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <Image src="/icons/phone-fill.svg" height={24} width={24} alt="" />
               <Link href="tel:+79831310113">+7(983) 13-101-13</Link>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <Image src="/icons/email-fill.svg" height={24} width={24} alt="" />
               <Link href="mailto:info@remont-mkd-nsk.ru">info@remont-mkd-nsk.ru</Link>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <Image src="/icons/location-fill.svg" height={24} width={24} alt="" />
               <Link
                 href="https://yandex.ru/maps/65/novosibirsk/house/ulitsa_lenina_15/bEsYfwZgSE0HQFtvfXxzeXpmYg==/?ll=82.910180%2C55.028656&z=16"
@@ -27,7 +27,7 @@ const FooterTop = () => {
                 г. Новосибирск, ул. Ленина, 15
               </Link>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <Image src="/icons/warning-fill.svg" height={24} width={24} alt="" />
               <span>
                 Пн-Пт: 8:00-18:00
@@ -38,7 +38,7 @@ const FooterTop = () => {
           </address>
         </div>
         <div className="flex flex-col gap-8">
-          <strong className="font-bold text-xl">Услуги</strong>
+          <strong>Услуги</strong>
           <div className="flex flex-col gap-4">
             <p>Ремонт кровли</p>
             <p>Герметизация швов</p>
@@ -49,7 +49,7 @@ const FooterTop = () => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          <strong className="font-bold text-xl">Компания</strong>
+          <strong>Компания</strong>
           <nav className="flex flex-col gap-4">
             <Link href="">О компании</Link>
             <Link href="">Портфолио</Link>
@@ -60,7 +60,7 @@ const FooterTop = () => {
           </nav>
         </div>
         <div className="flex flex-col gap-8">
-          <strong className="font-bold text-xl">География работ</strong>
+          <strong>География работ</strong>
           <nav className="flex flex-col gap-4">
             <Link href="">Новосибирск</Link>
             <Link href="">Бердск</Link>

@@ -2,7 +2,7 @@ import AnswerCard from "./AnswerCard";
 
 const RewiewList = () => {
   return (
-    <dl className="grid grid-cols-3 gap-6 items-start">
+    <dl className="items-start">
       <AnswerCard
         title="Как быстро сможете приехать  на осмотр?"
         description="В день обращения! Оставьте заявку до 15:00 – наш альпинист приедет для бесплатного осмотра и составления сметы. Фото-отчет предоставим сразу."

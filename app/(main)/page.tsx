@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="text-neutral-900">
+      <main className="text-foreground-primary">
         <TitleSection />
         <ServiceSection />
         <AdvantageSection />

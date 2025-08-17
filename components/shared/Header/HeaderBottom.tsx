@@ -3,12 +3,12 @@ import HeaderNavbar from "./HeaderNavbar";
 
 const HeaderBottom = () => {
   return (
-    <div className="bg-white px-(--space-inside-x)">
-      <div className="container mx-auto flex justify-between items-center py-3">
-        <div className="flex gap-8 items-center">
+    <div className="bg-background-primary px-(--space-inside-x)">
+      <div className="container mx-auto flex-between py-3">
+        <div className="flex-center gap-8">
           <Image src="/icons/logo.svg" width={70} height={64} alt="SEO" />
           <div>
-            <strong className="font-bold text-xl">ALPFORCE</strong>
+            <strong>ALPFORCE</strong>
             <p className="text-sm">Ремонт многоквартирных домов</p>
           </div>
         </div>

@@ -8,7 +8,7 @@ interface ExampleCardProps {
 
 const ExampleCard = (props: ExampleCardProps) => {
   return (
-    <div className="rounded-2xl overflow-hidden bg-slate-200">
+    <div className="rounded-2xl overflow-hidden bg-background-secondary">
       <Image
         className="max-w-101 max-h-50"
         src={`/images/${props.img}`}
@@ -17,9 +17,9 @@ const ExampleCard = (props: ExampleCardProps) => {
         alt=""
       />
       <div className="flex flex-col gap-4 p-8">
-        <dt className="font-bold text-xl">{props.title}</dt>
-        <dd className="text-sm">{props.description}</dd>
-        <div className="bg-blue-900 rounded-lg flex items-center justify-center text-white w-25 h-8">
+        <dt>{props.title}</dt>
+        <dd>{props.description}</dd>
+        <div className="bg-blue-900 rounded-lg flex-center text-foreground-secondary w-25 h-8">
           Завершено
         </div>
       </div>

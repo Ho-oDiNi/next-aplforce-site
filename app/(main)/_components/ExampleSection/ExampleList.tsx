@@ -2,7 +2,7 @@ import ExampleCard from "./ExampleCard";
 
 const ExampleList = () => {
   return (
-    <dl className="grid grid-cols-3 gap-6">
+    <dl>
       <ExampleCard
         img="house1.png"
         title="Ремонт кровли многоэтажного дома"

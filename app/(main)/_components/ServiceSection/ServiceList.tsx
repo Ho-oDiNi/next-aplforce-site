@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 
 const ServiceList = () => {
   return (
-    <dl className="grid grid-cols-3 gap-6">
+    <dl>
       <ServiceCard
         title="Ремонт кровли"
         description="Полный комплекс работ по ремонту кровель методом промышленного альпинизма"
