@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 const robotoFont = Roboto_Condensed({
   variable: "--font-roboto",
@@ -19,7 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${robotoFont.className} antialiased`}>{children}</body>
+      <body className={`${robotoFont.className} antialiased`}>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
+        </body>
     </html>
   );
 }

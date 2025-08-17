@@ -1,23 +1,29 @@
 import MiniAdvantageList from "./MiniAdvantageList";
 
-const TitleSection = () => {
+interface TitleSectionProps {
+  title: string;
+  description: string;
+  hasMiniAdvantage?: boolean;
+}
+
+const TitleSection = (props: TitleSectionProps) => {
+  const unitAdvantage = props.hasMiniAdvantage
+    ? <MiniAdvantageList />
+    : <></>;
+
   return (
     <section className="text-foreground-secondary bg-[url(/images/home.webp)] bg-cover bg-center bg-no-repeat">
       <div className="flex-center flex-col mx-auto gap-10">
         <hgroup className="max-w-none lg:max-w-2xl">
-          <h1>Ремонт многоквартирных домов в Новосибирске</h1>
-          <p>
-            Профессиональный ремонт кровель, герметизация швов, высотные работы методом
-            промышленного альпинизма. Работаем с ТСЖ и УК. Осмотр швов в день обращения. Гарантия до
-            5 лет.
-          </p>
+          <h1>{props.title}</h1>
+          <p>{props.description}</p>
         </hgroup>
 
         <button className="h-12 w-70 bg-red-500 text-foreground-secondary rounded-xl font-bold">
           Заказать консультацию
         </button>
 
-        <MiniAdvantageList />
+        {unitAdvantage}
       </div>
     </section>
   );
