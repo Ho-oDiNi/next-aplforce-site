@@ -1,10 +1,10 @@
-import TitleSection from "../../components/shared/TitleSection";
+import TitleSection from "@shared/TitleSection";
 import ServiceSection from "./_components/ServiceSection";
 import AdvantageSection from "./_components/AdvantageSection";
 import ExampleSection from "./_components/ExampleSection";
 import RewiewSection from "./_components/RewiewSection";
 import AnswerSection from "./_components/AnswerSection";
-import ConsultSection from "../../components/shared/ConsultSection";
+import ConsultSection from "@shared/ConsultSection";
 
 export default function Home() {
   return (

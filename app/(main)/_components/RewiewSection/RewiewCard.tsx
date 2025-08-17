@@ -1,4 +1,5 @@
 import Image from "next/image";
+import starIcon from "@icons/star-yellow-fill.svg"
 
 interface RewiewCardProps {
   rewiewText: string;
@@ -9,11 +10,11 @@ const RewiewCard = (props: RewiewCardProps) => {
   return (
     <div className="rounded-2xl bg-background-primary flex flex-col gap-4 p-8">
       <div className="flex gap-1">
-        <Image src={"/icons/star-fill.svg"} height={24} width={24} alt="" />
-        <Image src={"/icons/star-fill.svg"} height={24} width={24} alt="" />
-        <Image src={"/icons/star-fill.svg"} height={24} width={24} alt="" />
-        <Image src={"/icons/star-fill.svg"} height={24} width={24} alt="" />
-        <Image src={"/icons/star-fill.svg"} height={24} width={24} alt="" />
+        <Image src={starIcon} alt="" />
+        <Image src={starIcon} alt="" />
+        <Image src={starIcon} alt="" />
+        <Image src={starIcon} alt="" />
+        <Image src={starIcon} alt="" />
       </div>
       <blockquote>
         <p>{props.rewiewText}</p>

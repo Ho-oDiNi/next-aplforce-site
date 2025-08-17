@@ -1,5 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import phoneIcon from "@icons/phone-blue-light.svg"
+import calendarIcon from "@icons/calendar-blue-light.svg"
+import emailIcon from "@icons/email-blue-light.svg"
+import warningIcon from "@icons/warning-red-solid.svg"
 
 const MiniAdvantageList = () => {
   return (
@@ -13,7 +17,7 @@ const MiniAdvantageList = () => {
             <div className="flex flex-col gap-5">
                 <div className="rounded-2xl bg-background-primary p-8 flex flex-col gap-4">
                     <div className="flex-start gap-4">
-                        <Image src="icons/phone-blue.svg" height={24} width={24} alt=""/>
+                        <Image src={phoneIcon}  alt=""/>
                         <dt>Телефон</dt>
                     </div>
                     <div className="flex flex-col gap-2">
@@ -28,7 +32,7 @@ const MiniAdvantageList = () => {
 
                 <div className="rounded-2xl bg-background-primary p-8 flex flex-col gap-4">
                     <div className="flex-start gap-4">
-                        <Image src="icons/calendar-blue.svg" height={24} width={24} alt=""/>
+                        <Image src={calendarIcon}  alt=""/>
                         <dt className="text-nowrap">Режим работы</dt>
                     </div>
                     <div className="flex-between">
@@ -44,7 +48,7 @@ const MiniAdvantageList = () => {
 
             <div className="rounded-2xl bg-background-primary p-8 flex flex-col gap-4">
                 <div className="flex-start gap-4">
-                    <Image src="icons/email-blue.svg" height={24} width={24} alt=""/>
+                    <Image src={emailIcon}  alt=""/>
                     <dt>Email</dt>
                 </div>
                 <div className="flex flex-col gap-2">
@@ -63,7 +67,7 @@ const MiniAdvantageList = () => {
 
             <div className="rounded-2xl bg-background-primary p-8 flex flex-col gap-4">
                 <div className="flex-start gap-4">
-                    <Image src="icons/warning-red.svg" height={24} width={24} alt=""/>
+                    <Image src={warningIcon}  alt=""/>
                     <strong>Нужна срочная помощь?</strong>
                 </div>
                 <Link href="" className="h-12 w-full bg-red-500 text-foreground-secondary rounded-xl font-bold flex-center">Аварийный вызов</Link>

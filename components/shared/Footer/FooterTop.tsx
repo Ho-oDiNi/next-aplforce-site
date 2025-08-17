@@ -1,5 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import phoneIcon from "@icons/phone-red-fill.svg"
+import emailIcon from "@icons/email-red-fill.svg"
+import locationIcon from "@icons/location-red-fill.svg"
+import warningIcon from "@icons/warning-red-fill.svg"
 
 const FooterTop = () => {
   return (
@@ -9,15 +13,15 @@ const FooterTop = () => {
             <strong>Контакты</strong>
             <address className="flex not-italic flex-col gap-4">
               <div className="flex items-center gap-2">
-                <Image className="h-6 w-auto" src="/icons/phone-fill.svg" height={24} width={24} alt="" />
+                <Image className="h-6 w-auto" src={phoneIcon}  alt="" />
                 <Link href="tel:+79831310113">+7(983) 13-101-13</Link>
               </div>
               <div className="flex items-center gap-2">
-                <Image className="h-6 w-auto" src="/icons/email-fill.svg" height={24} width={24} alt="" />
+                <Image className="h-6 w-auto" src={emailIcon}  alt="" />
                 <Link href="mailto:info@remont-mkd-nsk.ru">info@remont-mkd-nsk.ru</Link>
               </div>
               <div className="flex items-center gap-2">
-                <Image className="h-6 w-auto" src="/icons/location-fill.svg" height={24} width={24} alt="" />
+                <Image className="h-6 w-auto" src={locationIcon}  alt="" />
                 <Link
                   href="https://yandex.ru/maps/65/novosibirsk/house/ulitsa_lenina_15/bEsYfwZgSE0HQFtvfXxzeXpmYg==/?ll=82.910180%2C55.028656&z=16"
                   prefetch={false}
@@ -28,7 +32,7 @@ const FooterTop = () => {
                 </Link>
               </div>
               <div className="flex items-center gap-2">
-                <Image className="h-6 w-auto" src="/icons/warning-fill.svg" height={24} width={24} alt="" />
+                <Image className="h-6 w-auto" src={warningIcon}  alt="" />
                 <span>
                   Пн-Пт: 8:00-18:00
                   <br />

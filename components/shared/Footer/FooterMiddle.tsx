@@ -1,11 +1,12 @@
 import Image from "next/image";
+import logoIcon from "@icons/logo-white.svg"
 
 const FooterMiddle = () => {
   return (
     <div className="bg-blue-900 px-(--space-inside-x) py-6">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4">
         <div className="flex gap-5">
-          <Image src="/icons/logo-white.svg" className="h-11 w-auto" width={48} height={44} alt="" />
+          <Image src={logoIcon} alt="" />
           <div className="flex flex-col justify-center">
             <strong>ALPFORCE</strong>
             <p className="text-sm">Ремонт многоквартирных домов</p>

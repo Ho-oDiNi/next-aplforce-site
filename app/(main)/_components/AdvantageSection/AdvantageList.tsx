@@ -1,10 +1,15 @@
-import AdvantageCard from "./AdvantageCard";
+import AdvantageCard from "@shared/AdvantageCard";
+import deliveryIcon from "@icons/delivery-red-fill.svg"
+import qualityIcon from "@icons/quality-red-fill.svg"
+import checkmarkIcon from "@icons/checkmark-red-fill.svg"
+import warningIcon from "@icons/warning-red-fill.svg"
+
 
 const AdvantageList = () => {
   return (
     <dl className="md:grid-cols-4 items-start">
       <AdvantageCard
-        icon="delivery-fill.svg"
+        icon={deliveryIcon}
         title="Скорость"
         description="Осмотр в день обращения, выполнение типовых высотных работ за 1-3 дня"
         commitmentArray={[
@@ -14,7 +19,7 @@ const AdvantageList = () => {
         ]}
       />
       <AdvantageCard
-        icon="quality-fill.svg"
+        icon={qualityIcon}
         title="10 лет опыта"
         description="Работаем с 2014 года, отремонтировали более 500 объектов в Новосибирске"
         commitmentArray={[
@@ -24,7 +29,7 @@ const AdvantageList = () => {
         ]}
       />
       <AdvantageCard
-        icon="checkmark-fill.svg"
+        icon={checkmarkIcon}
         title="Гарантия до 5 лет"
         description="Договор, акты выполненных работ и гарантию на все виды ремонта"
         commitmentArray={[
@@ -34,7 +39,7 @@ const AdvantageList = () => {
         ]}
       />
       <AdvantageCard
-        icon="warning-fill.svg"
+        icon={warningIcon}
         title="Аварийный выез 24/7"
         description="Круглосуточная служба реагирования для срочного ремонта кровли, сброса снега или устранения протечек"
         commitmentArray={[

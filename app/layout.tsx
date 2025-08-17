@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/shared/Header";
-import Footer from "@/components/shared/Footer";
-
-const robotoFont = Roboto_Condensed({
-  variable: "--font-roboto",
-  subsets: ["cyrillic"],
-});
+import Header from "@shared/Header";
+import Footer from "@shared/Footer";
+import robotoFont from "@ui/robotoFont";
 
 export const metadata: Metadata = {
   title: "Create Next App",

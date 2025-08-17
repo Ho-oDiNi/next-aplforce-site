@@ -1,6 +1,6 @@
-import TitleSection from "@/components/shared/TitleSection";
+import TitleSection from "@shared/TitleSection";
 import ContactSection from "./_components/ContactSection";
-import ConsultSection from "@/components/shared/ConsultSection";
+import ConsultSection from "@shared/ConsultSection";
 
 export default function Contact() {
   return (

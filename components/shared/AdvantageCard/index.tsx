@@ -1,6 +1,8 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
+
 interface AdvantageCardProps {
-  icon: string;
+  icon: string | StaticImport;
   title: string;
   description: string;
   commitmentArray: string[];
@@ -10,7 +12,7 @@ const AdvantageCard = (props: AdvantageCardProps) => {
   return (
     <div className="rounded-2xl bg-background-primary flex flex-col">
       <div className="rounded-2xl bg-blue-900 text-foreground-secondary p-8 flex-center flex-col  text-center gap-2 min-h-50">
-        <Image src={`/icons/${props.icon}`} height={24} width={24} className="h-6" alt="" />
+        <Image src={props.icon} alt="" />
         <dt>{props.title}</dt>
         <dd>{props.description}</dd>
       </div>
