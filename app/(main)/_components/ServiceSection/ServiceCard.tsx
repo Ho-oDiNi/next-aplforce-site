@@ -16,7 +16,7 @@ const ServiceCard = (props: ServiceCardProps) => {
   return (
     <div className="bg-background-secondary rounded-3xl p-8 flex flex-col gap-6 justify-between">
       <dt>{props.title}</dt>
-      <dd className="text-base">{props.description}</dd>
+      <dd>{props.description}</dd>
       <div className="flex-between lg:flex-row flex-col gap-3">
         <p className="text-red-500 bg-background-primary rounded-lg py-2 px-4 text-center whitespace-nowrap lg:w-auto w-full">
           от <data value={props.price}>{props.price}</data>{" "}

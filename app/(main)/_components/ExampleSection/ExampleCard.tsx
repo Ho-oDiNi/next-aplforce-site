@@ -10,7 +10,7 @@ const ExampleCard = (props: ExampleCardProps) => {
   return (
     <div className="rounded-2xl overflow-hidden bg-background-secondary">
       <Image
-        className="max-w-101 max-h-50"
+        className="max-w-101 h-50 "
         src={`/images/${props.img}`}
         height={200}
         width={404}

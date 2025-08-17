@@ -3,12 +3,16 @@
 @theme {
   --space-inside-x: calc(var(--spacing) * 4);
   --space-inside-y: calc(var(--spacing) * 16);
+  --space-inside-y-md: calc(var(--spacing) * 12);
 
   --color-background-primary: var(--color-white);
   --color-background-secondary: var(--color-slate-200);
 
   --color-foreground-primary: var(--color-neutral-900);
   --color-foreground-secondary: var(--color-white);
+
+  --breakpoint-xs: 26.5625rem;
+  --breakpoint-2xs: 23.4375rem;
 }
 
 @utility drag-none {
@@ -26,50 +30,62 @@
   }
 }
 
-@layer utilities {
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility flex-between {
+  @apply flex justify-between items-center;
+}
+
+@utility flex-start {
+  @apply flex justify-start items-center;
+}
+
+@layer utilities { 
+  * {
+    @apply transition-all;
+  } 
   main {
     @apply text-foreground-primary;
   }
-  hgroup {
-    @apply max-w-5/12 text-center;
-  }
-  h1 {
-    @apply font-bold text-5xl mb-6;
-  }
-  h2 {
-    @apply font-bold text-4xl mb-6;
-  }
   section {
     @apply py-(--space-inside-y) px-(--space-inside-x);
+    @media (max-width: 768px) {
+      @apply py-(--space-inside-y-md) px-(--space-inside-x);
+    }
   }
-  strong {
-    @apply font-bold text-xl;
+  hgroup {
+    @apply md:max-w-2xl text-center;
   }
   dl {
-    @apply grid gap-6 grid-cols-3;
+    @apply grid gap-6 md:grid-cols-3;
+  }
+  h1 {
+    @apply text-2xl xs:text-3xl md:text-4xl lg:text-5xl mb-6 font-bold ;
+  }
+  h2 {
+    @apply text-xl xs:text-2xl md:text-3xl lg:text-4xl mb-6 font-bold ;
+  }
+  strong {
+    @apply text-base 2xs:text-lg xs:text-xl font-bold;
+  }
+  p {
+    @apply text-sm 2xs:text-base xs:text-lg;
+  }
+  a {
+    @apply text-sm 2xs:text-base drag-none;
   }
   dt {
-    @apply font-bold text-xl;
+    @apply text-base 2xs:text-lg xs:text-xl font-bold;
   }
   dd {
-    @apply text-sm;
+    @apply text-sm 2xs:text-base;
   }
   button {
-    @apply cursor-pointer;
+    @apply text-sm 2xs:text-base cursor-pointer;
   }
   img {
     @apply drag-none;
   }
 }
-
-@layer custom {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-  .flex-start {
-    @apply flex justify-start items-center;
-  }
- }

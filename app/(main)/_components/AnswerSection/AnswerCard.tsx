@@ -12,7 +12,7 @@ const AnswerCard = (props: AnswerCardProps) => {
         <Image src={"/icons/question-red.svg"} height={40} width={40} alt="" />
         <dt>{props.title}</dt>
       </div>
-      <dd className="text-base">{props.description}</dd>
+      <dd>{props.description}</dd>
     </div>
   );
 };

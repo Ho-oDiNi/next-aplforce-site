@@ -2,7 +2,7 @@ import AdvantageCard from "./AdvantageCard";
 
 const AdvantageList = () => {
   return (
-    <dl className="grid-cols-4 items-start">
+    <dl className="md:grid-cols-4 items-start">
       <AdvantageCard
         icon="delivery-fill.svg"
         title="Скорость"

@@ -6,8 +6,8 @@ const RewiewSection = () => {
     <section className="bg-background-secondary">
       <div className="container mx-auto flex-center flex-col gap-10">
         <hgroup>
-          <h2>Примеры наших работ</h2>
-          <p>Фотоотчеты с выполненных объектов</p>
+          <h2>Отзывы клиентов</h2>
+          <p>Что говорят о нас ТСЖ и управляющие компании</p>
         </hgroup>
 
         <RewiewList />
@@ -16,7 +16,7 @@ const RewiewSection = () => {
           href=""
           className="h-12 w-70 bg-blue-500 text-foreground-secondary rounded-xl font-bold flex-center"
         >
-          Смотреть все работы
+          Читать
         </Link>
       </div>
     </section>

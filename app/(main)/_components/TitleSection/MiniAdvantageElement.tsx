@@ -6,7 +6,7 @@ interface MiniMiniAdvantageElementProps {
 const MiniAdvantageElement = (props: MiniMiniAdvantageElementProps) => {
   return (
     <div className="text-center">
-      <dt>{props.title}</dt>
+      <dt className="text-nowrap">{props.title}</dt>
       <dd>{props.description}</dd>
     </div>
   );

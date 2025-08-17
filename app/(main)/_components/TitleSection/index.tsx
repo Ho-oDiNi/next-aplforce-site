@@ -1,11 +1,10 @@
 import MiniAdvantageList from "./MiniAdvantageList";
-import Image from "next/image";
 
 const TitleSection = () => {
   return (
     <section className="text-foreground-secondary bg-[url(/images/home.webp)] bg-cover bg-center bg-no-repeat">
-      <div className="max-w-5/12 flex-center flex-col mx-auto gap-10">
-        <hgroup className="max-w-none">
+      <div className="flex-center flex-col mx-auto gap-10">
+        <hgroup className="max-w-none lg:max-w-2xl">
           <h1>Ремонт многоквартирных домов в Новосибирске</h1>
           <p>
             Профессиональный ремонт кровель, герметизация швов, высотные работы методом

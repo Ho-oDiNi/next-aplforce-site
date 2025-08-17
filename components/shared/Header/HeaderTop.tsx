@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const HeaderTop = () => {
   return (
@@ -11,9 +12,9 @@ const HeaderTop = () => {
         <div className="flex-center gap-8">
           <div className="flex-center gap-4">
             <Image src="/icons/phone-solid.svg" width={25} height={25} alt="SEO" />
-            <a href="tel:+73831234567">+ 7 (383) 123 - 45 - 67</a>
+            <Link className="hidden xs:block" href="tel:+73831234567">+ 7 (383) 123 - 45 - 67</Link>
           </div>
-          <button className="h-10 w-55 bg-red-500 text-foreground-secondary rounded-xl font-bold">
+          <button className="h-10 w-55 bg-red-500 text-foreground-secondary rounded-xl font-bold hidden md:block">
             Заказать консультацию
           </button>
         </div>
