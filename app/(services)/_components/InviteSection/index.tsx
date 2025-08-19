@@ -3,8 +3,8 @@ import ConsultForm from "@shared/ConsultSection/ConsultForm";
 const InviteSection = () => {
     return (
         <section className="bg-background-secondary">
-            <div className="flex-between container mx-auto flex flex-col gap-10 md:flex-row">
-                <div>
+            <div className="container mx-auto grid grid-cols-1 md:gap-14 md:grid-cols-2 gap-10">
+                <div className="flex flex-col items-start justify-center">
                     <h2>Бесплатно пригласить замерщика</h2>
                     <ol type="1" start={1}>
                         <li>

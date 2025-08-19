@@ -13,6 +13,17 @@
 
   --breakpoint-xs: 26.5625rem;
   --breakpoint-2xs: 23.4375rem;
+
+  --radial-right: radial-gradient(
+    circle at 100% 0,
+    transparent 15px,
+    var(--color-background-secondary) 16px
+  );
+  --radial-left: radial-gradient(
+    circle at 0 0,
+    transparent 15px,
+    var(--color-background-secondary) 16px
+  );
 }
 
 @utility drag-none {
@@ -81,7 +92,10 @@
     @apply 2xs:text-base xs:text-lg text-sm;
   }
   a {
-    @apply 2xs:text-base drag-none text-sm;
+    @apply 2xs:text-base drag-none xs:text-sm lg:text-base;
+  }
+  button {
+    @apply 2xs:text-base xs:text-sm cursor-pointer lg:text-base;
   }
   dt {
     @apply 2xs:text-lg xs:text-xl text-base font-bold;
@@ -92,9 +106,7 @@
   ol {
     @apply list-decimal pl-4;
   }
-  button {
-    @apply 2xs:text-base cursor-pointer text-sm;
-  }
+
   img {
     @apply drag-none;
   }
