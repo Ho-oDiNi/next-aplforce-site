@@ -2,9 +2,9 @@ import TitleSection from "@shared/TitleSection";
 import ExampleSection from "@shared/ExampleSection";
 import AdvantageSection from "@shared/AdvantageSection";
 import AnswerSection from "@shared/AnswerSection";
-import ServiceSwitchSection from "./_components/ServiceSwitchSection";
-import CompareSection from "./_components/CompareSection";
-import InviteSection from "./_components/InviteSection";
+import ServiceSwitchSection from "../_components/ServiceSwitchSection";
+import CompareSection from "../_components/CompareSection";
+import InviteSection from "../_components/InviteSection";
 
 export default function Services() {
     return (

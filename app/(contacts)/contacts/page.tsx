@@ -1,5 +1,5 @@
 import TitleSection from "@shared/TitleSection";
-import ContactSection from "./_components/ContactSection";
+import ContactSection from "../_components/ContactSection";
 import ConsultSection from "@shared/ConsultSection";
 
 export default function Contacts() {
