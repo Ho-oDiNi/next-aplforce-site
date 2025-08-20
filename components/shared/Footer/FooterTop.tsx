@@ -44,7 +44,7 @@ const FooterTop = () => {
                                 rel="noreferrer"
                                 target="_blank"
                             >
-                                г. Новосибирск, ул. Ленина, 15
+                                г.&nbsp;Новосибирск, ул.&nbsp;Ленина,&nbsp;15
                             </Link>
                         </div>
                         <div className="flex items-center gap-2">
@@ -53,11 +53,11 @@ const FooterTop = () => {
                                 src={warningIcon}
                                 alt=""
                             />
-                            <span>
-                                Пн-Пт: 8:00-18:00
+                            <Link href="">
+                                Пн-Пт:&nbsp;8:00-18:00
                                 <br />
-                                Аварийная служба: 24/7
-                            </span>
+                                Аварийная служба:&nbsp;24/7
+                            </Link>
                         </div>
                     </address>
                 </div>

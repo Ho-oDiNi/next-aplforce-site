@@ -3,7 +3,9 @@ import NavbarLink from "./NavbarLink";
 const HeaderNavbar = () => {
     return (
         <nav className="md:flex-center hidden gap-8">
-            <NavbarLink href="/">Главная</NavbarLink>
+            <NavbarLink href="/" isExact={true}>
+                Главная
+            </NavbarLink>
             <NavbarLink href="/services">Услуги</NavbarLink>
             <NavbarLink href="/about">О кампании</NavbarLink>
             <NavbarLink href="/blog">Блог</NavbarLink>

@@ -6,10 +6,21 @@ import { usePathname } from "next/navigation";
 interface NavbarLinkProps {
     href: string;
     children: React.ReactNode;
+    exact?: boolean; // Новая опция для точного совпадения
 }
 
 const NavbarLink = (props: NavbarLinkProps) => {
-    const isActive = usePathname() === props.href;
+    const currentPath = usePathname();
+    let isActive = false;
+
+    if (props.exact) {
+        isActive = currentPath === props.href;
+    } else {
+        isActive =
+            currentPath === props.href ||
+            currentPath.startsWith(props.href + "/");
+    }
+
     return (
         <Link
             href={props.href}

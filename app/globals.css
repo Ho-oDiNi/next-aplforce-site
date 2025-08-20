@@ -92,7 +92,7 @@
     @apply 2xs:text-base xs:text-sm lg:text-lg;
   }
   a {
-    @apply 2xs:text-base drag-none xs:text-sm lg:text-base;
+    @apply 2xs:text-base drag-none xs:text-sm lg:text-lg;
   }
   button {
     @apply 2xs:text-base xs:text-sm cursor-pointer lg:text-base;

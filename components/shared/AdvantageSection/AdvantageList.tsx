@@ -1,4 +1,4 @@
-import AdvantageCard from "@shared/AdvantageCard";
+import AdvantageCard from "@ui/AdvantageCard";
 import deliveryIcon from "@icons/delivery-red-fill.svg";
 import qualityIcon from "@icons/quality-red-fill.svg";
 import checkmarkIcon from "@icons/checkmark-red-fill.svg";
