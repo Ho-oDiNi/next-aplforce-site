@@ -6,7 +6,7 @@ export default function Sealing() {
         <>
             <section className="bg-background-secondary rounded-2xl p-8">
                 <div className="grid gap-8 md:grid-cols-2 md:gap-14">
-                    <div className="flex flex-col gap-15">
+                    <div className="flex flex-col md:gap-15 gap-8">
                         <hgroup className="text-start">
                             <h2>Герметизация межпанельных швов</h2>
                             <p>Устранение протечек современными материалами</p>
@@ -39,7 +39,7 @@ export default function Sealing() {
 
                         <Link
                             href=""
-                            className="text-foreground-secondary flex-center h-12 w-70 rounded-xl bg-red-500 font-bold"
+                            className="text-foreground-secondary flex-center h-12 w-full md:w-70 rounded-xl bg-red-500 font-bold"
                         >
                             Заказать расчет
                         </Link>

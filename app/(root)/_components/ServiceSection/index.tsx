@@ -18,7 +18,7 @@ const ServiceSection = () => {
 
                 <Link
                     href=""
-                    className="text-foreground-secondary flex-center h-12 w-70 rounded-xl bg-red-500 font-bold"
+                    className="text-foreground-secondary flex-center h-12 w-full md:w-70 rounded-xl bg-red-500 font-bold"
                 >
                     Все услуги
                 </Link>

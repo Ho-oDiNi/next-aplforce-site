@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import locationIcon from "@icons/location-blue-dark.svg";
+import phoneIcon from "@icons/phone-blue-dark.svg"
 
 const HeaderTop = () => {
     return (
@@ -12,7 +13,7 @@ const HeaderTop = () => {
                 </div>
                 <div className="flex-center gap-8">
                     <Link href="tel:+73831234567" className="flex-center gap-4">
-                        <Image src={locationIcon} alt="SEO" />
+                        <Image src={phoneIcon} alt="SEO" />
                         <span className="xs:block hidden">
                             + 7 (383) 123 - 45 - 67
                         </span>

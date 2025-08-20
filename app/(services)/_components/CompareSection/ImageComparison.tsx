@@ -15,10 +15,10 @@ const ImageComparison = () => {
     };
 
     return (
-        <div className="relative aspect-[8/3] w-full overflow-hidden rounded-t-2xl">
+        <div className="relative aspect-[8/5] md:aspect-[8/3] w-full overflow-hidden rounded-t-2xl">
             <Image alt="SEO" fill src={houseFirstImage} />
             <div
-                className="absolute top-0 right-0 left-0 aspect-[8/3] w-full overflow-hidden"
+                className="absolute top-0 right-0 left-0 aspect-[8/5] md:aspect-[8/3] w-full overflow-hidden"
                 style={{
                     clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
                 }}

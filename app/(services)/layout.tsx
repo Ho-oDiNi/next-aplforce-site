@@ -17,7 +17,7 @@ export default function Layout({
                 description="Профессиональная герметизация швов между панелями с использованием современных герметиков и технологий для полного устранения протечек."
             />
 
-            <div className="container mx-auto px-(--space-inside-x) pt-(--space-inside-y)">
+            <div className="container mx-auto px-(--space-inside-x) pt-8 md:pt-(--space-inside-y)">
                 <ServiceSwitchNav />
                 {children}
             </div>

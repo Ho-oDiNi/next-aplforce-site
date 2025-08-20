@@ -89,7 +89,7 @@
     @apply 2xs:text-lg xs:text-xl text-base font-bold;
   }
   p {
-    @apply 2xs:text-base xs:text-lg text-sm;
+    @apply 2xs:text-base xs:text-sm lg:text-lg;
   }
   a {
     @apply 2xs:text-base drag-none xs:text-sm lg:text-base;
