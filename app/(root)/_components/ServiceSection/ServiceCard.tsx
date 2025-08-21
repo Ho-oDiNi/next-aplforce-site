@@ -1,4 +1,4 @@
-import Link from "next/link";
+import StyledLink from "@ui/StyledLink"
 
 interface ServiceCardProps {
     title: string;
@@ -24,12 +24,14 @@ const ServiceCard = (props: ServiceCardProps) => {
                         {unitText}
                     </abbr>
                 </p>
-                <Link
-                    className="text-foreground-secondary w-full rounded-lg bg-blue-500 px-4 py-2 text-center lg:w-auto"
+                <StyledLink
                     href=""
+                    variant="secondary"
+                    size="max"
+                    className="px-4 lg:w-auto"
                 >
                     Подробнее
-                </Link>
+                </StyledLink>
             </div>
         </div>
     );

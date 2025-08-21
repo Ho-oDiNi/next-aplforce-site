@@ -40,7 +40,7 @@ export async function submitForm(prevState: any, formData: FormData) {
         );
 
         if (!telegramResponse.ok) {
-            throw new Error("Ошибка при отправке в Telegram");
+            throw new Error("Ошибка при отправке в Telegram ");
         }
 
         return {
@@ -52,7 +52,7 @@ export async function submitForm(prevState: any, formData: FormData) {
         return {
             success: false,
             message:
-                "Ошибка при отправке формы. Попробуйте еще раз или попробуйте позднее",
+                `Ошибка при отправке формы. Попробуйте еще раз или попробуйте позднее`,
         };
     }
 }

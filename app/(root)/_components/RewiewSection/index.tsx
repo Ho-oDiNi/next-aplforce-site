@@ -1,4 +1,4 @@
-import Link from "next/link";
+import StyledLink from "@ui/StyledLink"
 import RewiewList from "./RewiewList";
 
 const RewiewSection = () => {
@@ -11,13 +11,9 @@ const RewiewSection = () => {
                 </hgroup>
 
                 <RewiewList />
-
-                <Link
-                    href=""
-                    className="text-foreground-secondary flex-center h-12 w-70 rounded-xl bg-blue-500 font-bold"
-                >
+                <StyledLink href="" variant="secondary" size="lg" isBold={true}>
                     Читать
-                </Link>
+                </StyledLink>
             </div>
         </section>
     );

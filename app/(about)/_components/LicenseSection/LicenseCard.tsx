@@ -1,4 +1,4 @@
-import Link from "next/link";
+import StyledLink from "@ui/StyledLink";
 
 interface LicenseCardProps {
     title: string;
@@ -7,14 +7,15 @@ interface LicenseCardProps {
 
 const LicenseCard = (props: LicenseCardProps) => {
     return (
-        <div className="bg-background-secondary riunded-2xl flex h-full flex-col justify-between gap-6 rounded-2xl p-8">
+        <div className="bg-background-secondary flex h-full flex-col justify-between items-start gap-6 rounded-2xl p-8">
             <dt>{props.title}</dt>
-            <Link
+            <StyledLink
                 href={props.href}
-                className="flex-center h-8 w-20 rounded-lg bg-blue-500 text-sm text-white"
+                variant="secondary"
+                size="sm"
             >
                 Скачать
-            </Link>
+            </StyledLink>
         </div>
     );
 };

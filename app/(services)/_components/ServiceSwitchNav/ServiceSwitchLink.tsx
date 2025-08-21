@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import StyledLink from "@ui/StyledLink"
 
 interface ServiceSwitchLinkProps {
     href: string;
@@ -26,12 +27,14 @@ const ServiceSwitchLink = (props: ServiceSwitchLinkProps) => {
         <div
             className={`${isActive ? "md:bg-background-secondary" : "bg-background-primary md:bg-background-primary"} ${isActive ? roundedSides[props.roundedOrder] : ""} ${commonClasses}`}
         >
-            <Link
+            <StyledLink
                 href={props.href}
-                className={`${isActive ? "md:bg-background-primary bg-blue-500 text-white md:text-black" : "bg-background-secondary md:bg-blue-500 md:text-white"} flex-center h-12 w-full rounded-2xl md:rounded-2xl`}
+                variant={`${isActive ? "secondary" : "outline"}`}
+                size="max"
+                className={`${isActive ? "md:bg-background-primary md:text-foreground-primary" : "md:bg-blue-500 md:text-white"}`}
             >
                 {props.children}
-            </Link>
+            </StyledLink>
         </div>
     );
 };

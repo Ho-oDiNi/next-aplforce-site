@@ -1,4 +1,4 @@
-import Link from "next/link";
+import StyledLink from "@ui/StyledLink"
 import ServiceList from "./ServiceList";
 
 const ServiceSection = () => {
@@ -16,12 +16,14 @@ const ServiceSection = () => {
 
                 <ServiceList />
 
-                <Link
+                <StyledLink
                     href=""
-                    className="text-foreground-secondary flex-center h-12 w-full md:w-70 rounded-xl bg-red-500 font-bold"
+                    variant="primary"
+                    size="lg"
+                    isBold={true}
                 >
                     Все услуги
-                </Link>
+                </StyledLink>
             </div>
         </section>
     );

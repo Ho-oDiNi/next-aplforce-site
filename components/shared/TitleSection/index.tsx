@@ -1,3 +1,4 @@
+import StyledButton from "@/components/ui/StyledButton";
 import MiniAdvantageList from "./MiniAdvantageList";
 
 interface TitleSectionProps {
@@ -21,9 +22,9 @@ const TitleSection = (props: TitleSectionProps) => {
                     <p>{props.description}</p>
                 </hgroup>
 
-                <button className="text-foreground-secondary h-12 w-70 rounded-xl bg-red-500 font-bold">
+                <StyledButton variant="primary" size="lg">
                     Заказать консультацию
-                </button>
+                </StyledButton>
 
                 {unitAdvantage}
             </div>

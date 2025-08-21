@@ -89,13 +89,13 @@
     @apply 2xs:text-lg xs:text-xl text-base font-bold;
   }
   p {
-    @apply 2xs:text-base xs:text-sm lg:text-lg;
+    @apply 2xs:text-base text-sm lg:text-lg;
   }
   a {
-    @apply 2xs:text-base drag-none xs:text-sm lg:text-lg;
+    @apply 2xs:text-base drag-none text-sm lg:text-lg;
   }
   button {
-    @apply 2xs:text-base xs:text-sm cursor-pointer lg:text-lg;
+    @apply 2xs:text-base text-sm cursor-pointer lg:text-lg;
   }
   summary {
     @apply 2xs:text-lg xs:text-xl text-base font-bold;

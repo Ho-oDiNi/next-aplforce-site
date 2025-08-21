@@ -1,5 +1,5 @@
-import Link from "next/link";
 import CompareSection from "../../_components/CompareSection";
+import StyledLink from "@/components/ui/StyledLink";
 
 export default function Reparing() {
     return (
@@ -37,12 +37,14 @@ export default function Reparing() {
                             </div>
                         </div>
 
-                        <Link
+                        <StyledLink
                             href=""
-                            className="text-foreground-secondary flex-center h-12 w-full md:w-70  rounded-xl bg-red-500 font-bold"
+                            isBold={true}
+                            variant="primary"
+                            size="lg"
                         >
                             Заказать расчет
-                        </Link>
+                        </StyledLink>
                     </div>
                     <div className="flex flex-col gap-4">
                         <dl className="flex flex-col">

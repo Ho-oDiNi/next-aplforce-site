@@ -1,31 +1,30 @@
 import React from "react";
 
-type ButtonVariant = "primary" | "secondary" | "outline";
+type ButtonVariant = "primary" | "secondary";
 
 type ButtonSize = "sm" | "md" | "lg" | "max";
 
-interface StyledButtonButtonProps {
+interface StyledButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant;
     size?: ButtonSize;
     className?: string;
     children: React.ReactNode;
 }
 
-const StyledButton = (props: StyledButtonButtonProps) => {
-    const { variant = "primary", size = "md", className, children } = props;
+const StyledButton = (props: StyledButtonProps) => {
+    const { variant = "primary", size = "lg", className, children, ...restProps } = props;
 
     const baseClasses = "flex-center font-bold rounded-xl";
 
     const variantClasses = {
         primary: "bg-red-500 text-foreground-secondary",
         secondary: "bg-blue-500 text-foreground-secondary",
-        outline: "bg-background-secondary text-blue-500",
     };
 
     const sizeClasses = {
         sm: "py-2 px-4",
         md: "h-10 w-55",
-        lg: "h-12 w-70",
+        lg: "h-12 max-w-70 w-full",
         max: "h-12 w-full",
     };
 
@@ -36,7 +35,7 @@ const StyledButton = (props: StyledButtonButtonProps) => {
         ${className}
     `;
 
-    return <button className={buttonClasses}>{children}</button>;
+    return <button className={buttonClasses} {...restProps}>{children}</button>;
 };
 
 export default StyledButton;

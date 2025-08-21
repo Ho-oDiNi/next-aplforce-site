@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ExampleList from "./ExampleList";
+import StyledLink from "@/components/ui/StyledLink";
 
 const ExampleSection = () => {
     return (
@@ -11,13 +12,14 @@ const ExampleSection = () => {
                 </hgroup>
 
                 <ExampleList />
-
-                <Link
+                <StyledLink
                     href=""
-                    className="text-foreground-secondary flex-center h-12 w-70 rounded-xl bg-blue-500 font-bold"
+                    isBold={true}
+                    variant="secondary"
+                    size="lg"
                 >
                     Смотреть все работы
-                </Link>
+                </StyledLink>
             </div>
         </section>
     );

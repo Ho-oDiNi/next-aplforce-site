@@ -3,6 +3,7 @@
 import Form from "next/form";
 import InputField from "@ui/InputField";
 import ConsentCheckbox from "@ui/ConsentCheckbox";
+import SubmitButton from "./SubmitButton"
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 
@@ -55,14 +56,7 @@ const RequestForm = (props: RequestFormProps) => {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <button
-                        type="submit"
-                        className="text-foreground-secondary h-12 w-full rounded-xl bg-red-500 font-bold"
-                        disabled={pending}
-                        aria-disabled={pending}
-                    >
-                        {pending ? "Отправка..." : "Отправить заявку"}
-                    </button>
+                    <SubmitButton buttonPending={pending}/>
                     <ConsentCheckbox />
 
                     {state?.message && (

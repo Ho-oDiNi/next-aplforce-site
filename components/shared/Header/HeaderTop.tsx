@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import locationIcon from "@icons/location-blue-dark.svg";
 import phoneIcon from "@icons/phone-blue-dark.svg";
+import StyledButton from "@/components/ui/StyledButton";
 
 const HeaderTop = () => {
     return (
@@ -18,9 +19,9 @@ const HeaderTop = () => {
                             + 7 (383) 123 - 45 - 67
                         </span>
                     </Link>
-                    <button className="text-foreground-secondary hidden h-10 w-55 rounded-xl bg-red-500 font-bold md:block">
+                    <StyledButton variant="primary" size="md" className="hidden md:block">
                         Заказать консультацию
-                    </button>
+                    </StyledButton>
                 </div>
             </div>
         </div>

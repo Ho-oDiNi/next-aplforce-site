@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import StyledLink from "@ui/StyledLink"
 import phoneIcon from "@icons/phone-blue-light.svg";
 import calendarIcon from "@icons/calendar-blue-light.svg";
 import emailIcon from "@icons/email-blue-light.svg";
@@ -90,18 +91,21 @@ const MiniAdvantageList = () => {
                             <Image src={warningIcon} alt="" />
                             <strong>Нужна срочная помощь?</strong>
                         </div>
-                        <Link
+                        <StyledLink
                             href=""
-                            className="text-foreground-secondary flex-center h-12 w-full rounded-xl bg-red-500 font-bold"
+                            variant="primary"
+                            size="max"
+                            isBold={true}
                         >
                             Аварийный вызов
-                        </Link>
-                        <Link
+                        </StyledLink>
+                        <StyledLink
                             href=""
-                            className="bg-background-secondary flex-center h-12 w-full rounded-xl text-blue-500"
+                            variant="whatsapp"
+                            size="max"
                         >
                             Написать в WhatsApp
-                        </Link>
+                        </StyledLink>
                     </div>
                 </dl>
             </div>
