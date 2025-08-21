@@ -1,5 +1,6 @@
 import RequestForm from "@ui/RequestForm";
 import { submitForm } from "@/app/api/actions/formActions";
+import StyledSection from "@/components/ui/StyledSection";
 
 interface ConsultSectionProps {
     isWhite?: boolean;
@@ -15,23 +16,21 @@ const ConsultSection = (props: ConsultSectionProps) => {
             : "bg-background-primary",
     };
     return (
-        <section className={`${colorUnit.bgColor}`}>
-            <div className="flex-center container mx-auto flex-col gap-10">
-                <hgroup>
-                    <h2>Готовы начать работу?</h2>
-                    <p>
-                        Получите бесплатную консультацию и расчет стоимости
-                        работ для вашего дома
-                    </p>
-                </hgroup>
+        <StyledSection isSecondary={props.isWhite}>
+            <hgroup>
+                <h2>Готовы начать работу?</h2>
+                <p>
+                    Получите бесплатную консультацию и расчет стоимости
+                    работ для вашего дома
+                </p>
+            </hgroup>
 
-                <RequestForm
-                    formAction={submitForm}
-                    bgColor={colorUnit.bgColor}
-                    formColor={colorUnit.formColor}
+            <RequestForm
+                formAction={submitForm}
+                bgColor={colorUnit.bgColor}
+                formColor={colorUnit.formColor}
                 />
-            </div>
-        </section>
+        </StyledSection>
     );
 };
 

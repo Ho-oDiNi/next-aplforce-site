@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 interface NavbarLinkProps {
     href: string;
     children: React.ReactNode;
-    exact?: boolean; // Новая опция для точного совпадения
+    exact?: boolean;
 }
 
 const NavbarLink = (props: NavbarLinkProps) => {

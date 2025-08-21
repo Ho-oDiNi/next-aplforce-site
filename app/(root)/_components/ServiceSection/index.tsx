@@ -1,31 +1,30 @@
 import StyledLink from "@ui/StyledLink"
 import ServiceList from "./ServiceList";
+import StyledSection from "@ui/StyledSection";
 
 const ServiceSection = () => {
     return (
-        <section>
-            <div className="flex-center container mx-auto flex-col gap-10">
-                <hgroup>
-                    <h2>Наши услуги</h2>
-                    <p>
-                        Комплексное обслуживание многоквартирных домов с
-                        использованием современных технологий и безопасных
-                        методов промышленного альпинизма
-                    </p>
-                </hgroup>
+        <StyledSection>
+            <hgroup>
+                <h2>Наши услуги</h2>
+                <p>
+                    Комплексное обслуживание многоквартирных домов с
+                    использованием современных технологий и безопасных
+                    методов промышленного альпинизма
+                </p>
+            </hgroup>
 
-                <ServiceList />
+            <ServiceList />
 
-                <StyledLink
-                    href=""
-                    variant="primary"
-                    size="lg"
-                    isBold={true}
+            <StyledLink
+                href=""
+                variant="primary"
+                size="lg"
+                isBold={true}
                 >
-                    Все услуги
-                </StyledLink>
-            </div>
-        </section>
+                Все услуги
+            </StyledLink>
+        </StyledSection>
     );
 };
 
