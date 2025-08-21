@@ -95,7 +95,7 @@
     @apply 2xs:text-base drag-none xs:text-sm lg:text-lg;
   }
   button {
-    @apply 2xs:text-base xs:text-sm cursor-pointer lg:text-base;
+    @apply 2xs:text-base xs:text-sm cursor-pointer lg:text-lg;
   }
   summary {
     @apply 2xs:text-lg xs:text-xl text-base font-bold;
@@ -114,7 +114,7 @@
   }
 
   summary {
-    @apply flex-between;
+    @apply flex-between cursor-pointer;
     &::marker {
       @apply hidden list-none;
     }

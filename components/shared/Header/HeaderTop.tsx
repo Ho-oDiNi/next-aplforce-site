@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import locationIcon from "@icons/location-blue-dark.svg";
-import phoneIcon from "@icons/phone-blue-dark.svg"
+import phoneIcon from "@icons/phone-blue-dark.svg";
 
 const HeaderTop = () => {
     return (

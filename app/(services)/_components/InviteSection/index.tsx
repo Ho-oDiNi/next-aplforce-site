@@ -1,9 +1,10 @@
-import ConsultForm from "@shared/ConsultSection/ConsultForm";
+import RequestForm from "@ui/RequestForm";
+import { submitForm } from "@actions/formActions";
 
 const InviteSection = () => {
     return (
         <section className="bg-background-secondary">
-            <div className="container mx-auto grid grid-cols-1 md:gap-14 md:grid-cols-2 gap-10">
+            <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
                 <div className="flex flex-col items-start justify-center">
                     <h2>Бесплатно пригласить замерщика</h2>
                     <ol type="1" start={1}>
@@ -20,7 +21,8 @@ const InviteSection = () => {
                     </ol>
                 </div>
 
-                <ConsultForm
+                <RequestForm
+                    formAction={submitForm}
                     bgColor="bg-background-secondary"
                     formColor="bg-foreground-secondary"
                 />

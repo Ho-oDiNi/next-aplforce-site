@@ -1,4 +1,5 @@
-import ConsultForm from "./ConsultForm";
+import RequestForm from "@ui/RequestForm";
+import { submitForm } from "@actions/formActions";
 
 interface ConsultSectionProps {
     isWhite?: boolean;
@@ -24,7 +25,8 @@ const ConsultSection = (props: ConsultSectionProps) => {
                     </p>
                 </hgroup>
 
-                <ConsultForm
+                <RequestForm
+                    formAction={submitForm}
                     bgColor={colorUnit.bgColor}
                     formColor={colorUnit.formColor}
                 />
