@@ -1,5 +1,5 @@
 import RequestForm from "@ui/RequestForm";
-import { submitForm } from "@actions/formActions";
+import { submitForm } from "@api/actions/formActions";
 
 const InviteSection = () => {
     return (

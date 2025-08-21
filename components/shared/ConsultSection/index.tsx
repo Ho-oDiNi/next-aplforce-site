@@ -1,5 +1,5 @@
 import RequestForm from "@ui/RequestForm";
-import { submitForm } from "@actions/formActions";
+import { submitForm } from "@/app/api/actions/formActions";
 
 interface ConsultSectionProps {
     isWhite?: boolean;
