@@ -11,7 +11,7 @@ const MapSection = () => {
                 <h2 className="mb-4 md:mb-8">География работ</h2>
                 <div className="flex-between w-full flex-col lg:flex-row lg:gap-14">
                     <dl className="flex-center flex-col">
-                        <dt>Основные города</dt>
+                        <dt className="text-nowrap">Основные города</dt>
                         <div className="mb-8 grid grid-cols-2 gap-x-8 gap-y-2 sm:grid-cols-3 lg:grid-cols-1">
                             <div className="flex-start gap-x-2 md:gap-x-4">
                                 <Image src={locationIcon} alt="" />

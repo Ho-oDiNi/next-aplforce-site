@@ -2,7 +2,7 @@ import InviteSection from "./_components/InviteSection";
 import TitleSection from "@shared/TitleSection";
 import ExampleSection from "@shared/ExampleSection";
 import AdvantageSection from "@shared/AdvantageSection";
-import AnswerSection from "@shared/AnswerSection";
+import AccordionFAQ from "@ui/AccordionFAQ";
 import ServiceSwitchNav from "./_components/ServiceSwitchNav";
 
 export default function Layout({
@@ -25,7 +25,7 @@ export default function Layout({
             <InviteSection />
             <ExampleSection />
             <AdvantageSection />
-            <AnswerSection />
+            <AccordionFAQ />
         </>
     );
 }

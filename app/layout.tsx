@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@shared/Header";
 import Footer from "@shared/Footer";
-import robotoFont from "@ui/robotoFont";
+import RobotoFont from "@ui/RobotoFont";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ru">
-            <body className={`${robotoFont.className} antialiased`}>
+            <body className={`${RobotoFont.className} antialiased`}>
                 <Header />
                 <main>{children}</main>
                 <Footer />

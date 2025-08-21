@@ -97,6 +97,9 @@
   button {
     @apply 2xs:text-base xs:text-sm cursor-pointer lg:text-base;
   }
+  summary {
+    @apply 2xs:text-lg xs:text-xl text-base font-bold;
+  }
   dt {
     @apply 2xs:text-lg xs:text-xl text-base font-bold;
   }
@@ -106,8 +109,23 @@
   ol {
     @apply list-decimal pl-4;
   }
-
   img {
     @apply drag-none;
+  }
+
+  summary {
+    @apply flex-between;
+    &::marker {
+      @apply hidden list-none;
+    }
+    &:after {
+      @apply h-6 w-6;
+    }
+  }
+  details summary:after {
+    @apply content-[url("/icons/plus-blue-light.svg")];
+  }
+  details[open] summary:after {
+    @apply content-[url("/icons/minus-blue-light.svg")];
   }
 }
