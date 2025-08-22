@@ -1,14 +1,14 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
-interface AdvantageCardProps {
+interface FeatureCardProps {
     icon: string | StaticImport;
     title: string;
     description: string;
     commitmentArray?: string[];
 }
 
-const AdvantageCard = (props: AdvantageCardProps) => {
+const FeatureCard = (props: FeatureCardProps) => {
     return (
         <div className="bg-background-primary flex flex-col rounded-2xl">
             <div
@@ -33,4 +33,4 @@ const AdvantageCard = (props: AdvantageCardProps) => {
     );
 };
 
-export default AdvantageCard;
+export default FeatureCard;

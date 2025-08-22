@@ -1,10 +1,10 @@
-interface DetailsCardProps {
+interface AccordionItemProps {
     title: string;
     description: string;
     isOpen?: boolean;
 }
 
-const DetailsCard = (props: DetailsCardProps) => {
+const AccordionItem = (props: AccordionItemProps) => {
     return (
         <details
             open={props.isOpen}
@@ -16,4 +16,4 @@ const DetailsCard = (props: DetailsCardProps) => {
     );
 };
 
-export default DetailsCard;
+export default AccordionItem;
