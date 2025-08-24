@@ -69,7 +69,7 @@ export interface InputFieldProps {
     bgColor: string;
 }
 
-export interface AdvantageCardProps {
+export interface FeatureCardProps {
     icon: string | StaticImport;
     title: string;
     description: string;
@@ -131,4 +131,11 @@ export interface ServiceCardProps {
     description: string;
     price: number;
     isLinearMeter?: boolean;
+}
+
+export interface FeatureCardProps {
+    icon: string | StaticImport;
+    title: string;
+    description: string;
+    commitmentArray?: string[];
 }

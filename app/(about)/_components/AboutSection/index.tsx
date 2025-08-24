@@ -1,4 +1,4 @@
-import AdvantageCard from "@ui/AdvantageCard";
+import FeatureCard from "@ui/FeatureCard";
 import StyledSection from "@ui/StyledSection";
 import deliveryIcon from "@icons/delivery-red-fill.svg";
 import qualityIcon from "@icons/quality-red-fill.svg";
@@ -19,22 +19,22 @@ const AboutSection = () => {
                 </p>
             </hgroup>
             <dl className="w-full items-start md:grid-cols-4">
-                <AdvantageCard
+                <FeatureCard
                     icon={deliveryIcon}
                     title="2000+"
                     description="Выполненных обектов"
                     />
-                <AdvantageCard
+                <FeatureCard
                     icon={qualityIcon}
                     title="15 лет"
                     description="Работаем на рынке"
                     />
-                <AdvantageCard
+                <FeatureCard
                     icon={checkmarkIcon}
                     title="500+"
                     description="Довольных клиентов"
                     />
-                <AdvantageCard
+                <FeatureCard
                     icon={warningIcon}
                     title="24/7"
                     description="Аварийная служба"

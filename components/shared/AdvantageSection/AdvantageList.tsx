@@ -1,4 +1,4 @@
-import AdvantageCard from "@ui/AdvantageCard";
+import FeatureCard from "@ui/FeatureCard";
 import deliveryIcon from "@icons/delivery-red-fill.svg";
 import qualityIcon from "@icons/quality-red-fill.svg";
 import checkmarkIcon from "@icons/checkmark-red-fill.svg";
@@ -7,7 +7,7 @@ import warningIcon from "@icons/warning-red-fill.svg";
 const AdvantageList = () => {
     return (
         <dl className="items-start md:grid-cols-4">
-            <AdvantageCard
+            <FeatureCard
                 icon={deliveryIcon}
                 title="Скорость"
                 description="Осмотр в день обращения, выполнение типовых высотных работ за 1-3 дня"
@@ -17,7 +17,7 @@ const AdvantageList = () => {
                     "Не тратим ваше время на долгие согласования",
                 ]}
             />
-            <AdvantageCard
+            <FeatureCard
                 icon={qualityIcon}
                 title="10 лет опыта"
                 description="Работаем с 2014 года, отремонтировали более 500 объектов в Новосибирске"
@@ -27,7 +27,7 @@ const AdvantageList = () => {
                     "Соблюдение сроков",
                 ]}
             />
-            <AdvantageCard
+            <FeatureCard
                 icon={checkmarkIcon}
                 title="Гарантия до 5 лет"
                 description="Договор, акты выполненных работ и гарантию на все виды ремонта"
@@ -37,7 +37,7 @@ const AdvantageList = () => {
                     "Защита от недобросовестных подрядчиков",
                 ]}
             />
-            <AdvantageCard
+            <FeatureCard
                 icon={warningIcon}
                 title="Аварийный выез 24/7"
                 description="Круглосуточная служба реагирования для срочного ремонта кровли, сброса снега или устранения протечек"
