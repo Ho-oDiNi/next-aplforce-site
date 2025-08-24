@@ -1,10 +1,7 @@
 import RequestForm from "@ui/RequestForm";
 import { submitForm } from "@/app/api/actions/formActions";
 import StyledSection from "@/components/ui/StyledSection";
-
-interface ConsultSectionProps {
-    isWhite?: boolean;
-}
+import { ConsultSectionProps } from "@types";
 
 const ConsultSection = (props: ConsultSectionProps) => {
     const colorUnit = {

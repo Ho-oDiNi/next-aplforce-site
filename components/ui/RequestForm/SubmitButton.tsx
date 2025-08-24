@@ -1,11 +1,8 @@
-import { FormStatus, useFormStatus } from "react-dom";
 import StyledButton from "../StyledButton";
+import { SubmitButtonProps } from "@types"
 
-interface SubmitButtonProps {
-    buttonPending: boolean;
-}
 
-const SubmitButton = (props :SubmitButtonProps) => {
+const SubmitButton = (props: SubmitButtonProps) => {
     return (
         <StyledButton
             variant="primary"

@@ -1,15 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import StyledLink from "@ui/StyledLink"
+import { ServiceSwitchLinkProps } from "@types";
 
-interface ServiceSwitchLinkProps {
-    href: string;
-    children: React.ReactNode;
-    roundedOrder: number;
-}
 
 const ServiceSwitchLink = (props: ServiceSwitchLinkProps) => {
     const isActive = usePathname() === props.href;

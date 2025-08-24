@@ -1,10 +1,4 @@
-// import StyledSection from "@ui/StyledSection";
-
-interface StyledSectionProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-    isSecondary?: boolean;
-    sectionClassName?: string;
-    children: React.ReactNode;
-}
+import { StyledSectionProps } from "@types";
 
 const StyledSection = (props: StyledSectionProps) => {
     const bgColor = props.isSecondary ? "bg-background-secondary" : "bg-background-primary"

@@ -1,7 +1,4 @@
-interface MiniMiniAdvantageElementProps {
-    title: string;
-    description: string;
-}
+import { MiniMiniAdvantageElementProps } from "@types";
 
 const MiniAdvantageElement = (props: MiniMiniAdvantageElementProps) => {
     return (

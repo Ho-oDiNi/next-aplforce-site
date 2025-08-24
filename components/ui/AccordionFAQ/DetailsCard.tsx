@@ -1,8 +1,4 @@
-interface DetailsCardProps {
-    title: string;
-    description: string;
-    isOpen?: boolean;
-}
+import { DetailsCardProps } from "@types";
 
 const DetailsCard = (props: DetailsCardProps) => {
     return (

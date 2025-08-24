@@ -1,10 +1,6 @@
 import Image from "next/image";
 import questionIcon from "@icons/question-red-solid.svg";
-
-interface AnswerCardProps {
-    title: string;
-    description: string;
-}
+import { AnswerCardProps } from "@types";
 
 const AnswerCard = (props: AnswerCardProps) => {
     return (

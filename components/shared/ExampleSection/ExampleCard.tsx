@@ -1,10 +1,5 @@
+import { ExampleCardProps } from "@types";
 import Image from "next/image";
-
-interface ExampleCardProps {
-    title: string;
-    description: string;
-    img: string;
-}
 
 const ExampleCard = (props: ExampleCardProps) => {
     return (

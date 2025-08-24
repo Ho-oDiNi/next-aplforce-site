@@ -1,11 +1,5 @@
+import { ServiceCardProps } from "@types";
 import StyledLink from "@ui/StyledLink"
-
-interface ServiceCardProps {
-    title: string;
-    description: string;
-    price: number;
-    isLinearMeter?: boolean;
-}
 
 const ServiceCard = (props: ServiceCardProps) => {
     const unitExplanation = props.isLinearMeter

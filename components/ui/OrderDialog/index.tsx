@@ -5,10 +5,7 @@ import { submitForm } from "@api/actions/formActions";
 import RequestForm from "@ui/RequestForm";
 import closeIcon from "@icons/close-blue-dark.svg";
 import Image from 'next/image';
-
-interface OrderDialogProps {
-  onClose: () => void;
-}
+import { OrderDialogProps } from '@/types';
 
 const OrderDialog = forwardRef<HTMLDialogElement, OrderDialogProps>(
   ({ onClose }, ref) => {

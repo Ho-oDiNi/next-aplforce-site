@@ -1,13 +1,8 @@
 "use client";
 
+import { NavbarLinkProps } from "@types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-interface NavbarLinkProps {
-    href: string;
-    children: React.ReactNode;
-    exact?: boolean;
-}
 
 const NavbarLink = (props: NavbarLinkProps) => {
     const currentPath = usePathname();

@@ -6,25 +6,7 @@ import ConsentCheckbox from "@ui/ConsentCheckbox";
 import SubmitButton from "./SubmitButton"
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
-
-interface RequestFormProps {
-    bgColor: string;
-    formColor: string;
-    formAction: (
-        prevState: FormState,
-        formData: FormData,
-    ) => Promise<FormState>;
-}
-
-interface FormState {
-    errors?: {
-        name?: string;
-        phone?: string;
-        consent?: string;
-    };
-    success?: boolean;
-    message?: string;
-}
+import { RequestFormProps } from "@types";
 
 const RequestForm = (props: RequestFormProps) => {
     const { pending } = useFormStatus();

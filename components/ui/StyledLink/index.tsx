@@ -1,19 +1,6 @@
 import React from "react";
 import Link from "next/link";
-// import StyledLink from "@ui/StyledLink"
-
-type LinkVariant = "primary" | "secondary" | "outline" | "whatsapp";
-
-type LinkSize = "sm" | "md" | "lg" | "max";
-
-interface StyledLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-    href: string;
-    variant?: LinkVariant;
-    size?: LinkSize;
-    isBold?: boolean;
-    className?: string;
-    children: React.ReactNode;
-}
+import { StyledLinkProps } from "@types"
 
 const StyledLink = (props: StyledLinkProps) => {
     const { variant = "primary", size = "lg", isBold=false, className = "", children, ...restProps } = props;

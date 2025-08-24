@@ -1,13 +1,9 @@
 'use client';
 
+import { DialogContextType } from '@/types';
 import OrderDialog from '@ui/OrderDialog';
 import React, { createContext, useContext, useRef, useCallback } from 'react';
 
-interface DialogContextType {
-  openDialog: () => void;
-  closeDialog: () => void;
-  dialogRef: React.RefObject<HTMLDialogElement | null>;
-}
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined);
 

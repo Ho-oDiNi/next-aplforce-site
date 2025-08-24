@@ -1,11 +1,4 @@
-interface InputFieldProps {
-    label: string;
-    name: string;
-    type: string;
-    inputMode: "tel" | "text";
-    placeholder: string;
-    bgColor: string;
-}
+import { InputFieldProps } from "@types"
 
 const InputField = (props: InputFieldProps) => {
     return (
