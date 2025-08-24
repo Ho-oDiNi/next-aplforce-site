@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import locationIcon from "@icons/location-blue-dark.svg";
 import phoneIcon from "@icons/phone-blue-dark.svg";
-import StyledButton from "@/components/ui/StyledButton";
+import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 
 const HeaderTop = () => {
     return (
@@ -19,9 +19,9 @@ const HeaderTop = () => {
                             + 7 (383) 123 - 45 - 67
                         </span>
                     </Link>
-                    <StyledButton variant="primary" size="md" className="hidden md:block">
+                    <OpenDialogButton variant="primary" size="md" className="hidden md:block">
                         Заказать консультацию
-                    </StyledButton>
+                    </OpenDialogButton>
                 </div>
             </div>
         </div>

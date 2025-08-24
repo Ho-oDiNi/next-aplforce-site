@@ -1,5 +1,5 @@
+import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 import CompareSection from "../../_components/CompareSection";
-import StyledLink from "@ui/StyledLink"
 
 export default function Dismanting() {
     return (
@@ -37,14 +37,12 @@ export default function Dismanting() {
                             </div>
                         </div>
 
-                        <StyledLink
-                            href=""
-                            isBold={true}
+                        <OpenDialogButton
                             variant="primary"
                             size="lg"
                         >
                             Заказать расчет
-                        </StyledLink>
+                        </OpenDialogButton>
                     </div>
                     <div className="flex flex-col gap-4">
                         <dl className="flex flex-col">

@@ -1,15 +1,5 @@
 import React from "react";
-
-type ButtonVariant = "primary" | "secondary";
-
-type ButtonSize = "sm" | "md" | "lg" | "max";
-
-interface StyledButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: ButtonVariant;
-    size?: ButtonSize;
-    className?: string;
-    children: React.ReactNode;
-}
+import { StyledButtonProps } from "@types"
 
 const StyledButton = (props: StyledButtonProps) => {
     const { variant = "primary", size = "lg", className, children, ...restProps } = props;

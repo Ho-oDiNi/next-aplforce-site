@@ -1,6 +1,6 @@
-import StyledButton from "@/components/ui/StyledButton";
 import MiniAdvantageList from "./MiniAdvantageList";
 import StyledSection from "@/components/ui/StyledSection";
+import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 
 interface TitleSectionProps {
     title: string;
@@ -22,9 +22,9 @@ const TitleSection = (props: TitleSectionProps) => {
                 <p>{props.description}</p>
             </hgroup>
 
-            <StyledButton variant="primary" size="lg">
+            <OpenDialogButton variant="primary" size="lg">
                 Заказать консультацию
-            </StyledButton>
+            </OpenDialogButton>
 
             {unitAdvantage}
         </StyledSection>
