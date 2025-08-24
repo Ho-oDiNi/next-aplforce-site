@@ -1,8 +1,4 @@
-interface AccordionItemProps {
-    title: string;
-    description: string;
-    isOpen?: boolean;
-}
+import { AccordionItemProps } from "@/types";
 
 const AccordionItem = (props: AccordionItemProps) => {
     return (

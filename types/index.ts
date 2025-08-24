@@ -139,3 +139,9 @@ export interface FeatureCardProps {
     description: string;
     commitmentArray?: string[];
 }
+
+export interface AccordionItemProps {
+    title: string;
+    description: string;
+    isOpen?: boolean;
+}
