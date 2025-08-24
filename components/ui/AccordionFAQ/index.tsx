@@ -1,5 +1,5 @@
 import StyledSection from "../StyledSection";
-import DetailsCard from "./DetailsCard";
+import AccordionItem from "./AccordionItem";
 
 const AccordionFAQ = () => {
     return (
@@ -9,14 +9,14 @@ const AccordionFAQ = () => {
                 <p>Ответы на самые популярные вопросы</p>
             </hgroup>
             <div className="flex-start w-full flex-col gap-4">
-                <DetailsCard
+                <AccordionItem
                     title="Вопрос 1"
                     description="Ответ 1"
                     isOpen={true}
                 />
-                <DetailsCard title="Вопрос 2" description="Ответ 2" />
-                <DetailsCard title="Вопрос 3" description="Ответ 3" />
-                <DetailsCard title="Вопрос 4" description="Ответ 4" />
+                <AccordionItem title="Вопрос 2" description="Ответ 2" />
+                <AccordionItem title="Вопрос 3" description="Ответ 3" />
+                <AccordionItem title="Вопрос 4" description="Ответ 4" />
             </div>
         </StyledSection>
     );

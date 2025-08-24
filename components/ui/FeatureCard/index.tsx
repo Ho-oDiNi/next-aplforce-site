@@ -1,7 +1,18 @@
 import { AdvantageCardProps } from "@types";
 import Image from "next/image";
 
+<<<<<<< HEAD:components/ui/AdvantageCard/index.tsx
 const AdvantageCard = (props: AdvantageCardProps) => {
+=======
+interface FeatureCardProps {
+    icon: string | StaticImport;
+    title: string;
+    description: string;
+    commitmentArray?: string[];
+}
+
+const FeatureCard = (props: FeatureCardProps) => {
+>>>>>>> 6db8bd64ab499ff453dc2a4004d76fbe2e6b946a:components/ui/FeatureCard/index.tsx
     return (
         <div className="bg-background-primary flex flex-col rounded-2xl">
             <div
@@ -26,4 +37,4 @@ const AdvantageCard = (props: AdvantageCardProps) => {
     );
 };
 
-export default AdvantageCard;
+export default FeatureCard;
