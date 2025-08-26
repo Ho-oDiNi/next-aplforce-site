@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import StyledLink from "@ui/StyledLink"
+import StyledLink from "@ui/StyledLink";
 import phoneIcon from "@icons/phone-blue-light.svg";
 import calendarIcon from "@icons/calendar-blue-light.svg";
 import emailIcon from "@icons/email-blue-light.svg";
@@ -29,8 +29,7 @@ const MiniAdvantageList = () => {
                                 <dd>+ 7 (383) 123 - 45 - 67</dd>
                             </Link>
                             <dd className="text-zinc-300">
-                                Основной номер <wbr />{" "}
-                                (Пн-Пт:&nbsp;8:00-18:00)
+                                Основной номер <wbr /> (Пн-Пт:&nbsp;8:00-18:00)
                             </dd>
                         </div>
                         <div className="flex flex-col gap-2">
@@ -53,9 +52,7 @@ const MiniAdvantageList = () => {
                             <dd className="text-nowrap">8:00 - 18:00</dd>
                         </div>
                         <div className="flex-between">
-                            <dd className="text-red-500">
-                                Аварийная служба
-                            </dd>
+                            <dd className="text-red-500">Аварийная служба</dd>
                             <dd className="text-red-500">24/7</dd>
                         </div>
                     </div>
@@ -96,14 +93,10 @@ const MiniAdvantageList = () => {
                         variant="primary"
                         size="max"
                         isBold={true}
-                        >
+                    >
                         Аварийный вызов
                     </StyledLink>
-                    <StyledLink
-                        href=""
-                        variant="whatsapp"
-                        size="max"
-                        >
+                    <StyledLink href="" variant="whatsapp" size="max">
                         Написать в WhatsApp
                     </StyledLink>
                 </div>

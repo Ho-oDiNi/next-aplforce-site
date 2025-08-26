@@ -8,7 +8,7 @@ const NavbarLink = (props: NavbarLinkProps) => {
     const currentPath = usePathname();
     let isActive = false;
 
-    if (props.exact) {
+    if (props.isExact) {
         isActive = currentPath === props.href;
     } else {
         isActive =

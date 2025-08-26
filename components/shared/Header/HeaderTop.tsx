@@ -19,7 +19,11 @@ const HeaderTop = () => {
                             + 7 (383) 123 - 45 - 67
                         </span>
                     </Link>
-                    <OpenDialogButton variant="primary" size="md" className="hidden md:block">
+                    <OpenDialogButton
+                        variant="primary"
+                        size="md"
+                        className="hidden md:block"
+                    >
                         Заказать консультацию
                     </OpenDialogButton>
                 </div>

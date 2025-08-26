@@ -1,13 +1,15 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-export interface StyledButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface StyledButtonProps
+    extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: "primary" | "secondary";
     size?: "sm" | "md" | "lg" | "max";
     className?: string;
     children: React.ReactNode;
 }
 
-export interface StyledLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface StyledLinkProps
+    extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;
     variant?: "primary" | "secondary" | "outline" | "whatsapp";
     size?: "sm" | "md" | "lg" | "max";
@@ -26,7 +28,8 @@ export interface RewiewCardProps {
     authorName: string;
 }
 
-export interface StyledSectionProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface StyledSectionProps
+    extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     isSecondary?: boolean;
     sectionClassName?: string;
     children: React.ReactNode;
@@ -35,7 +38,6 @@ export interface StyledSectionProps extends React.AnchorHTMLAttributes<HTMLAncho
 export interface SubmitButtonProps {
     buttonPending: boolean;
 }
-
 
 export interface RequestFormProps {
     bgColor: string;
@@ -57,7 +59,7 @@ export interface FormState {
 }
 
 export interface OrderDialogProps {
-  onClose: () => void;
+    onClose: () => void;
 }
 
 export interface InputFieldProps {
@@ -96,7 +98,7 @@ export interface TitleSectionProps {
 export interface NavbarLinkProps {
     href: string;
     children: React.ReactNode;
-    exact?: boolean;
+    isExact?: boolean;
 }
 
 export interface ExampleCardProps {
@@ -115,9 +117,9 @@ export interface AnswerCardProps {
 }
 
 export interface DialogContextType {
-  openDialog: () => void;
-  closeDialog: () => void;
-  dialogRef: React.RefObject<HTMLDialogElement | null>;
+    openDialog: () => void;
+    closeDialog: () => void;
+    dialogRef: React.RefObject<HTMLDialogElement | null>;
 }
 
 export interface ServiceSwitchLinkProps {

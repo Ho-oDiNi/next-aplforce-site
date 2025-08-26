@@ -1,11 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import { StyledLinkProps } from "@types"
+import { StyledLinkProps } from "@types";
 
 const StyledLink = (props: StyledLinkProps) => {
-    const { variant = "primary", size = "lg", isBold=false, className = "", children, ...restProps } = props;
+    const {
+        variant = "primary",
+        size = "lg",
+        isBold = false,
+        className = "",
+        children,
+        ...restProps
+    } = props;
     const baseClasses = "rounded-xl flex-center";
-    const fontBoldness = isBold ? "font-bold" : "font-normal"
+    const fontBoldness = isBold ? "font-bold" : "font-normal";
 
     const variantClasses = {
         primary: "bg-red-500 text-foreground-secondary",
@@ -29,7 +36,11 @@ const StyledLink = (props: StyledLinkProps) => {
         ${className}
     `;
 
-    return <Link className={linkClasses} {...restProps}>{children}</Link>;
+    return (
+        <Link className={linkClasses} {...restProps}>
+            {children}
+        </Link>
+    );
 };
 
 export default StyledLink;

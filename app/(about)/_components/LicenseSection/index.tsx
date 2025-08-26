@@ -16,12 +16,12 @@ const LicenseSection = () => {
                 <LicenseCard
                     title="Допуск СРО на строительные работы"
                     href=""
-                    />
+                />
                 <LicenseCard title="Сертификат ISO 9001:2015" href="" />
                 <LicenseCard
                     title="Допуск к работе в опасных условиях"
                     href=""
-                    />
+                />
                 <LicenseCard title="Страхование ответственности" href="" />
             </dl>
         </StyledSection>

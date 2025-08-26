@@ -11,12 +11,7 @@ const ExampleSection = () => {
             </hgroup>
 
             <ExampleList />
-            <StyledLink
-                href=""
-                isBold={true}
-                variant="secondary"
-                size="lg"
-                >
+            <StyledLink href="" isBold={true} variant="secondary" size="lg">
                 Смотреть все работы
             </StyledLink>
         </StyledSection>

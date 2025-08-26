@@ -1,7 +1,6 @@
 import { FeatureCardProps } from "@types";
 import Image from "next/image";
 
-
 const FeatureCard = (props: FeatureCardProps) => {
     return (
         <div className="bg-background-primary flex flex-col rounded-2xl">

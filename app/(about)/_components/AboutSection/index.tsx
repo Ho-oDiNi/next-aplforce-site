@@ -12,10 +12,10 @@ const AboutSection = () => {
                 <h2>О компании ALPFORCE</h2>
                 <p>
                     Мы специализируемся на комплексном обслуживании
-                    многоквартирных домов в Новосибирске и области с 2009
-                    года. Наша команда профессиональных альпинистов
-                    выполняет работы любой сложности на высоте, обеспечивая
-                    безопасность и качество
+                    многоквартирных домов в Новосибирске и области с 2009 года.
+                    Наша команда профессиональных альпинистов выполняет работы
+                    любой сложности на высоте, обеспечивая безопасность и
+                    качество
                 </p>
             </hgroup>
             <dl className="w-full items-start md:grid-cols-4">
@@ -23,25 +23,24 @@ const AboutSection = () => {
                     icon={deliveryIcon}
                     title="2000+"
                     description="Выполненных обектов"
-                    />
+                />
                 <FeatureCard
                     icon={qualityIcon}
                     title="15 лет"
                     description="Работаем на рынке"
-                    />
+                />
                 <FeatureCard
                     icon={checkmarkIcon}
                     title="500+"
                     description="Довольных клиентов"
-                    />
+                />
                 <FeatureCard
                     icon={warningIcon}
                     title="24/7"
                     description="Аварийная служба"
-                    />
+                />
             </dl>
         </StyledSection>
-
     );
 };
 

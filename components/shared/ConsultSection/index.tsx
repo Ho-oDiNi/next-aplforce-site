@@ -17,8 +17,8 @@ const ConsultSection = (props: ConsultSectionProps) => {
             <hgroup>
                 <h2>Готовы начать работу?</h2>
                 <p>
-                    Получите бесплатную консультацию и расчет стоимости
-                    работ для вашего дома
+                    Получите бесплатную консультацию и расчет стоимости работ
+                    для вашего дома
                 </p>
             </hgroup>
 
@@ -26,7 +26,7 @@ const ConsultSection = (props: ConsultSectionProps) => {
                 formAction={submitForm}
                 bgColor={colorUnit.bgColor}
                 formColor={colorUnit.formColor}
-                />
+            />
         </StyledSection>
     );
 };

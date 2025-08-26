@@ -1,12 +1,11 @@
-// components/OpenDialogButton.tsx
-'use client';
+"use client";
 
 import React from "react";
 import { StyledButtonProps } from "@types";
 import StyledButton from "../StyledButton";
 import { useDialog } from "@api/context/DialogContext";
 
-const OpenDialogButton = (props: StyledButtonProps) => {    
+const OpenDialogButton = (props: StyledButtonProps) => {
     const { openDialog } = useDialog();
 
     return (

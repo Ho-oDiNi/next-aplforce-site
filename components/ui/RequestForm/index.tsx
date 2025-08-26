@@ -3,7 +3,7 @@
 import Form from "next/form";
 import InputField from "@ui/InputField";
 import ConsentCheckbox from "@ui/ConsentCheckbox";
-import SubmitButton from "./SubmitButton"
+import SubmitButton from "./SubmitButton";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { RequestFormProps } from "@types";
@@ -38,7 +38,7 @@ const RequestForm = (props: RequestFormProps) => {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <SubmitButton buttonPending={pending}/>
+                    <SubmitButton buttonPending={pending} />
                     <ConsentCheckbox />
 
                     {state?.message && (

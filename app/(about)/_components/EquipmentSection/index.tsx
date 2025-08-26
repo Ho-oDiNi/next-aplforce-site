@@ -22,9 +22,7 @@ const EquipmentSection = () => {
                         </div>
                         <div className="flex gap-4">
                             <Image src={checkmarkIcon} alt="" />
-                            <dd>
-                                Специальные инструменты для высотных работ
-                            </dd>
+                            <dd>Специальные инструменты для высотных работ</dd>
                         </div>
                         <div className="flex gap-4">
                             <Image src={checkmarkIcon} alt="" />

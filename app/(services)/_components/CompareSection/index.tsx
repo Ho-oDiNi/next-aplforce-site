@@ -1,5 +1,5 @@
 import ImageComparison from "./ImageComparison";
-import StyledButton from "@ui/StyledButton"
+import StyledButton from "@ui/StyledButton";
 
 const CompareSection = () => {
     return (
@@ -9,8 +9,12 @@ const CompareSection = () => {
                 <strong>Герметизация межпанельных швов</strong>
                 <p>ул. Ленина, 45</p>
                 <div className="flex-start gap-2">
-                    <StyledButton variant="primary" size="sm">До</StyledButton>
-                    <StyledButton variant="secondary" size="sm">После</StyledButton>
+                    <StyledButton variant="primary" size="sm">
+                        До
+                    </StyledButton>
+                    <StyledButton variant="secondary" size="sm">
+                        После
+                    </StyledButton>
                 </div>
             </div>
         </div>

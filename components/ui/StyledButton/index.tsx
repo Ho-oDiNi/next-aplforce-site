@@ -1,8 +1,14 @@
 import React from "react";
-import { StyledButtonProps } from "@types"
+import { StyledButtonProps } from "@types";
 
 const StyledButton = (props: StyledButtonProps) => {
-    const { variant = "primary", size = "lg", className, children, ...restProps } = props;
+    const {
+        variant = "primary",
+        size = "lg",
+        className,
+        children,
+        ...restProps
+    } = props;
 
     const baseClasses = "flex-center font-bold rounded-xl";
 
@@ -25,7 +31,11 @@ const StyledButton = (props: StyledButtonProps) => {
         ${className}
     `;
 
-    return <button className={buttonClasses} {...restProps}>{children}</button>;
+    return (
+        <button className={buttonClasses} {...restProps}>
+            {children}
+        </button>
+    );
 };
 
 export default StyledButton;

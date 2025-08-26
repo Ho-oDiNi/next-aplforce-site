@@ -6,7 +6,7 @@ export default function Sealing() {
         <>
             <section className="bg-background-secondary rounded-2xl p-8">
                 <div className="grid gap-8 md:grid-cols-2 md:gap-14">
-                    <div className="flex flex-col md:gap-15 gap-8">
+                    <div className="flex flex-col gap-8 md:gap-15">
                         <hgroup className="text-start">
                             <h2>Герметизация межпанельных швов</h2>
                             <p>Устранение протечек современными материалами</p>
@@ -37,10 +37,7 @@ export default function Sealing() {
                             </div>
                         </div>
 
-                        <OpenDialogButton
-                            variant="primary"
-                            size="lg"
-                        >
+                        <OpenDialogButton variant="primary" size="lg">
                             Заказать расчет
                         </OpenDialogButton>
                     </div>

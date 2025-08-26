@@ -3,7 +3,6 @@ import locationIcon from "@icons/location-blue-light.svg";
 import mockImage from "@images/mock-map-image.jpg";
 import StyledSection from "@ui/StyledSection";
 
-
 // Исправить - не работает + привязать Яндекс API
 
 const MapSection = () => {
@@ -52,7 +51,7 @@ const MapSection = () => {
                     src={mockImage}
                     alt=""
                     className="w-full max-w-5xl rounded-2xl"
-                    />
+                />
             </div>
         </StyledSection>
     );

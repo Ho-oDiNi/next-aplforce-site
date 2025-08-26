@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@shared/Header";
 import Footer from "@shared/Footer";
 import RobotoFont from "@ui/RobotoFont";
-import { DialogContainer, DialogProvider } from '@api/context/DialogContext';
+import { DialogContainer, DialogProvider } from "@api/context/DialogContext";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -20,7 +20,7 @@ export default function RootLayout({
             <body className={`${RobotoFont.className} antialiased`}>
                 <DialogProvider>
                     <Header />
-                        <main>{children}</main>
+                    <main>{children}</main>
                     <DialogContainer />
                     <Footer />
                 </DialogProvider>

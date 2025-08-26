@@ -1,6 +1,5 @@
 import StyledButton from "../StyledButton";
-import { SubmitButtonProps } from "@types"
-
+import { SubmitButtonProps } from "@types";
 
 const SubmitButton = (props: SubmitButtonProps) => {
     return (
@@ -14,6 +13,6 @@ const SubmitButton = (props: SubmitButtonProps) => {
             {props.buttonPending ? "Отправка..." : "Отправить заявку"}
         </StyledButton>
     );
-}
+};
 
 export default SubmitButton;

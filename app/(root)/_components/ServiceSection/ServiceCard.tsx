@@ -12,12 +12,12 @@ const ServiceCard = (props: ServiceCardProps) => {
             <dt>{props.title}</dt>
             <dd>{props.description}</dd>
             <div className="flex-between flex-col gap-3 lg:flex-row">
-                <p className="bg-background-primary w-full rounded-lg px-4 py-2 text-center whitespace-nowrap text-red-500 lg:w-auto">
+                <span className="bg-background-primary w-full rounded-lg px-4 py-2 text-center whitespace-nowrap text-red-500 lg:w-auto">
                     от <data value={props.price}>{props.price}</data>{" "}
                     <abbr className="no-underline" title={unitExplanation}>
                         {unitText}
                     </abbr>
-                </p>
+                </span>
                 <StyledLink
                     href=""
                     variant="secondary"

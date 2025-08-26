@@ -2,9 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import React from "react";
-import StyledLink from "@ui/StyledLink"
+import StyledLink from "@ui/StyledLink";
 import { ServiceSwitchLinkProps } from "@types";
-
 
 const ServiceSwitchLink = (props: ServiceSwitchLinkProps) => {
     const isActive = usePathname() === props.href;
