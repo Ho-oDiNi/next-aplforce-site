@@ -1,11 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import StyledLink from "@ui/StyledLink";
-import phoneIcon from "@icons/phone-blue-light.svg";
 import calendarIcon from "@icons/calendar-blue-light.svg";
 import emailIcon from "@icons/email-blue-light.svg";
+import phoneIcon from "@icons/phone-blue-light.svg";
 import warningIcon from "@icons/warning-red-solid.svg";
+import StyledLink from "@ui/StyledLink";
 import StyledSection from "@ui/StyledSection";
+import Image from "next/image";
+import Link from "next/link";
 
 const MiniAdvantageList = () => {
     return (

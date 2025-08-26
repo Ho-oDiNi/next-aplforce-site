@@ -1,6 +1,6 @@
-import Image from "next/image";
 import starIcon from "@icons/star-yellow-fill.svg";
 import { RewiewCardProps } from "@types";
+import Image from "next/image";
 
 const RewiewCard = (props: RewiewCardProps) => {
     return (

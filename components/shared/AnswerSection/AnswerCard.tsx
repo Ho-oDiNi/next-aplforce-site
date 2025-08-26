@@ -1,6 +1,6 @@
-import Image from "next/image";
 import questionIcon from "@icons/question-red-solid.svg";
 import { AnswerCardProps } from "@types";
+import Image from "next/image";
 
 const AnswerCard = (props: AnswerCardProps) => {
     return (

@@ -1,8 +1,10 @@
-import InviteSection from "./_components/InviteSection";
-import TitleSection from "@shared/TitleSection";
-import ExampleSection from "@shared/ExampleSection";
 import AdvantageSection from "@shared/AdvantageSection";
+import ExampleSection from "@shared/ExampleSection";
+import TitleSection from "@shared/TitleSection";
 import AccordionFAQ from "@ui/AccordionFAQ";
+import React from "react";
+
+import InviteSection from "./_components/InviteSection";
 import ServiceSwitchNav from "./_components/ServiceSwitchNav";
 
 export default function Layout({

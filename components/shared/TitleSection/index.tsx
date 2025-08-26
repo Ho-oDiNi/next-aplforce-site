@@ -1,7 +1,9 @@
-import MiniAdvantageList from "./MiniAdvantageList";
-import StyledSection from "@/components/ui/StyledSection";
-import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 import { TitleSectionProps } from "@types";
+
+import MiniAdvantageList from "./MiniAdvantageList";
+
+import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
+import StyledSection from "@/components/ui/StyledSection";
 
 const TitleSection = (props: TitleSectionProps) => {
     const unitAdvantage = props.hasMiniAdvantage ? (

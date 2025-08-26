@@ -1,5 +1,6 @@
-import StyledButton from "../StyledButton";
 import { SubmitButtonProps } from "@types";
+
+import StyledButton from "../StyledButton";
 
 const SubmitButton = (props: SubmitButtonProps) => {
     return (

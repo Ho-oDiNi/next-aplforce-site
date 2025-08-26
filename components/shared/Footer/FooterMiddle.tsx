@@ -1,5 +1,5 @@
-import Image from "next/image";
 import logoIcon from "@icons/logo-white.svg";
+import Image from "next/image";
 
 const FooterMiddle = () => {
     return (

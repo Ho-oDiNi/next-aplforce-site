@@ -1,4 +1,5 @@
 import StyledSection from "@ui/StyledSection";
+
 import LicenseCard from "./LicenseCard";
 
 const LicenseSection = () => {

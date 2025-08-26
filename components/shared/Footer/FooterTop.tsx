@@ -1,9 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
-import phoneIcon from "@icons/phone-red-fill.svg";
 import emailIcon from "@icons/email-red-fill.svg";
 import locationIcon from "@icons/location-red-fill.svg";
+import phoneIcon from "@icons/phone-red-fill.svg";
 import warningIcon from "@icons/warning-red-fill.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const FooterTop = () => {
     return (

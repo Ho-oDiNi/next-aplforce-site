@@ -1,4 +1,5 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import React from "react";
 
 export interface StyledButtonProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -39,15 +40,6 @@ export interface SubmitButtonProps {
     buttonPending: boolean;
 }
 
-export interface RequestFormProps {
-    bgColor: string;
-    formColor: string;
-    formAction: (
-        prevState: FormState,
-        formData: FormData,
-    ) => Promise<FormState>;
-}
-
 export interface FormState {
     errors?: {
         name?: string;
@@ -56,6 +48,15 @@ export interface FormState {
     };
     success?: boolean;
     message?: string;
+}
+
+export interface RequestFormProps {
+    bgColor: string;
+    formColor: string;
+    formAction: (
+        prevState: FormState,
+        formData: FormData,
+    ) => Promise<FormState>;
 }
 
 export interface OrderDialogProps {
@@ -69,13 +70,6 @@ export interface InputFieldProps {
     inputMode: "tel" | "text";
     placeholder: string;
     bgColor: string;
-}
-
-export interface FeatureCardProps {
-    icon: string | StaticImport;
-    title: string;
-    description: string;
-    commitmentArray?: string[];
 }
 
 export interface DetailsCardProps {

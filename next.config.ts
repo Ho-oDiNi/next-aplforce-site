@@ -1,14 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    async redirects() {
-        return [
+    images: {
+        remotePatterns: [
             {
-                source: "/services",
-                destination: "/services/sealing",
-                permanent: true,
+                protocol: "https",
+                hostname: "avatars.mds.yandex.net",
+                pathname: "/get-yapic/**",
             },
-        ];
+        ],
     },
 };
 

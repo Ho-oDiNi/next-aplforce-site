@@ -1,5 +1,5 @@
-import StyledLink from "@ui/StyledLink";
 import { LicenseCardProps } from "@types";
+import StyledLink from "@ui/StyledLink";
 
 const LicenseCard = (props: LicenseCardProps) => {
     return (

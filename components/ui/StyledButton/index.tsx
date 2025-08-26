@@ -1,5 +1,5 @@
-import React from "react";
 import { StyledButtonProps } from "@types";
+import React from "react";
 
 const StyledButton = (props: StyledButtonProps) => {
     const {

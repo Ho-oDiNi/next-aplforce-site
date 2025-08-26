@@ -1,4 +1,5 @@
 import StyledSection from "@ui/StyledSection";
+
 import AdvantageList from "./AdvantageList";
 
 const AdvantageSection = () => {

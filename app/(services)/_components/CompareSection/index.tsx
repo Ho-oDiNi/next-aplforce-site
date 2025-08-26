@@ -1,5 +1,6 @@
-import ImageComparison from "./ImageComparison";
 import StyledButton from "@ui/StyledButton";
+
+import ImageComparison from "./ImageComparison";
 
 const CompareSection = () => {
     return (

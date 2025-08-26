@@ -1,8 +1,10 @@
 "use server";
 
+import { FormState } from "@/types";
+
 // Экранировать данные
 
-export async function submitForm(prevState: any, formData: FormData) {
+const submitForm = async (prevState: FormState, formData: FormData) => {
     const name = formData.get("name") as string;
     const phone = formData.get("phone") as string;
     const consent = formData.get("consent");
@@ -51,7 +53,9 @@ export async function submitForm(prevState: any, formData: FormData) {
     } catch (error) {
         return {
             success: false,
-            message: `Ошибка при отправке формы. Попробуйте еще раз или попробуйте позднее`,
+            message: `Ошибка при отправке формы. Попробуйте еще раз или попробуйте позднее\n${error}`,
         };
     }
-}
+};
+
+export default submitForm;

@@ -1,5 +1,5 @@
 import { ServiceCardProps } from "@types";
-import StyledLink from "@ui/StyledLink"
+import StyledLink from "@ui/StyledLink";
 
 const ServiceCard = (props: ServiceCardProps) => {
     const unitExplanation = props.isLinearMeter

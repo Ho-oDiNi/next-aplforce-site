@@ -1,4 +1,5 @@
 import StyledSection from "../StyledSection";
+
 import AccordionItem from "./AccordionItem";
 
 const AccordionFAQ = () => {

@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
 import { StyledLinkProps } from "@types";
+import Link from "next/link";
+import React from "react";
 
 const StyledLink = (props: StyledLinkProps) => {
     const {

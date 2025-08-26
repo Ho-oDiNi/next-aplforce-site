@@ -1,5 +1,6 @@
-import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 import CompareSection from "../../_components/CompareSection";
+
+import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 
 export default function Sealing() {
     return (

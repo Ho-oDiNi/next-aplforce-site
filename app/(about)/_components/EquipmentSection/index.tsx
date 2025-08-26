@@ -1,8 +1,8 @@
-import Image from "next/image";
 import checkmarkIcon from "@icons/checkmark-red-solid.svg";
-import StyledSection from "@ui/StyledSection";
 import mockImage1 from "@images/house1.png";
 import mockImage2 from "@images/house2.png";
+import StyledSection from "@ui/StyledSection";
+import Image from "next/image";
 
 const EquipmentSection = () => {
     return (

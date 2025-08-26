@@ -1,7 +1,8 @@
 import TitleSection from "@shared/TitleSection";
+
 import AboutSection from "../_components/AboutSection";
-import LicenseSection from "../_components/LicenseSection";
 import EquipmentSection from "../_components/EquipmentSection";
+import LicenseSection from "../_components/LicenseSection";
 import MapSection from "../_components/MapSection";
 
 export default function About() {

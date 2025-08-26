@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
-import { StyledButtonProps } from "@types";
-import StyledButton from "../StyledButton";
 import { useDialog } from "@api/context/DialogContext";
+import { StyledButtonProps } from "@types";
+import React from "react";
+
+import StyledButton from "../StyledButton";
 
 const OpenDialogButton = (props: StyledButtonProps) => {
     const { openDialog } = useDialog();

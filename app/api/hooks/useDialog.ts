@@ -2,7 +2,7 @@
 
 import { useRef, useCallback } from "react";
 
-export const useDialog = () => {
+const useDialog = () => {
     const dialogRef = useRef<HTMLDialogElement | null>(null);
 
     const open = useCallback(() => {
@@ -15,3 +15,5 @@ export const useDialog = () => {
 
     return { dialogRef, open, close };
 };
+
+export default useDialog;

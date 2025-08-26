@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import locationIcon from "@icons/location-blue-dark.svg";
 import phoneIcon from "@icons/phone-blue-dark.svg";
+import Image from "next/image";
+import Link from "next/link";
+
 import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 
 const HeaderTop = () => {

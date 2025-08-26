@@ -1,10 +1,11 @@
 "use client";
 
-import { forwardRef } from "react";
-import { submitForm } from "@api/actions/formActions";
-import RequestForm from "@ui/RequestForm";
 import closeIcon from "@icons/close-blue-dark.svg";
+import RequestForm from "@ui/RequestForm";
 import Image from "next/image";
+import React, { forwardRef } from "react";
+
+import submitForm from "@/app/api/actions/submitForm";
 import { OrderDialogProps } from "@/types";
 
 const OrderDialog = forwardRef<HTMLDialogElement, OrderDialogProps>(
@@ -41,4 +42,5 @@ const OrderDialog = forwardRef<HTMLDialogElement, OrderDialogProps>(
     },
 );
 
+OrderDialog.displayName = "OrderDialog";
 export default OrderDialog;

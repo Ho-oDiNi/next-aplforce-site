@@ -1,7 +1,8 @@
-import RequestForm from "@ui/RequestForm";
-import { submitForm } from "@/app/api/actions/formActions";
-import StyledSection from "@/components/ui/StyledSection";
 import { ConsultSectionProps } from "@types";
+import RequestForm from "@ui/RequestForm";
+
+import submitForm from "@/app/api/actions/submitForm";
+import StyledSection from "@/components/ui/StyledSection";
 
 const ConsultSection = (props: ConsultSectionProps) => {
     const colorUnit = {

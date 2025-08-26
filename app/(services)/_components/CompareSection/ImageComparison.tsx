@@ -1,11 +1,11 @@
 "use client";
 // ДОРАБОТАТЬ
 
-import Image from "next/image";
-import { useState } from "react";
+import sliderIcon from "@icons/slider-white.svg";
 import houseSecondImage from "@images/comp1.png";
 import houseFirstImage from "@images/comp2.png";
-import sliderIcon from "@icons/slider-white.svg";
+import Image from "next/image";
+import React, { useState } from "react";
 
 const ImageComparison = () => {
     const [sliderPosition, setSliderPosition] = useState(50);

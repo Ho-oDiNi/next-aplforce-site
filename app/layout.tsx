@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@shared/Header";
-import Footer from "@shared/Footer";
-import RobotoFont from "@ui/RobotoFont";
 import { DialogContainer, DialogProvider } from "@api/context/DialogContext";
+import Footer from "@shared/Footer";
+import Header from "@shared/Header";
+import RobotoFont from "@ui/RobotoFont";
+import type { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
     title: "Create Next App",

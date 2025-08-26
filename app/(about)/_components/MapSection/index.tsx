@@ -1,7 +1,7 @@
-import Image from "next/image";
 import locationIcon from "@icons/location-blue-light.svg";
 import mockImage from "@images/mock-map-image.jpg";
 import StyledSection from "@ui/StyledSection";
+import Image from "next/image";
 
 // Исправить - не работает + привязать Яндекс API
 

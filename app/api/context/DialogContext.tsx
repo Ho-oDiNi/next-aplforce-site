@@ -1,8 +1,9 @@
 "use client";
 
-import { DialogContextType } from "@/types";
 import OrderDialog from "@ui/OrderDialog";
 import React, { createContext, useContext, useRef, useCallback } from "react";
+
+import { DialogContextType } from "@/types";
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined);
 

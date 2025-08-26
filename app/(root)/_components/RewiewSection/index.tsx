@@ -1,6 +1,7 @@
-import StyledLink from "@ui/StyledLink"
-import RewiewList from "./RewiewList";
+import StyledLink from "@ui/StyledLink";
 import StyledSection from "@ui/StyledSection";
+
+import RewiewList from "./RewiewList";
 
 const RewiewSection = () => {
     return (

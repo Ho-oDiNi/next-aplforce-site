@@ -1,5 +1,5 @@
-import HeaderTop from "./HeaderTop";
 import HeaderBottom from "./HeaderBottom";
+import HeaderTop from "./HeaderTop";
 
 const Header = () => {
     return (

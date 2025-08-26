@@ -1,12 +1,13 @@
 "use client";
 
-import Form from "next/form";
-import InputField from "@ui/InputField";
+import { RequestFormProps } from "@types";
 import ConsentCheckbox from "@ui/ConsentCheckbox";
-import SubmitButton from "./SubmitButton";
+import InputField from "@ui/InputField";
+import Form from "next/form";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
-import { RequestFormProps } from "@types";
+
+import SubmitButton from "./SubmitButton";
 
 const RequestForm = (props: RequestFormProps) => {
     const { pending } = useFormStatus();

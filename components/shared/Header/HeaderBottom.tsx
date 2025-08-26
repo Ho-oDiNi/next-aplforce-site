@@ -1,8 +1,9 @@
-import Image from "next/image";
-import HeaderNavbar from "./HeaderNavbar";
-import Link from "next/link";
-import logoIcon from "@icons/logo-main.svg";
 import burgerIcon from "@icons/burger-blue-dark.svg";
+import logoIcon from "@icons/logo-main.svg";
+import Image from "next/image";
+import Link from "next/link";
+
+import HeaderNavbar from "./HeaderNavbar";
 
 const HeaderBottom = () => {
     return (

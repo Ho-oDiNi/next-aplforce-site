@@ -1,9 +1,9 @@
-import FeatureCard from "@ui/FeatureCard";
-import StyledSection from "@ui/StyledSection";
+import checkmarkIcon from "@icons/checkmark-red-fill.svg";
 import deliveryIcon from "@icons/delivery-red-fill.svg";
 import qualityIcon from "@icons/quality-red-fill.svg";
-import checkmarkIcon from "@icons/checkmark-red-fill.svg";
 import warningIcon from "@icons/warning-red-fill.svg";
+import FeatureCard from "@ui/FeatureCard";
+import StyledSection from "@ui/StyledSection";
 
 const AboutSection = () => {
     return (
