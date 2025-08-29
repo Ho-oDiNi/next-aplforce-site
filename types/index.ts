@@ -140,3 +140,7 @@ export interface AccordionItemProps {
     description: string;
     isOpen?: boolean;
 }
+
+export interface SubdomainProps {
+    cityName: string;
+}

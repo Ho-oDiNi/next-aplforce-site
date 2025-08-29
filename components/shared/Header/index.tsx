@@ -1,10 +1,12 @@
 import HeaderBottom from "./HeaderBottom";
 import HeaderTop from "./HeaderTop";
 
-const Header = () => {
+import { SubdomainProps } from "@/types";
+
+const Header = (props: SubdomainProps) => {
     return (
         <header>
-            <HeaderTop />
+            <HeaderTop cityName={props.cityName} />
             <HeaderBottom />
         </header>
     );

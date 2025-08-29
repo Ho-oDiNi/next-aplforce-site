@@ -4,18 +4,21 @@ import TitleSection from "@shared/TitleSection";
 import AccordionFAQ from "@ui/AccordionFAQ";
 import React from "react";
 
+import getCityFromHost from "../api/middleware/getCityFromHost";
+
 import InviteSection from "./_components/InviteSection";
 import ServiceSwitchNav from "./_components/ServiceSwitchNav";
 
-export default function Layout({
+const Layout = async ({
     children,
 }: Readonly<{
     children: React.ReactNode;
-}>) {
+}>) => {
+    const cityName = await getCityFromHost();
     return (
         <>
             <TitleSection
-                title="Ремонт межпанельных швов в Новосибирске"
+                title={`Ремонт межпанельных швов в ${cityName}е`}
                 description="Профессиональная герметизация швов между панелями с использованием современных герметиков и технологий для полного устранения протечек."
             />
 
@@ -30,4 +33,6 @@ export default function Layout({
             <AccordionFAQ />
         </>
     );
-}
+};
+
+export default Layout;
