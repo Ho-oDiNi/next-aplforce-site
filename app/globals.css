@@ -26,6 +26,10 @@
   );
 }
 
+@utility bg-unset {
+  background-color: unset;
+}
+
 @utility drag-none {
   -webkit-user-drag: none;
   -khtml-user-drag: none;

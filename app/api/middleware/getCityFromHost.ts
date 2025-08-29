@@ -1,9 +1,6 @@
 import { headers } from "next/headers";
 
-const cityMap: Record<string, string> = {
-    novosibirsk: "Новосибирск",
-    berdsk: "Бердск",
-};
+import { cityMap } from "@/types";
 
 const getCityFromHost = async () => {
     const headersList = await headers();

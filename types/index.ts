@@ -58,7 +58,7 @@ export interface RequestFormProps {
     ) => Promise<FormState>;
 }
 
-export interface OrderDialogProps {
+export interface DialogProps {
     onClose: () => void;
 }
 
@@ -144,3 +144,14 @@ export interface AccordionItemProps {
 export interface SubdomainProps {
     cityName: string;
 }
+
+export interface PopupProps {
+    children: React.ReactNode;
+}
+
+export const cityMap: Record<string, string> = {
+    novosibirsk: "Новосибирск",
+    berdsk: "Бердск",
+    academgorodok: "Академгородок",
+    nso: "Новосибирская область",
+};

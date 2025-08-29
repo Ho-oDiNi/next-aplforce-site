@@ -6,9 +6,9 @@ import Image from "next/image";
 import React, { forwardRef } from "react";
 
 import submitForm from "@/app/api/actions/submitForm";
-import { OrderDialogProps } from "@/types";
+import { DialogProps } from "@/types";
 
-const OrderDialog = forwardRef<HTMLDialogElement, OrderDialogProps>(
+const OrderDialog = forwardRef<HTMLDialogElement, DialogProps>(
     ({ onClose }, ref) => {
         const handleBackdropClick = (
             e: React.MouseEvent<HTMLDialogElement>,
@@ -26,7 +26,7 @@ const OrderDialog = forwardRef<HTMLDialogElement, OrderDialogProps>(
                 aria-labelledby="SEO"
             >
                 <button
-                    className="absolute top-6 right-6 rounded-full"
+                    className="absolute top-6 right-6 cursor-pointer rounded-full"
                     onClick={onClose}
                 >
                     <Image src={closeIcon} alt="Закрыть" />
