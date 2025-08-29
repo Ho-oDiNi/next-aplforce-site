@@ -7,8 +7,8 @@ const HeaderNavbar = () => {
                 Главная
             </NavbarLink>
             <NavbarLink href="/services">Услуги</NavbarLink>
-            <NavbarLink href="/about">О кампании</NavbarLink>
-            <NavbarLink href="/blog">Блог</NavbarLink>
+            <NavbarLink href="/about">О компании</NavbarLink>
+            {/* <NavbarLink href="/blog">Блог</NavbarLink> */}
             <NavbarLink href="/contacts">Контакты</NavbarLink>
         </nav>
     );

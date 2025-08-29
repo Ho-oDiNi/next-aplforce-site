@@ -14,7 +14,6 @@ export interface StyledLinkProps
     href: string;
     variant?: "primary" | "secondary" | "outline" | "whatsapp";
     size?: "sm" | "md" | "lg" | "max";
-    isBold?: boolean;
     className?: string;
     children: React.ReactNode;
 }

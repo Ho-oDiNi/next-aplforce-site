@@ -3,7 +3,7 @@ import TitleSection from "@shared/TitleSection";
 import AboutSection from "../_components/AboutSection";
 import EquipmentSection from "../_components/EquipmentSection";
 import LicenseSection from "../_components/LicenseSection";
-import MapSection from "../_components/MapSection";
+// import MapSection from "../_components/MapSection";
 
 export default function About() {
     return (
@@ -15,7 +15,7 @@ export default function About() {
             <AboutSection />
             <LicenseSection />
             <EquipmentSection />
-            <MapSection />
+            {/* <MapSection /> */}
         </>
     );
 }

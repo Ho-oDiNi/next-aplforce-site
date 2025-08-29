@@ -8,22 +8,16 @@ const LicenseSection = () => {
             <hgroup>
                 <h2>Лицензии и сертификаты</h2>
                 <p>
-                    Свяжитесь с нами удобным способом или заполните форму
-                    обратной связи
+                    Действуем в строгом соответствии с требованиями ГОСТ и СНИП
                 </p>
             </hgroup>
             <dl className="w-full items-start">
-                <LicenseCard title="Лицензия на высотные работы" href="" />
+                <LicenseCard title="Допуск на высотные работы" href="" />
                 <LicenseCard
-                    title="Допуск СРО на строительные работы"
+                    title="Образец договора на оказание услуг"
                     href=""
                 />
-                <LicenseCard title="Сертификат ISO 9001:2015" href="" />
-                <LicenseCard
-                    title="Допуск к работе в опасных условиях"
-                    href=""
-                />
-                <LicenseCard title="Страхование ответственности" href="" />
+                <LicenseCard title="Образец акта выполненных работ" href="" />
             </dl>
         </StyledSection>
     );

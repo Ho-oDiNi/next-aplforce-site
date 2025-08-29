@@ -14,7 +14,7 @@ const ExampleCard = (props: ExampleCardProps) => {
             <div className="flex flex-col gap-4 p-8">
                 <dt>{props.title}</dt>
                 <dd>{props.description}</dd>
-                <div className="flex-center text-foreground-secondary h-8 w-25 rounded-lg bg-blue-900">
+                <div className="flex-center text-foreground-secondary h-8 w-25 rounded-lg bg-blue-900 text-sm">
                     Завершено
                 </div>
             </div>

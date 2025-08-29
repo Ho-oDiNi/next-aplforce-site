@@ -12,7 +12,7 @@ const ServiceCard = (props: ServiceCardProps) => {
             <dt>{props.title}</dt>
             <dd>{props.description}</dd>
             <div className="flex-between flex-col gap-3 lg:flex-row">
-                <span className="bg-background-primary w-full rounded-lg px-4 py-2 text-center whitespace-nowrap text-red-500 lg:w-auto">
+                <span className="bg-background-primary w-full rounded-lg px-4 py-2 text-center text-sm whitespace-nowrap text-red-500 lg:w-auto">
                     от <data value={props.price}>{props.price}</data>{" "}
                     <abbr className="no-underline" title={unitExplanation}>
                         {unitText}
@@ -21,8 +21,8 @@ const ServiceCard = (props: ServiceCardProps) => {
                 <StyledLink
                     href=""
                     variant="secondary"
-                    size="max"
-                    className="px-4 lg:w-auto"
+                    size="sm"
+                    className="w-full lg:w-auto"
                 >
                     Подробнее
                 </StyledLink>

@@ -7,7 +7,7 @@ import StyledSection from "@ui/StyledSection";
 import Image from "next/image";
 import Link from "next/link";
 
-const MiniAdvantageList = () => {
+const ContactSection = () => {
     return (
         <StyledSection isSecondary={true}>
             <hgroup>
@@ -25,16 +25,16 @@ const MiniAdvantageList = () => {
                             <dt>Телефон</dt>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <Link href="tel:+73831234567">
-                                <dd>+ 7 (383) 123 - 45 - 67</dd>
+                            <Link href="tel:+79831310113">
+                                <dd>+ 7 (983) 131 - 01 - 13</dd>
                             </Link>
                             <dd className="text-zinc-300">
-                                Основной номер <wbr /> (Пн-Пт:&nbsp;8:00-18:00)
+                                Основной номер <wbr /> (Пн-Пт:&nbsp;8:00-22:00)
                             </dd>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <Link href="tel:+73831234567">
-                                <dd>+7 (383) 999-88-77</dd>
+                            <Link href="tel:+79831310113">
+                                <dd>+ 7 (983) 131 - 01 - 13</dd>
                             </Link>
                             <dd className="text-zinc-300">
                                 Аварийная служба (круглосуточно)
@@ -49,7 +49,7 @@ const MiniAdvantageList = () => {
                         </div>
                         <div className="flex-between">
                             <dd>Понедельник - Пятница</dd>
-                            <dd className="text-nowrap">8:00 - 18:00</dd>
+                            <dd className="text-nowrap">8:00 - 22:00</dd>
                         </div>
                         <div className="flex-between">
                             <dd className="text-red-500">Аварийная служба</dd>
@@ -89,14 +89,18 @@ const MiniAdvantageList = () => {
                         <strong>Нужна срочная помощь?</strong>
                     </div>
                     <StyledLink
-                        href=""
+                        href="tel:+79831310113"
                         variant="primary"
                         size="max"
-                        isBold={true}
                     >
                         Аварийный вызов
                     </StyledLink>
-                    <StyledLink href="" variant="whatsapp" size="max">
+                    <StyledLink
+                        href={`https://wa.me/79831310113?text=${encodeURI("Добрый день!\nЯ хочу воспользоваться услугами по ремонту многоквартирного дома")}`}
+                        target="_blank"
+                        variant="whatsapp"
+                        size="max"
+                    >
                         Написать в WhatsApp
                     </StyledLink>
                 </div>
@@ -105,4 +109,4 @@ const MiniAdvantageList = () => {
     );
 };
 
-export default MiniAdvantageList;
+export default ContactSection;

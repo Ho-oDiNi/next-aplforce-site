@@ -12,7 +12,7 @@ const RewiewSection = () => {
             </hgroup>
 
             <RewiewList />
-            <StyledLink href="" variant="secondary" size="lg" isBold={true}>
+            <StyledLink href="" variant="secondary" size="lg">
                 Читать
             </StyledLink>
         </StyledSection>

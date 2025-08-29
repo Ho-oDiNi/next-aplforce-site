@@ -10,18 +10,20 @@ const StyledButton = (props: StyledButtonProps) => {
         ...restProps
     } = props;
 
-    const baseClasses = "flex-center font-bold rounded-xl";
+    const baseClasses = "flex-center font-bold cursor-pointer text-sm";
 
     const variantClasses = {
-        primary: "bg-red-500 text-foreground-secondary",
-        secondary: "bg-blue-500 text-foreground-secondary",
+        primary:
+            "bg-red-500 text-foreground-secondary hover:bg-red-600 active:bg-red-400",
+        secondary:
+            "bg-blue-500 text-foreground-secondary hover:bg-blue-600 active:bg-blue-400",
     };
 
     const sizeClasses = {
-        sm: "py-2 px-4",
-        md: "h-10 w-55",
-        lg: "h-12 max-w-70 w-full",
-        max: "h-12 w-full",
+        sm: "py-2 px-4 rounded-lg",
+        md: "h-10 w-55 2xs:text-base lg:text-lg rounded-xl",
+        lg: "h-12 max-w-70 w-full 2xs:text-base lg:text-lg xl:text-xl rounded-xl",
+        max: "h-12 w-full 2xs:text-base lg:text-lg xl:text-xl rounded-xl",
     };
 
     const buttonClasses = `

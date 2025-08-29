@@ -1,6 +1,6 @@
 import checkmarkIcon from "@icons/checkmark-red-solid.svg";
-import mockImage1 from "@images/house1.png";
-import mockImage2 from "@images/house2.png";
+import equipmentHelmetImage from "@images/equipment-helmet.jpg";
+import equipmentSlingsImage from "@images/equipment-slings.jpg";
 import StyledSection from "@ui/StyledSection";
 import Image from "next/image";
 
@@ -12,10 +12,6 @@ const EquipmentSection = () => {
                 <div className="mr-8">
                     <dt className="mb-6">Профессиональное снаряжение</dt>
                     <div className="flex flex-col gap-2">
-                        <div className="flex gap-4">
-                            <Image src={checkmarkIcon} alt="" />
-                            <dd>Сертифицированные веревки и карабины</dd>
-                        </div>
                         <div className="flex gap-4">
                             <Image src={checkmarkIcon} alt="" />
                             <dd>Современные страховочные системы</dd>
@@ -30,8 +26,16 @@ const EquipmentSection = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={mockImage1} className="rounded-2xl" alt="" />
-                <Image src={mockImage2} className="rounded-2xl" alt="" />
+                <Image
+                    src={equipmentHelmetImage}
+                    className="overflow-hidden rounded-2xl shadow-xl"
+                    alt=""
+                />
+                <Image
+                    src={equipmentSlingsImage}
+                    className="overflow-hidden rounded-2xl shadow-xl"
+                    alt=""
+                />
             </dl>
         </StyledSection>
     );

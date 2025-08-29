@@ -22,7 +22,7 @@ const OrderDialog = forwardRef<HTMLDialogElement, OrderDialogProps>(
             <dialog
                 ref={ref}
                 onClick={handleBackdropClick}
-                className="sticky top-0 m-auto rounded-lg backdrop:bg-black backdrop:opacity-50"
+                className="fixed top-0 m-auto rounded-lg backdrop:bg-black backdrop:opacity-50"
                 aria-labelledby="SEO"
             >
                 <button

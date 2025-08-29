@@ -19,7 +19,9 @@ const NavbarLink = (props: NavbarLinkProps) => {
     return (
         <Link
             href={props.href}
-            className={isActive ? "font-bold text-blue-900" : ""}
+            className={
+                isActive ? "font-bold text-blue-900" : "hover:opacity-70"
+            }
         >
             {props.children}
         </Link>

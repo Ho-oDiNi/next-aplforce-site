@@ -7,7 +7,7 @@ import HeaderNavbar from "./HeaderNavbar";
 
 const HeaderBottom = () => {
     return (
-        <div className="bg-background-primary px-(--space-inside-x)">
+        <div className="bg-background-primary mt-12 px-(--space-inside-x) md:mt-16">
             <div className="flex-between container mx-auto flex-row-reverse py-3 md:flex-row">
                 <Link href="/" className="flex-center gap-8">
                     <Image

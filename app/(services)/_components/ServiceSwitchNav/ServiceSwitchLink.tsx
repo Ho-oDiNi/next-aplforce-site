@@ -19,13 +19,21 @@ const ServiceSwitchLink = (props: ServiceSwitchLinkProps) => {
 
     return (
         <div
-            className={`${isActive ? "md:bg-background-secondary" : "bg-background-primary md:bg-background-primary"} ${isActive ? roundedSides[props.roundedOrder] : ""} ${commonClasses}`}
+            className={`${
+                isActive
+                    ? `md:bg-background-secondary ${roundedSides[props.roundedOrder]}`
+                    : "bg-background-primary md:bg-background-primary"
+            } ${commonClasses}`}
         >
             <StyledLink
                 href={props.href}
                 variant={`${isActive ? "secondary" : "outline"}`}
                 size="max"
-                className={`${isActive ? "md:bg-background-primary md:text-foreground-primary" : "md:bg-blue-500 md:text-white"}`}
+                className={`${
+                    isActive
+                        ? "md:bg-background-primary md:text-foreground-primary pointer-events-none"
+                        : "md:bg-blue-500 md:text-white md:hover:bg-blue-600! md:active:bg-blue-400!"
+                }`}
             >
                 {props.children}
             </StyledLink>

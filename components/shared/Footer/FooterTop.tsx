@@ -18,8 +18,11 @@ const FooterTop = () => {
                                 src={phoneIcon}
                                 alt=""
                             />
-                            <Link href="tel:+79831310113">
-                                +7(983) 13-101-13
+                            <Link
+                                href="tel:+79831310113"
+                                className="hover:opacity-70"
+                            >
+                                + 7 (983) 131 - 01 - 13
                             </Link>
                         </div>
                         <div className="flex items-center gap-2">
@@ -28,7 +31,10 @@ const FooterTop = () => {
                                 src={emailIcon}
                                 alt=""
                             />
-                            <Link href="mailto:info@remont-mkd-nsk.ru">
+                            <Link
+                                href="mailto:info@remont-mkd-nsk.ru"
+                                className="hover:opacity-70"
+                            >
                                 info@remont-mkd-nsk.ru
                             </Link>
                         </div>
@@ -43,6 +49,7 @@ const FooterTop = () => {
                                 prefetch={false}
                                 rel="noreferrer"
                                 target="_blank"
+                                className="hover:opacity-70"
                             >
                                 г.&nbsp;Новосибирск, ул.&nbsp;Ленина,&nbsp;15
                             </Link>
@@ -53,7 +60,7 @@ const FooterTop = () => {
                                 src={warningIcon}
                                 alt=""
                             />
-                            <Link href="">
+                            <Link href="" className="hover:opacity-70">
                                 Пн-Пт:&nbsp;8:00-18:00
                                 <br />
                                 Аварийная служба:&nbsp;24/7
@@ -76,21 +83,41 @@ const FooterTop = () => {
                 <div className="flex flex-col gap-8">
                     <strong>Компания</strong>
                     <nav className="flex flex-col gap-4">
-                        <Link href="">О компании</Link>
-                        <Link href="">Портфолио</Link>
-                        <Link href="">Отзывы</Link>
-                        <Link href="">Полезные статьи</Link>
-                        <Link href="">Для ТСЖ и УК</Link>
-                        <Link href="">Контакты</Link>
+                        <Link href="" className="hover:opacity-70">
+                            О компании
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Портфолио
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Отзывы
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Полезные статьи
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Для ТСЖ и УК
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Контакты
+                        </Link>
                     </nav>
                 </div>
                 <div className="flex flex-col gap-8">
                     <strong>География работ</strong>
                     <nav className="flex flex-col gap-4">
-                        <Link href="">Новосибирск</Link>
-                        <Link href="">Бердск</Link>
-                        <Link href="">Академгородок</Link>
-                        <Link href="">Новосибирская область</Link>
+                        <Link href="" className="hover:opacity-70">
+                            Новосибирск
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Бердск
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Академгородок
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Новосибирская область
+                        </Link>
                     </nav>
                     <div>
                         <p>Аварийная служба</p>

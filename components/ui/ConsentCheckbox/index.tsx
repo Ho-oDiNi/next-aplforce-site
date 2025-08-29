@@ -6,7 +6,10 @@ const ConsentCheckbox = () => {
             <input type="checkbox" className="mr-2" name="consent" required />
             <p className="text-xs">
                 Даю согласие на обработку персональных данных в соответствии{" "}
-                <Link className="text-xs text-blue-900" href="">
+                <Link
+                    className="text-xs text-blue-900 hover:opacity-70"
+                    href=""
+                >
                     с политикой конфиденциальности
                 </Link>
             </p>

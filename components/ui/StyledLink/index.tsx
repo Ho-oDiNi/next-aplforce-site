@@ -6,31 +6,31 @@ const StyledLink = (props: StyledLinkProps) => {
     const {
         variant = "primary",
         size = "lg",
-        isBold = false,
         className = "",
         children,
         ...restProps
     } = props;
-    const baseClasses = "rounded-xl flex-center";
-    const fontBoldness = isBold ? "font-bold" : "font-normal";
+    const baseClasses = "flex-center text-sm";
 
     const variantClasses = {
-        primary: "bg-red-500 text-foreground-secondary",
-        secondary: "bg-blue-500 text-foreground-secondary",
-        outline: "bg-background-secondary text-foreground-primary",
-        whatsapp: "bg-background-secondary text-blue-500",
+        primary:
+            "bg-red-500 text-foreground-secondary hover:bg-red-600 active:bg-red-400 font-bold xl:text-xl",
+        secondary:
+            "bg-blue-500 text-foreground-secondary hover:bg-blue-600 active:bg-blue-400",
+        outline:
+            "bg-background-secondary text-foreground-primary hover:bg-slate-300 active:bg-slate-300",
+        whatsapp: "bg-background-secondary text-blue-500 hover:bg-slate-300",
     };
 
     const sizeClasses = {
-        sm: "py-2 px-4 text-sm inline-block!",
-        md: "h-10 w-55",
-        lg: "h-12 max-w-70 w-full",
-        max: "h-12 w-full",
+        sm: "py-2 px-4 text-sm inline-block! text-center rounded-lg",
+        md: "h-10 w-55 rounded-xl 2xs:text-base lg:text-lg",
+        lg: "h-12 max-w-70 w-full rounded-xl 2xs:text-base lg:text-lg",
+        max: "h-12 w-full rounded-xl 2xs:text-base lg:text-lg",
     };
 
     const linkClasses = `
         ${baseClasses}
-        ${fontBoldness}
         ${variantClasses[variant]}
         ${sizeClasses[size]}
         ${className}
