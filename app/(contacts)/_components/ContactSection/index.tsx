@@ -11,7 +11,7 @@ const ContactSection = () => {
     return (
         <StyledSection isSecondary={true}>
             <hgroup>
-                <h2>Контакты</h2>
+                <h1>Контакты</h1>
                 <p>
                     Свяжитесь с нами удобным способом или заполните форму
                     обратной связи

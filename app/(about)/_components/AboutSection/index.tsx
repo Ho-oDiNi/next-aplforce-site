@@ -9,7 +9,7 @@ const AboutSection = () => {
     return (
         <StyledSection isSecondary={true}>
             <hgroup>
-                <h2>О компании ALPFORCE</h2>
+                <h1>О компании ALPFORCE</h1>
                 <p>
                     Мы специализируемся на комплексном обслуживании
                     многоквартирных домов в Новосибирске с 2017 года. Наша
