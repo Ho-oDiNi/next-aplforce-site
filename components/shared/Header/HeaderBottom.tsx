@@ -17,7 +17,9 @@ const HeaderBottom = () => {
                     />
                     <div className="hidden md:block">
                         <strong>ALPFORCE</strong>
-                        <p className="text-sm">Ремонт многоквартирных домов</p>
+                        <p className="text-sm text-nowrap">
+                            Ремонт многоквартирных домов
+                        </p>
                     </div>
                 </Link>
                 <HeaderNavbar />

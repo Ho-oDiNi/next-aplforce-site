@@ -2,10 +2,18 @@ import emailIcon from "@icons/email-red-fill.svg";
 import locationIcon from "@icons/location-red-fill.svg";
 import phoneIcon from "@icons/phone-red-fill.svg";
 import warningIcon from "@icons/warning-red-fill.svg";
+import { headers } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 
-const FooterTop = () => {
+import pasteCityIntoUrl from "@/utils/pasteCityIntoUrl";
+
+const FooterTop = async () => {
+    const headersList = await headers();
+    const host = headersList.get("host") || "";
+    const protocol = headersList.get("x-forwarded-proto") || "";
+    const urlPath = protocol + "://" + host;
+
     return (
         <div className="bg-blue-900 px-(--space-inside-x) pt-14 pb-6">
             <div className="container mx-auto grid grid-cols-1 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
@@ -71,19 +79,31 @@ const FooterTop = () => {
                 <div className="flex flex-col gap-8">
                     <strong>Услуги</strong>
                     <div className="flex flex-col gap-4">
-                        <p>Ремонт кровли</p>
-                        <p>Герметизация швов</p>
-                        <p>Демонтаж козырьков</p>
-                        <p>Сброс снега</p>
-                        <p>Гидроизоляция балконов</p>
-                        <p>Высотные работы</p>
+                        <Link href="" className="hover:opacity-70">
+                            Ремонт кровли
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Герметизация швов
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Демонтаж козырьков
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Сброс снега
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Гидроизоляция балконов
+                        </Link>
+                        <Link href="" className="hover:opacity-70">
+                            Высотные работы
+                        </Link>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-8">
                     <strong>Компания</strong>
                     <nav className="flex flex-col gap-4">
-                        <Link href="" className="hover:opacity-70">
+                        <Link href="/about" className="hover:opacity-70">
                             О компании
                         </Link>
                         <Link href="" className="hover:opacity-70">
@@ -98,7 +118,7 @@ const FooterTop = () => {
                         <Link href="" className="hover:opacity-70">
                             Для ТСЖ и УК
                         </Link>
-                        <Link href="" className="hover:opacity-70">
+                        <Link href="/contacts" className="hover:opacity-70">
                             Контакты
                         </Link>
                     </nav>
@@ -106,16 +126,40 @@ const FooterTop = () => {
                 <div className="flex flex-col gap-8">
                     <strong>География работ</strong>
                     <nav className="flex flex-col gap-4">
-                        <Link href="" className="hover:opacity-70">
+                        <Link
+                            href={pasteCityIntoUrl({
+                                url: urlPath,
+                                newSubdomain: "novosibirsk",
+                            })}
+                            className="hover:opacity-70"
+                        >
                             Новосибирск
                         </Link>
-                        <Link href="" className="hover:opacity-70">
+                        <Link
+                            href={pasteCityIntoUrl({
+                                url: urlPath,
+                                newSubdomain: "berdsk",
+                            })}
+                            className="hover:opacity-70"
+                        >
                             Бердск
                         </Link>
-                        <Link href="" className="hover:opacity-70">
+                        <Link
+                            href={pasteCityIntoUrl({
+                                url: urlPath,
+                                newSubdomain: "academgorodok",
+                            })}
+                            className="hover:opacity-70"
+                        >
                             Академгородок
                         </Link>
-                        <Link href="" className="hover:opacity-70">
+                        <Link
+                            href={pasteCityIntoUrl({
+                                url: urlPath,
+                                newSubdomain: "nso",
+                            })}
+                            className="hover:opacity-70"
+                        >
                             Новосибирская область
                         </Link>
                     </nav>

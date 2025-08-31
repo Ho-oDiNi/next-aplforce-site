@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Clean-Param: utm_source&utm_medium&utm_campaign
+Sitemap: http://localhost:3000/sitemap.xml

@@ -9,7 +9,9 @@ const FooterMiddle = () => {
                     <Image src={logoIcon} className="h-full w-auto" alt="" />
                     <div className="flex flex-col justify-center">
                         <strong>ALPFORCE</strong>
-                        <p className="text-sm">Ремонт многоквартирных домов</p>
+                        <p className="text-sm text-nowrap">
+                            Ремонт многоквартирных домов
+                        </p>
                     </div>
                 </div>
                 <p className="max-w-xs text-sm opacity-50 sm:col-2 lg:col-4">
