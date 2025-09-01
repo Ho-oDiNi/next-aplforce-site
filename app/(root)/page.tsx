@@ -4,10 +4,10 @@ import ConsultSection from "@shared/ConsultSection";
 import ExampleSection from "@shared/ExampleSection";
 import TitleSection from "@shared/TitleSection";
 
-import getCityFromHost from "../api/middleware/getCityFromHost";
-
 import RewiewSection from "./_components/RewiewSection";
 import ServiceSection from "./_components/ServiceSection";
+
+import getCityFromHost from "@/utils/getCityFromHost";
 
 const Home = async () => {
     const cityName = await getCityFromHost();

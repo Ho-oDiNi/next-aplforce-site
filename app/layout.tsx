@@ -6,7 +6,7 @@ import RobotoFont from "@ui/RobotoFont";
 import type { Metadata } from "next";
 import React from "react";
 
-import getCityFromHost from "./api/middleware/getCityFromHost";
+import getCityFromHost from "@/utils/getCityFromHost";
 
 export const metadata: Metadata = {
     title: `Alpforce – высотные работы и ремонт многоквартирных домов по доступным ценам`,
