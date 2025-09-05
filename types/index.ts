@@ -155,3 +155,14 @@ export const cityMap: Record<string, string> = {
     academgorodok: "Академгородок",
     nso: "Новосибирская область",
 };
+
+export type AccordionItemType = [
+    string | React.ReactNode,
+    string | React.ReactNode,
+];
+
+export interface AccordionFAQProps {
+    title: string | React.ReactNode;
+    description: string | React.ReactNode;
+    AccordionItems: AccordionItemType[];
+}
