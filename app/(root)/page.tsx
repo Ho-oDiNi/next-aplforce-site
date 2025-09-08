@@ -2,10 +2,10 @@ import AdvantageSection from "@shared/AdvantageSection";
 import AnswerSection from "@shared/AnswerSection";
 import ConsultSection from "@shared/ConsultSection";
 import ExampleSection from "@shared/ExampleSection";
+import ServiceSection from "@shared/ServiceSection";
 import TitleSection from "@shared/TitleSection";
 
 import RewiewSection from "./_components/RewiewSection";
-import ServiceSection from "./_components/ServiceSection";
 
 import getCityFromHost from "@/utils/getCityFromHost";
 

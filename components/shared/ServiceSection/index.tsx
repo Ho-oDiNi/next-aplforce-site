@@ -17,7 +17,7 @@ const ServiceSection = () => {
 
             <ServiceList />
 
-            <StyledLink href="" variant="primary" size="lg">
+            <StyledLink href="/services" variant="primary" size="lg">
                 Все услуги
             </StyledLink>
         </StyledSection>

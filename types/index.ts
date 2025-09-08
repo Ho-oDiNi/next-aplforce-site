@@ -124,6 +124,7 @@ export interface ServiceSwitchLinkProps {
 export interface ServiceCardProps {
     title: string;
     description: string;
+    link: string;
     price: number;
     isLinearMeter?: boolean;
 }
@@ -136,8 +137,8 @@ export interface FeatureCardProps {
 }
 
 export interface AccordionItemProps {
-    title: string;
-    description: string;
+    title: string | React.ReactNode;
+    description: string | React.ReactNode;
     isOpen?: boolean;
 }
 
@@ -155,14 +156,3 @@ export const cityMap: Record<string, string> = {
     academgorodok: "Академгородок",
     nso: "Новосибирская область",
 };
-
-export type AccordionItemType = [
-    string | React.ReactNode,
-    string | React.ReactNode,
-];
-
-export interface AccordionFAQProps {
-    title: string | React.ReactNode;
-    description: string | React.ReactNode;
-    AccordionItems: AccordionItemType[];
-}

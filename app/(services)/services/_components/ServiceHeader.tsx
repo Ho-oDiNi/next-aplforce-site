@@ -12,7 +12,9 @@ export default function ServiceHeader({
     return (
         <hgroup className="text-start">
             <h2 className="font-bold">{title}</h2>
-            <p className="mt-2 text-lg">{description}</p>
+            <p className="mt-2 text-xl font-bold text-blue-900">
+                {description}
+            </p>
         </hgroup>
     );
 }

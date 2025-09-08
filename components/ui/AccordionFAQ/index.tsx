@@ -1,23 +1,40 @@
+import React from "react";
+
 import StyledSection from "../StyledSection";
 
 import AccordionItem from "./AccordionItem";
 
-const AccordionFAQ = () => {
+export type AccordionItemType = [
+    string | React.ReactNode,
+    string | React.ReactNode,
+];
+
+export interface AccordionFAQProps {
+    title: string | React.ReactNode;
+    description: string | React.ReactNode;
+    AccordionItems: AccordionItemType[];
+}
+
+const AccordionFAQ = ({
+    title,
+    description,
+    AccordionItems,
+}: AccordionFAQProps) => {
     return (
         <StyledSection>
             <hgroup>
-                <h2>Ответы на вопросы</h2>
-                <p>Ответы на самые популярные вопросы</p>
+                <h2>{title}</h2>
+                <p>{description}</p>
             </hgroup>
             <div className="flex-start w-full flex-col gap-4">
-                <AccordionItem
-                    title="Вопрос 1"
-                    description="Ответ 1"
-                    isOpen={true}
-                />
-                <AccordionItem title="Вопрос 2" description="Ответ 2" />
-                <AccordionItem title="Вопрос 3" description="Ответ 3" />
-                <AccordionItem title="Вопрос 4" description="Ответ 4" />
+                {AccordionItems.map(([question, answer], index) => (
+                    <AccordionItem
+                        key={index}
+                        title={question}
+                        description={answer}
+                        isOpen={index === 0}
+                    />
+                ))}
             </div>
         </StyledSection>
     );

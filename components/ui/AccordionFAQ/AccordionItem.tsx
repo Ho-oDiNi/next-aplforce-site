@@ -6,8 +6,8 @@ const AccordionItem = (props: AccordionItemProps) => {
             open={props.isOpen}
             className="bg-background-secondary w-full rounded-2xl p-8 lg:max-w-2xl"
         >
-            <summary>{props.title}</summary>
-            <p className="mt-4">{props.description}</p>
+            <summary className="font-bold">{props.title}</summary>
+            <p className="mt-4 text-base">{props.description}</p>
         </details>
     );
 };

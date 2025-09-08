@@ -19,7 +19,7 @@ const ServiceCard = (props: ServiceCardProps) => {
                     </abbr>
                 </span>
                 <StyledLink
-                    href=""
+                    href={props.link}
                     variant="secondary"
                     size="sm"
                     className="w-full lg:w-auto"

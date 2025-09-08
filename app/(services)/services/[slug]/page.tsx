@@ -1,7 +1,11 @@
 import { notFound } from "next/navigation";
 
-import ServiceContent from "../_components/ServiceContent";
+import InviteSection from "../_components/InviteSection";
+import ServiceSection from "../_components/ServiceSection";
 
+import AdvantageSection from "@/components/shared/AdvantageSection";
+import TitleSection from "@/components/shared/TitleSection";
+import AccordionFAQ from "@/components/ui/AccordionFAQ";
 import { getServiceBySlug } from "@/data/services";
 
 interface ServicePageProps {
@@ -18,19 +22,53 @@ export default async function ServicePage({ params }: ServicePageProps) {
         notFound();
     }
 
+    const faqItems: [string, string][] = [
+        [
+            "Что делать, если течет межпанельный шов в моей квартире?",
+            "Немедленно обратиться в управляющую компанию с письменным заявлением. Зафиксируйте проблему фото и видео. УК обязана составить акт и назначить ремонт текущих межпанельных швов.",
+        ],
+        [
+            "Кто должен делать ремонт межпанельных швов?",
+            "По закону, содержание общедомового имущества (фасада) — обязанность управляющей компании (УК). Жильцы вправе требовать от УК устранения проблем. Мы ведем работы по заделке межпонельных швов как с УК, так и напрямую с ТСЖ и собственниками квартир.",
+        ],
+        [
+            "Как формируется цена и нужна ли смета на межпанельные швы?",
+            "Смета на межпанельные швы составляется после осмотра объекта. Цена ремонта зависит от объема работ, состояния стыков, этажности и используемых материалов. Мы предоставляем детализированный расчет перед началом работ.",
+        ],
+        [
+            "Что делать, если течет межпанельный шов в моей квартире?",
+            "«Золотой стандарт» — технология «теплый шов»: монтаж утеплителя «Вилатерм» с последующей герметизацией полиуретановым герметиком. Это обеспечивает и гидроизоляцию, и утепление стыков.",
+        ],
+        [
+            "Нужна ли первичная заделка швов в новостройке?",
+            "Да, это критически важно. Своевременная первичная заделка межпанельного шва профессиональными материалами предотвратит проблемы в будущем и сэкономит средства на последующий ремонт.",
+        ],
+    ];
+
     return (
-        <section className="bg-background-secondary rounded-2xl p-8">
-            <ServiceContent service={service} />
-        </section>
+        <>
+            <TitleSection
+                title={`Ремонт межпанельных швов в Новосибирске`}
+                description="Профессиональная герметизация швов между панелями с использованием современных герметиков и технологий для полного устранения протечек."
+            />
+            <ServiceSection service={service} />
+            <AdvantageSection />
+            <InviteSection />
+            <AccordionFAQ
+                title="Ответы на вопросы"
+                description=""
+                AccordionItems={faqItems}
+            />
+        </>
     );
 }
 
 export const generateStaticParams = async () => {
     return [
-        { slug: "sealing" },
-        { slug: "repairing" },
-        { slug: "dismantling" },
+        { slug: "remont-mezhpanelnykh-shvov" },
+        { slug: "germetizatsiya-mezhpanelnykh-shvov" },
+        { slug: "pervichnaya-zadelka-shvov" },
     ];
 };
 
-export const revalidate = 3600;
+export const revalidate = 1;

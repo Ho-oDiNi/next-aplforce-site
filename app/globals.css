@@ -99,7 +99,7 @@
     @apply 2xs:text-base drag-none text-sm lg:text-lg;
   }
   summary {
-    @apply 2xs:text-lg xs:text-xl text-base font-bold;
+    @apply 2xs:text-lg xs:text-xl text-base;
   }
   dt {
     @apply 2xs:text-lg xs:text-xl text-base font-bold;

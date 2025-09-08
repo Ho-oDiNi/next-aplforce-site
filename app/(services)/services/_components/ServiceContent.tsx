@@ -30,9 +30,9 @@ export default function ServiceContent({ service }: ServiceContentProps) {
                     description={service.description}
                 />
 
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4">
                     {service.mainText}
-                    <div className="flex-start flex-wrap gap-4">
+                    <div className="flex-start mt-6 flex-wrap gap-4">
                         <ServicePriceBadge
                             price={service.price}
                             priceUnit={service.priceUnit}

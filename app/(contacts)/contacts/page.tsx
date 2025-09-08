@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 import ContactSection from "../_components/ContactSection";
 
-import getCityFromHost from "@/utils/getCityFromHost";
+// import getCityFromHost from "@/utils/getCityFromHost";
 
 export const metadata: Metadata = {
     title: `Контакты Alpforce - Аварийная служба ремонта`, // ${await getCityFromHost()}
