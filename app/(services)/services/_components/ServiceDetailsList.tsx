@@ -12,14 +12,14 @@ export default function ServiceDetailsList({
     isSecond = false,
 }: ServiceDetailsListProps) {
     return (
-        <div className={`flex flex-col ${isSecond ? "mt-6" : ""}`}>
+        <div className={`flex flex-col ${isSecond ? "mt-12" : ""}`}>
             <h3 className="xs:text-2xl mb-6 text-xl font-bold md:text-3xl lg:text-4xl">
                 {title}
             </h3>
             {items.map((item, index) => (
                 <li
                     key={index}
-                    className={`relative pl-4 before:absolute before:left-0 before:content-['•'] ${isSecond ? "mb-2" : ""}`}
+                    className={`relative pl-4 before:absolute before:left-0 before:content-['•'] ${isSecond ? "mb-3" : ""}`}
                 >
                     {item}
                 </li>

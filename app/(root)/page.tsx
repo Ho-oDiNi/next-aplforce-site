@@ -20,8 +20,8 @@ const Home = async () => {
             />
             <ServiceSection />
             <AdvantageSection />
-            <ExampleSection />
-            <RewiewSection />
+            {/* <ExampleSection /> */}
+            {/* <RewiewSection /> */}
             <AnswerSection />
             <ConsultSection isWhite={true} />
         </>

@@ -8,6 +8,8 @@ import Link from "next/link";
 
 import pasteCityIntoUrl from "@/utils/pasteCityIntoUrl";
 
+// TODO: Заменить ссылки
+
 const FooterTop = async () => {
     const headersList = await headers();
     const host = headersList.get("host") || "";
@@ -68,7 +70,7 @@ const FooterTop = async () => {
                                 src={warningIcon}
                                 alt=""
                             />
-                            <Link href="" className="hover:opacity-70">
+                            <Link href="/contacts" className="hover:opacity-70">
                                 Пн-Пт:&nbsp;8:00-18:00
                                 <br />
                                 Аварийная служба:&nbsp;24/7
@@ -79,23 +81,23 @@ const FooterTop = async () => {
                 <div className="flex flex-col gap-8">
                     <strong>Услуги</strong>
                     <div className="flex flex-col gap-4">
-                        <Link href="" className="hover:opacity-70">
-                            Ремонт кровли
+                        <Link
+                            href="/services/remont-mezhpanelnykh-shvov"
+                            className="hover:opacity-70"
+                        >
+                            Ремонт швов
                         </Link>
-                        <Link href="" className="hover:opacity-70">
+                        <Link
+                            href="/services/germetizatsiya-mezhpanelnykh-shvov"
+                            className="hover:opacity-70"
+                        >
                             Герметизация швов
                         </Link>
-                        <Link href="" className="hover:opacity-70">
-                            Демонтаж козырьков
-                        </Link>
-                        <Link href="" className="hover:opacity-70">
-                            Сброс снега
-                        </Link>
-                        <Link href="" className="hover:opacity-70">
-                            Гидроизоляция балконов
-                        </Link>
-                        <Link href="" className="hover:opacity-70">
-                            Высотные работы
+                        <Link
+                            href="/services/pervichnaya-zadelka-shvov"
+                            className="hover:opacity-70"
+                        >
+                            Первичная заделка
                         </Link>
                     </div>
                 </div>
@@ -106,18 +108,18 @@ const FooterTop = async () => {
                         <Link href="/about" className="hover:opacity-70">
                             О компании
                         </Link>
-                        <Link href="" className="hover:opacity-70">
+                        {/* <Link href="" className="hover:opacity-70">
                             Портфолио
-                        </Link>
-                        <Link href="" className="hover:opacity-70">
+                        </Link> */}
+                        {/* <Link href="" className="hover:opacity-70">
                             Отзывы
-                        </Link>
-                        <Link href="" className="hover:opacity-70">
+                        </Link> */}
+                        {/* <Link href="" className="hover:opacity-70">
                             Полезные статьи
-                        </Link>
-                        <Link href="" className="hover:opacity-70">
+                        </Link> */}
+                        {/* <Link href="" className="hover:opacity-70">
                             Для ТСЖ и УК
-                        </Link>
+                        </Link> */}
                         <Link href="/contacts" className="hover:opacity-70">
                             Контакты
                         </Link>

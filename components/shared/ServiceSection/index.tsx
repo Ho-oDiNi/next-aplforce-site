@@ -3,6 +3,8 @@ import StyledSection from "@ui/StyledSection";
 
 import ServiceList from "./ServiceList";
 
+// TODO: Изменить ссылку страницы услуг
+
 const ServiceSection = () => {
     return (
         <StyledSection>
@@ -17,7 +19,11 @@ const ServiceSection = () => {
 
             <ServiceList />
 
-            <StyledLink href="/services" variant="primary" size="lg">
+            <StyledLink
+                href="/services/remont-mezhpanelnykh-shvov"
+                variant="primary"
+                size="lg"
+            >
                 Все услуги
             </StyledLink>
         </StyledSection>

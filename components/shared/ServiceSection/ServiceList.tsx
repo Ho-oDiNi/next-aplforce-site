@@ -14,14 +14,14 @@ const ServiceList = () => {
                 title="Герметизация межпанельных швов"
                 description="Комплексная защита вашего дома от теплопотерь, влаги и сквозняков"
                 link="/services/germetizatsiya-mezhpanelnykh-shvov"
-                price={320}
+                price={590}
                 isLinearMeter={true}
             />
             <ServiceCard
                 title="Первичная заделка швов"
                 description="Качественная заделка межпанельных швов в новостройках"
                 link="/services/pervichnaya-zadelka-shvov"
-                price={1200}
+                price={790}
                 isLinearMeter={true}
             />
         </dl>
