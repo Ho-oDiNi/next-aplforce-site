@@ -11,14 +11,14 @@ const LicenseSection = () => {
                     Действуем в строгом соответствии с требованиями ГОСТ и СНИП
                 </p>
             </hgroup>
-            <dl className="w-full items-start">
+            <div className="grid w-full items-start gap-6 md:grid-cols-3">
                 <LicenseCard title="Допуск на высотные работы" href="" />
                 <LicenseCard
                     title="Образец договора на оказание услуг"
                     href=""
                 />
                 <LicenseCard title="Образец акта выполненных работ" href="" />
-            </dl>
+            </div>
         </StyledSection>
     );
 };

@@ -8,21 +8,29 @@ const EquipmentSection = () => {
     return (
         <StyledSection isSecondary={true}>
             <h2 className="m-0">Оборудование и технологии</h2>
-            <dl className="flex-between w-full flex-col lg:flex-row">
+            <div className="flex-between w-full flex-col gap-6 lg:flex-row">
                 <div className="mr-8">
-                    <dt className="mb-6">Профессиональное снаряжение</dt>
+                    <h3 className="2xs:text-lg xs:text-xl mb-6 text-base font-bold">
+                        Профессиональное снаряжение
+                    </h3>
                     <div className="flex flex-col gap-2">
                         <div className="flex gap-4">
                             <Image src={checkmarkIcon} alt="" />
-                            <dd>Современные страховочные системы</dd>
+                            <p className="2xs:text-base text-sm">
+                                Современные страховочные системы
+                            </p>
                         </div>
                         <div className="flex gap-4">
                             <Image src={checkmarkIcon} alt="" />
-                            <dd>Специальные инструменты для высотных работ</dd>
+                            <p className="2xs:text-base text-sm">
+                                Специальные инструменты для высотных работ
+                            </p>
                         </div>
                         <div className="flex gap-4">
                             <Image src={checkmarkIcon} alt="" />
-                            <dd>Профессиональная строительная техника</dd>
+                            <p className="2xs:text-base text-sm">
+                                Профессиональная строительная техника
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -36,7 +44,7 @@ const EquipmentSection = () => {
                     className="overflow-hidden rounded-2xl shadow-xl"
                     alt=""
                 />
-            </dl>
+            </div>
         </StyledSection>
     );
 };

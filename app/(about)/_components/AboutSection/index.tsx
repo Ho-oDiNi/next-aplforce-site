@@ -17,7 +17,7 @@ const AboutSection = () => {
                     сложности на высоте, обеспечивая безопасность и качество
                 </p>
             </hgroup>
-            <dl className="w-full items-start md:grid-cols-4">
+            <div className="grid w-full items-start gap-6 md:grid-cols-4">
                 <FeatureCard
                     icon={deliveryIcon}
                     title="2000+"
@@ -38,7 +38,7 @@ const AboutSection = () => {
                     title="24/7"
                     description="Аварийная служба"
                 />
-            </dl>
+            </div>
         </StyledSection>
     );
 };
