@@ -2,10 +2,12 @@ import calendarIcon from "@icons/calendar-blue-light.svg";
 import emailIcon from "@icons/email-blue-light.svg";
 import phoneIcon from "@icons/phone-blue-light.svg";
 import warningIcon from "@icons/warning-red-solid.svg";
-import StyledLink from "@ui/StyledLink";
 import StyledSection from "@ui/StyledSection";
-import Image from "next/image";
-import Link from "next/link";
+
+import ContactCard from "./ContactCard";
+import ContactInfoBlock from "./ContactInfoBlock";
+import EmergencyContact from "./EmergencyContact";
+import ScheduleBlock from "./ScheduleBlock";
 
 const ContactSection = () => {
     return (
@@ -19,101 +21,53 @@ const ContactSection = () => {
             </hgroup>
             <div className="grid w-full items-start gap-6 md:grid-cols-3">
                 <div className="flex flex-col gap-5">
-                    <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
-                        <div className="flex-start gap-4">
-                            <Image src={phoneIcon} alt="" />
-                            <h3 className="2xs:text-lg xs:text-xl text-base font-bold">
-                                Телефон
-                            </h3>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <Link href="tel:+79831310113">
-                                + 7 (983) 131 - 01 - 13
-                            </Link>
-                            <p className="text-zinc-300">
-                                Основной номер <wbr /> (Пн-Пт:&nbsp;8:00-22:00)
-                            </p>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <Link href="tel:+79831310113">
-                                + 7 (983) 131 - 01 - 13
-                            </Link>
-                            <p className="text-zinc-300">
-                                Аварийная служба (круглосуточно)
-                            </p>
-                        </div>
-                    </section>
+                    <ContactCard icon={phoneIcon} title="Телефон">
+                        <ContactInfoBlock
+                            link="tel:+79831310113"
+                            text="+ 7 (983) 131 - 01 - 13"
+                            description="Основной номер (Пн-Пт: 8:00-22:00)"
+                        />
+                        <ContactInfoBlock
+                            link="tel:+79831310113"
+                            text="+ 7 (983) 131 - 01 - 13"
+                            description="Аварийная служба (круглосуточно)"
+                        />
+                    </ContactCard>
 
-                    <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
-                        <div className="flex-start gap-4">
-                            <Image src={calendarIcon} alt="" />
-                            <h3 className="2xs:text-lg xs:text-xl text-base font-bold text-nowrap">
-                                Режим работы
-                            </h3>
-                        </div>
-                        <div className="flex-between">
-                            <span>Понедельник - Пятница</span>
-                            <span className="text-nowrap">8:00 - 22:00</span>
-                        </div>
-                        <div className="flex-between">
-                            <span className="text-red-500">
-                                Аварийная служба
-                            </span>
-                            <span className="text-red-500">24/7</span>
-                        </div>
-                    </section>
+                    <ContactCard icon={calendarIcon} title="Режим работы">
+                        <ScheduleBlock
+                            period="Понедельник - Пятница"
+                            time="8:00 - 22:00"
+                        />
+                        <ScheduleBlock
+                            period="Аварийная служба"
+                            time="24/7"
+                            isEmergency={true}
+                        />
+                    </ContactCard>
                 </div>
 
-                <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
-                    <div className="flex-start gap-4">
-                        <Image src={emailIcon} alt="" />
-                        <h3 className="2xs:text-lg xs:text-xl text-base font-bold text-nowrap">
-                            Email
-                        </h3>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <Link href="mailto:info@alpforce.ru">
-                            info@alpforce.ru
-                        </Link>
-                        <p className="text-zinc-300">Основная почта</p>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <Link href="mailto:zakaz@alpforce.ru">
-                            zakaz@alpforce.ru
-                        </Link>
-                        <p className="text-zinc-300">Заказы и сметы</p>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <Link href="mailto:director@alpforce.ru">
-                            director@alpforce.ru
-                        </Link>
-                        <p className="text-zinc-300">Директор</p>
-                    </div>
-                </section>
+                <ContactCard icon={emailIcon} title="Email">
+                    <ContactInfoBlock
+                        link="mailto:info@alpforce.ru"
+                        text="info@alpforce.ru"
+                        description="Основная почта"
+                    />
+                    <ContactInfoBlock
+                        link="mailto:zakaz@alpforce.ru"
+                        text="zakaz@alpforce.ru"
+                        description="Заказы и сметы"
+                    />
+                    <ContactInfoBlock
+                        link="mailto:director@alpforce.ru"
+                        text="director@alpforce.ru"
+                        description="Директор"
+                    />
+                </ContactCard>
 
-                <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
-                    <div className="flex-start gap-4">
-                        <Image src={warningIcon} alt="" />
-                        <h3 className="2xs:text-lg xs:text-xl text-base font-bold">
-                            Нужна срочная помощь?
-                        </h3>
-                    </div>
-                    <StyledLink
-                        href="tel:+79831310113"
-                        variant="primary"
-                        size="max"
-                    >
-                        Аварийный вызов
-                    </StyledLink>
-                    <StyledLink
-                        href={`https://wa.me/79831310113?text=${encodeURI("Добрый день!\nЯ хочу воспользоваться услугами по ремонту многоквартирного дома")}`}
-                        target="_blank"
-                        variant="whatsapp"
-                        size="max"
-                    >
-                        Написать в WhatsApp
-                    </StyledLink>
-                </section>
+                <ContactCard icon={warningIcon} title="Нужна срочная помощь?">
+                    <EmergencyContact />
+                </ContactCard>
             </div>
         </StyledSection>
     );
