@@ -16,14 +16,16 @@ export default function ServiceDetailsList({
             <h3 className="xs:text-2xl mb-6 text-xl font-bold md:text-3xl lg:text-4xl">
                 {title}
             </h3>
-            {items.map((item, index) => (
-                <li
-                    key={index}
-                    className={`relative pl-4 before:absolute before:left-0 before:content-['•'] ${isSecond ? "mb-3" : ""}`}
-                >
-                    {item}
-                </li>
-            ))}
+            <ul>
+                {items.map((item, index) => (
+                    <li
+                        key={index}
+                        className={`relative pl-4 before:absolute before:left-0 before:content-['•'] ${isSecond ? "mb-3" : ""}`}
+                    >
+                        {item}
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

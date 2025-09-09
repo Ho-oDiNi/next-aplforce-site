@@ -156,3 +156,10 @@ export const cityMap: Record<string, string> = {
     academgorodok: "Академгородок",
     nso: "Новосибирская область",
 };
+
+export const prepositionalCityMap: Record<string, string> = {
+    Новосибирск: "Новосибирске",
+    Бердск: "Бердске",
+    Академгородок: "Академгородке",
+    "Новосибирская область": "Новосибирской области",
+};

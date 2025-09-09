@@ -8,9 +8,14 @@ const ServiceCard = (props: ServiceCardProps) => {
     const unitText = props.isLinearMeter ? "руб./п.м." : "руб./м²";
 
     return (
-        <div className="bg-background-secondary flex flex-col justify-between gap-6 rounded-3xl p-8">
-            <dt>{props.title}</dt>
-            <dd>{props.description}</dd>
+        <section className="bg-background-secondary flex flex-col justify-between gap-6 rounded-3xl p-8">
+            <hgroup className="text-start">
+                <h3 className="2xs:text-lg xs:text-xl mb-6 text-base font-bold">
+                    {props.title}
+                </h3>
+                <p className="2xs:text-base text-sm">{props.description}</p>
+            </hgroup>
+
             <div className="flex-between flex-col gap-3 lg:flex-row">
                 <span className="bg-background-primary w-full rounded-lg px-4 py-2 text-center text-sm whitespace-nowrap text-red-500 lg:w-auto">
                     от <data value={props.price}>{props.price}</data>{" "}
@@ -27,7 +32,7 @@ const ServiceCard = (props: ServiceCardProps) => {
                     Подробнее
                 </StyledLink>
             </div>
-        </div>
+        </section>
     );
 };
 

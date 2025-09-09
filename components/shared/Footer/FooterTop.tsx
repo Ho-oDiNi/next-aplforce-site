@@ -105,8 +105,17 @@ const FooterTop = async () => {
                 <div className="flex flex-col gap-8">
                     <strong>Компания</strong>
                     <nav className="flex flex-col gap-4">
+                        <Link href="/" className="hover:opacity-70">
+                            Главное
+                        </Link>
+                        <Link href="/sevices" className="hover:opacity-70">
+                            Услуги
+                        </Link>
                         <Link href="/about" className="hover:opacity-70">
                             О компании
+                        </Link>
+                        <Link href="/contacts" className="hover:opacity-70">
+                            Контакты
                         </Link>
                         {/* <Link href="" className="hover:opacity-70">
                             Портфолио
@@ -120,9 +129,6 @@ const FooterTop = async () => {
                         {/* <Link href="" className="hover:opacity-70">
                             Для ТСЖ и УК
                         </Link> */}
-                        <Link href="/contacts" className="hover:opacity-70">
-                            Контакты
-                        </Link>
                     </nav>
                 </div>
                 <div className="flex flex-col gap-8">

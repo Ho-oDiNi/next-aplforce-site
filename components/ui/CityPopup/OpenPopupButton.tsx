@@ -11,13 +11,12 @@ const OpenPopupButton = (props: PopupProps) => {
     const closeDialog = () => setIsDialogOpen(false);
 
     return (
-        <div className="relative">
-            <div
-                className="flex-center cursor-pointer gap-4 hover:opacity-70"
-                onClick={openDialog}
-            >
-                {props.children}
-            </div>
+        <div className="flex-center relative">
+            <button onClick={openDialog}>
+                <div className="flex-center cursor-pointer gap-4 hover:opacity-70">
+                    {props.children}
+                </div>
+            </button>
             <CityPopup isOpen={isDialogOpen} onClose={closeDialog} />
         </div>
     );

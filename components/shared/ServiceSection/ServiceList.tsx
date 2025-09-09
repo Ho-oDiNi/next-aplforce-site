@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 
 const ServiceList = () => {
     return (
-        <dl>
+        <div className="grid gap-6 md:grid-cols-3">
             <ServiceCard
                 title="Ремонт межпанельных швов"
                 description="Полное восстановление разрушенного или протекающего межпанельного шва"
@@ -24,7 +24,7 @@ const ServiceList = () => {
                 price={790}
                 isLinearMeter={true}
             />
-        </dl>
+        </div>
     );
 };
 

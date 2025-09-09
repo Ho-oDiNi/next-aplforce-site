@@ -1,32 +1,40 @@
+import ImageHome from "@images/home.webp";
 import { TitleSectionProps } from "@types";
+import Image from "next/image";
 
 import MiniAdvantageList from "./MiniAdvantageList";
 
 import OpenDialogButton from "@/components/ui/OrderDialog/OpenDialogButton";
 import StyledSection from "@/components/ui/StyledSection";
 
-const TitleSection = (props: TitleSectionProps) => {
-    const unitAdvantage = props.hasMiniAdvantage ? (
-        <MiniAdvantageList />
-    ) : (
-        <></>
-    );
+const TitleSection = ({
+    title,
+    description,
+    hasMiniAdvantage,
+}: TitleSectionProps) => {
+    const unitAdvantage = hasMiniAdvantage ? <MiniAdvantageList /> : <></>;
 
     return (
         <StyledSection
             isSecondary={true}
-            sectionClassName="bg-[url(/images/home.webp)] bg-cover bg-center bg-no-repeat text-foreground-secondary"
+            sectionClassName="text-foreground-secondary relative"
         >
-            <hgroup className="max-w-none lg:max-w-2xl">
-                <h1>{props.title}</h1>
-                <p>{props.description}</p>
+            <hgroup className="z-1 max-w-none lg:max-w-2xl">
+                <h1>{title}</h1>
+                <p>{description}</p>
             </hgroup>
 
-            <OpenDialogButton variant="primary" size="lg">
+            <OpenDialogButton variant="primary" size="lg" className="z-1">
                 Заказать консультацию
             </OpenDialogButton>
 
             {unitAdvantage}
+            <Image
+                src={ImageHome}
+                alt=""
+                className="absolute top-0 left-0 h-full object-cover"
+                priority={true}
+            />
         </StyledSection>
     );
 };

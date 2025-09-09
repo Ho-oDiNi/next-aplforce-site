@@ -48,7 +48,7 @@ export default function ServiceContent({ service }: ServiceContentProps) {
             </div>
 
             <div className="flex flex-col gap-4">
-                <ul className="flex flex-col">
+                <div className="flex flex-col">
                     <ServiceDetailsList
                         title="Что входит в работы"
                         items={service.whatIncluded}
@@ -58,7 +58,7 @@ export default function ServiceContent({ service }: ServiceContentProps) {
                         items={service.materials}
                         isSecond={true}
                     />
-                </ul>
+                </div>
             </div>
         </div>
     );

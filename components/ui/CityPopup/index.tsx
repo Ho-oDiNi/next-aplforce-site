@@ -19,7 +19,7 @@ const CityPopup = ({ isOpen, onClose }: OrderDialogProps) => {
         if (!dialog) return;
 
         if (isOpen) {
-            dialog.showModal();
+            dialog.show();
         } else {
             dialog.close();
         }
@@ -33,7 +33,7 @@ const CityPopup = ({ isOpen, onClose }: OrderDialogProps) => {
 
     return (
         <dialog
-            className="backdrop:bg-unset absolute top-4 left-4 rounded-3xl bg-white p-8 shadow-2xl"
+            className="backdrop:bg-unset absolute -top-3 -left-3 w-60 rounded-3xl bg-white p-8 shadow-2xl"
             ref={dialogRef}
             onClick={handleBackdropClick}
             aria-labelledby="SEO"

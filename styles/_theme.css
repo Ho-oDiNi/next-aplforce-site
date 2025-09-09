@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --space-inside-x: calc(var(--spacing) * 4);
+  --space-inside-y: calc(var(--spacing) * 16);
+  --space-inside-y-md: calc(var(--spacing) * 12);
+
+  --color-background-primary: var(--color-white);
+  --color-background-secondary: var(--color-slate-200);
+
+  --color-foreground-primary: var(--color-neutral-900);
+  --color-foreground-secondary: var(--color-white);
+
+  --breakpoint-xs: 26.5625rem;
+  --breakpoint-2xs: 23.4375rem;
+
+  --radial-right: radial-gradient(
+    circle at 100% 0,
+    transparent 15px,
+    var(--color-background-secondary) 16px
+  );
+  --radial-left: radial-gradient(
+    circle at 0 0,
+    transparent 15px,
+    var(--color-background-secondary) 16px
+  );
+}

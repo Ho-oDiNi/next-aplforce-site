@@ -1,0 +1,66 @@
+@layer components {
+  * {
+    @apply transition-all;
+  }
+  main {
+    @apply text-foreground-primary;
+  }
+  section {
+    @apply px-(--space-inside-x) py-(--space-inside-y);
+    @media (max-width: 768px) {
+      @apply px-(--space-inside-x) py-(--space-inside-y-md);
+    }
+  }
+  hgroup {
+    @apply text-center md:max-w-2xl;
+  }
+  dl {
+    @apply grid gap-6 md:grid-cols-3;
+  }
+  h1 {
+    @apply xs:text-3xl mb-8 text-2xl font-bold md:text-4xl lg:text-5xl;
+  }
+  h2 {
+    @apply xs:text-2xl mb-6 text-xl font-bold md:text-3xl lg:text-4xl;
+  }
+  strong {
+    @apply 2xs:text-lg xs:text-xl text-base font-bold;
+  }
+  p {
+    @apply 2xs:text-base text-sm lg:text-lg;
+  }
+  a {
+    @apply 2xs:text-base drag-none text-sm lg:text-lg;
+  }
+  summary {
+    @apply 2xs:text-lg xs:text-xl text-base;
+  }
+  dt {
+    @apply 2xs:text-lg xs:text-xl text-base font-bold;
+  }
+  dd {
+    @apply 2xs:text-base text-sm;
+  }
+  ol {
+    @apply list-decimal pl-4;
+  }
+  img {
+    @apply drag-none;
+  }
+
+  summary {
+    @apply flex-between cursor-pointer;
+    &::marker {
+      @apply hidden list-none;
+    }
+    &:after {
+      @apply h-6 w-6;
+    }
+  }
+  details summary:after {
+    @apply content-[url("/icons/plus-blue-light.svg")];
+  }
+  details[open] summary:after {
+    @apply content-[url("/icons/minus-blue-light.svg")];
+  }
+}

@@ -23,7 +23,7 @@ const HeaderBottom = () => {
                     </div>
                 </Link>
                 <HeaderNavbar />
-                <button className="block md:hidden">
+                <button className="block md:hidden" aria-label="SEO">
                     <Image src={burgerIcon} alt="" />
                 </button>
             </div>

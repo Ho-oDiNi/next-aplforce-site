@@ -4,7 +4,6 @@ import InviteSection from "../_components/InviteSection";
 import ServiceSection from "../_components/ServiceSection";
 
 import AdvantageSection from "@/components/shared/AdvantageSection";
-import TitleSection from "@/components/shared/TitleSection";
 import AccordionFAQ from "@/components/ui/AccordionFAQ";
 import { getServiceBySlug } from "@/data/services";
 
@@ -47,18 +46,14 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
     return (
         <>
-            <TitleSection
-                title={`Ремонт межпанельных швов в Новосибирске`}
-                description="Профессиональная герметизация швов между панелями с использованием современных герметиков и технологий для полного устранения протечек."
-            />
             <ServiceSection service={service} />
             <AdvantageSection />
-            <InviteSection />
             <AccordionFAQ
                 title="Ответы на вопросы"
                 description=""
                 AccordionItems={faqItems}
             />
+            <InviteSection />
         </>
     );
 }

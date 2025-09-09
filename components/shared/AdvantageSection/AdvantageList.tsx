@@ -6,7 +6,7 @@ import FeatureCard from "@ui/FeatureCard";
 
 const AdvantageList = () => {
     return (
-        <dl className="items-start md:grid-cols-4">
+        <div className="grid items-start gap-6 md:grid-cols-4">
             <FeatureCard
                 icon={deliveryIcon}
                 title="Скорость"
@@ -47,7 +47,7 @@ const AdvantageList = () => {
                     "Аварийные повреждения балконов",
                 ]}
             />
-        </dl>
+        </div>
     );
 };
 
