@@ -62,7 +62,7 @@ export interface DialogProps {
     onClose: () => void;
 }
 
-export interface InputFieldProps {
+export interface StyledInputProps {
     label: string;
     name: string;
     type: string;

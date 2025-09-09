@@ -1,0 +1,47 @@
+import checkmarkIcon from "@icons/checkmark-red-fill.svg";
+import deliveryIcon from "@icons/delivery-red-fill.svg";
+import qualityIcon from "@icons/quality-red-fill.svg";
+import warningIcon from "@icons/warning-red-fill.svg";
+
+import FeatureCard from "@/components/shared/FeatureCard";
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
+
+const AboutSection = () => {
+    return (
+        <StyledSection isSecondary={true}>
+            <hgroup>
+                <h1>О компании ALPFORCE</h1>
+                <p>
+                    Мы специализируемся на комплексном обслуживании
+                    многоквартирных домов в Новосибирске с 2017 года. Наша
+                    команда профессиональных альпинистов выполняет работы любой
+                    сложности на высоте, обеспечивая безопасность и качество
+                </p>
+            </hgroup>
+            <div className="grid w-full items-start gap-6 md:grid-cols-4">
+                <FeatureCard
+                    icon={deliveryIcon}
+                    title="2000+"
+                    description="Выполненных обектов"
+                />
+                <FeatureCard
+                    icon={qualityIcon}
+                    title="8 лет"
+                    description="Работаем на рынке"
+                />
+                <FeatureCard
+                    icon={checkmarkIcon}
+                    title="500+"
+                    description="Довольных клиентов"
+                />
+                <FeatureCard
+                    icon={warningIcon}
+                    title="24/7"
+                    description="Аварийная служба"
+                />
+            </div>
+        </StyledSection>
+    );
+};
+
+export default AboutSection;

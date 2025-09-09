@@ -1,9 +1,9 @@
-import AdvantageSection from "@shared/AdvantageSection";
-import AnswerSection from "@shared/AnswerSection";
-import ConsultSection from "@shared/ConsultSection";
-import ServiceSection from "@shared/ServiceSection";
-import TitleSection from "@shared/TitleSection";
+import TitleSection from "@/components/sections/TitleSection";
 
+import AdvantageSection from "@/components/sections/AdvantageSection";
+import AnswerSection from "@/components/sections/AnswerSection";
+import ConsultSection from "@/components/sections/ConsultSection";
+import ServiceSection from "@/components/sections/ServiceSection";
 import getCityFromHost from "@/utils/getCityFromHost";
 import getCityInPrepositional from "@/utils/getCityInPrepositional";
 

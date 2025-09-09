@@ -1,6 +1,6 @@
 import React from "react";
 
-import StyledSection from "../StyledSection";
+import StyledSection from "../StyledNode/StyledSection";
 
 import AccordionItem from "./AccordionItem";
 

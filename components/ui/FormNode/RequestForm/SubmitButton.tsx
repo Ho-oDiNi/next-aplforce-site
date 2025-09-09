@@ -1,0 +1,19 @@
+import { SubmitButtonProps } from "@types";
+
+import StyledButton from "../../StyledNode/StyledButton";
+
+const SubmitButton = (props: SubmitButtonProps) => {
+    return (
+        <StyledButton
+            variant="primary"
+            size="max"
+            type="submit"
+            disabled={props.buttonPending}
+            aria-disabled={props.buttonPending}
+        >
+            {props.buttonPending ? "Отправка..." : "Отправить заявку"}
+        </StyledButton>
+    );
+};
+
+export default SubmitButton;

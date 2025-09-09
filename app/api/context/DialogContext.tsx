@@ -1,6 +1,6 @@
 "use client";
 
-import OrderDialog from "@ui/OrderDialog";
+import OrderDialog from "@/components/ui/DialogNode/OrderDialog";
 import React, { createContext, useContext, useRef, useCallback } from "react";
 
 import { DialogContextType } from "@/types";
