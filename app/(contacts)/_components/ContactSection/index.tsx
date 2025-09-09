@@ -17,76 +17,86 @@ const ContactSection = () => {
                     обратной связи
                 </p>
             </hgroup>
-            <dl className="w-full items-start">
+            <div className="grid w-full items-start gap-6 md:grid-cols-3">
                 <div className="flex flex-col gap-5">
-                    <div className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
+                    <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
                         <div className="flex-start gap-4">
                             <Image src={phoneIcon} alt="" />
-                            <dt>Телефон</dt>
+                            <h3 className="2xs:text-lg xs:text-xl text-base font-bold">
+                                Телефон
+                            </h3>
                         </div>
                         <div className="flex flex-col gap-2">
                             <Link href="tel:+79831310113">
-                                <dd>+ 7 (983) 131 - 01 - 13</dd>
+                                + 7 (983) 131 - 01 - 13
                             </Link>
-                            <dd className="text-zinc-300">
+                            <p className="text-zinc-300">
                                 Основной номер <wbr /> (Пн-Пт:&nbsp;8:00-22:00)
-                            </dd>
+                            </p>
                         </div>
                         <div className="flex flex-col gap-2">
                             <Link href="tel:+79831310113">
-                                <dd>+ 7 (983) 131 - 01 - 13</dd>
+                                + 7 (983) 131 - 01 - 13
                             </Link>
-                            <dd className="text-zinc-300">
+                            <p className="text-zinc-300">
                                 Аварийная служба (круглосуточно)
-                            </dd>
+                            </p>
                         </div>
-                    </div>
+                    </section>
 
-                    <div className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
+                    <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
                         <div className="flex-start gap-4">
                             <Image src={calendarIcon} alt="" />
-                            <dt className="text-nowrap">Режим работы</dt>
+                            <h3 className="2xs:text-lg xs:text-xl text-base font-bold text-nowrap">
+                                Режим работы
+                            </h3>
                         </div>
                         <div className="flex-between">
-                            <dd>Понедельник - Пятница</dd>
-                            <dd className="text-nowrap">8:00 - 22:00</dd>
+                            <span>Понедельник - Пятница</span>
+                            <span className="text-nowrap">8:00 - 22:00</span>
                         </div>
                         <div className="flex-between">
-                            <dd className="text-red-500">Аварийная служба</dd>
-                            <dd className="text-red-500">24/7</dd>
+                            <span className="text-red-500">
+                                Аварийная служба
+                            </span>
+                            <span className="text-red-500">24/7</span>
                         </div>
-                    </div>
+                    </section>
                 </div>
 
-                <div className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
+                <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
                     <div className="flex-start gap-4">
                         <Image src={emailIcon} alt="" />
-                        <dt>Email</dt>
+                        <h3 className="2xs:text-lg xs:text-xl text-base font-bold text-nowrap">
+                            Email
+                        </h3>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Link href="mailto:info@remont-mkd-nsk.ru">
-                            <dd>info@remont-mkd-nsk.ru</dd>
+                        <Link href="mailto:info@alpforce.ru">
+                            info@alpforce.ru
                         </Link>
-                        <dd className="text-zinc-300">Основная почта</dd>
+                        <p className="text-zinc-300">Основная почта</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Link href="mailto:zakaz@remont-mkd-nsk.ru">
-                            <dd>zakaz@remont-mkd-nsk.ru</dd>
+                        <Link href="mailto:zakaz@alpforce.ru">
+                            zakaz@alpforce.ru
                         </Link>
-                        <dd className="text-zinc-300">Заказы и сметы</dd>
+                        <p className="text-zinc-300">Заказы и сметы</p>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Link href="mailto:director@remont-mkd-nsk.ru">
-                            <dd>director@remont-mkd-nsk.ru</dd>
+                        <Link href="mailto:director@alpforce.ru">
+                            director@alpforce.ru
                         </Link>
-                        <dd className="text-zinc-300">Директор</dd>
+                        <p className="text-zinc-300">Директор</p>
                     </div>
-                </div>
+                </section>
 
-                <div className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
+                <section className="bg-background-primary flex flex-col gap-4 rounded-2xl p-8">
                     <div className="flex-start gap-4">
                         <Image src={warningIcon} alt="" />
-                        <strong>Нужна срочная помощь?</strong>
+                        <h3 className="2xs:text-lg xs:text-xl text-base font-bold">
+                            Нужна срочная помощь?
+                        </h3>
                     </div>
                     <StyledLink
                         href="tel:+79831310113"
@@ -103,8 +113,8 @@ const ContactSection = () => {
                     >
                         Написать в WhatsApp
                     </StyledLink>
-                </div>
-            </dl>
+                </section>
+            </div>
         </StyledSection>
     );
 };
