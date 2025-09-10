@@ -1,4 +1,5 @@
 import { ServiceCardProps } from "@types";
+
 import StyledLink from "@/components/ui/StyledNode/StyledLink";
 
 const ServiceCard = (props: ServiceCardProps) => {

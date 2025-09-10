@@ -1,8 +1,7 @@
-import StyledSection from "@/components/ui/StyledNode/StyledSection";
-
 import ExampleList from "./ExampleList";
 
 import StyledLink from "@/components/ui/StyledNode/StyledLink";
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const ExampleSection = () => {
     return (

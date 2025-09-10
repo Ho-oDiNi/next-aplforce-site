@@ -1,6 +1,6 @@
-import StyledSection from "@/components/ui/StyledNode/StyledSection";
-
 import LicenseCard from "./LicenseCard";
+
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const LicenseSection = () => {
     return (

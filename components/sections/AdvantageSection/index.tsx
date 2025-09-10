@@ -1,6 +1,6 @@
-import StyledSection from "@/components/ui/StyledNode/StyledSection";
-
 import AdvantageList from "./AdvantageList";
+
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const AdvantageSection = () => {
     return (

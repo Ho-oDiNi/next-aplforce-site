@@ -1,6 +1,6 @@
-import StyledButton from "@/components/ui/StyledNode/StyledButton";
-
 import ImageComparison from "./ImageComparison";
+
+import StyledButton from "@/components/ui/StyledNode/StyledButton";
 
 const CompareSection = () => {
     return (

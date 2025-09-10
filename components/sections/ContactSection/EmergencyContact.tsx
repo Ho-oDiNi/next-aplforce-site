@@ -1,5 +1,6 @@
-import StyledLink from "@/components/ui/StyledNode/StyledLink";
 import React from "react";
+
+import StyledLink from "@/components/ui/StyledNode/StyledLink";
 
 const EmergencyContact = () => {
     return (

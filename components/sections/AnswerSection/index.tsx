@@ -1,6 +1,6 @@
-import StyledSection from "@/components/ui/StyledNode/StyledSection";
-
 import AnswerList from "./AnswerList";
+
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const RewiewSection = () => {
     return (

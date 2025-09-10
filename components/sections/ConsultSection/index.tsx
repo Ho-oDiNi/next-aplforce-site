@@ -1,7 +1,7 @@
 import { ConsultSectionProps } from "@types";
-import RequestForm from "@/components/ui/FormNode/RequestForm";
 
 import submitForm from "@/app/api/actions/submitForm";
+import RequestForm from "@/components/ui/FormNode/RequestForm";
 import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const ConsultSection = (props: ConsultSectionProps) => {

@@ -22,6 +22,8 @@
             "@/*": ["./*"],
             "@shared/*": ["./components/shared/*"],
             "@ui/*": ["./components/ui/*"],
+            "@sections/*": ["./components/sections/*"],
+            "@layout/*": ["./components/layout/*"],
             "@icons/*": ["./public/icons/*"],
             "@images/*": ["./public/images/*"],
             "@api/*": ["./app/api/*"],

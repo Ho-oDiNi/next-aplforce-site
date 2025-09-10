@@ -3,10 +3,9 @@ import { Metadata } from "next";
 import AboutSection from "@/components/sections/AboutSection";
 import EquipmentSection from "@/components/sections/EquipmentSection";
 import LicenseSection from "@/components/sections/LicenseSection";
+import MapSection from "@/components/sections/MapSection";
 
 // import getCityFromHost from "@/utils/getCityFromHost";
-
-// import MapSection from "../_components/MapSection";
 
 export const metadata: Metadata = {
     title: `О компании Alpforce - Высотные работы для МКД по ГОСТ и СНИП`, // ${await getCityFromHost()}
@@ -19,7 +18,7 @@ const About = async () => {
             <AboutSection />
             <LicenseSection />
             <EquipmentSection />
-            {/* <MapSection /> */}
+            <MapSection />
         </>
     );
 };

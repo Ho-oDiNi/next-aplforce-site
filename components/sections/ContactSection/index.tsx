@@ -2,12 +2,13 @@ import calendarIcon from "@icons/calendar-blue-light.svg";
 import emailIcon from "@icons/email-blue-light.svg";
 import phoneIcon from "@icons/phone-blue-light.svg";
 import warningIcon from "@icons/warning-red-solid.svg";
-import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 import ContactCard from "./ContactCard";
 import ContactInfoBlock from "./ContactInfoBlock";
 import EmergencyContact from "./EmergencyContact";
 import ScheduleBlock from "./ScheduleBlock";
+
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const ContactSection = () => {
     return (

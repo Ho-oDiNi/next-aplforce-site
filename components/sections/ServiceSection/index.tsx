@@ -1,7 +1,7 @@
+import ServiceList from "./ServiceList";
+
 import StyledLink from "@/components/ui/StyledNode/StyledLink";
 import StyledSection from "@/components/ui/StyledNode/StyledSection";
-
-import ServiceList from "./ServiceList";
 
 // TODO: Изменить ссылку страницы услуг
 

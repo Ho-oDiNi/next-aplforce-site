@@ -1,7 +1,7 @@
+import RewiewList from "./RewiewList";
+
 import StyledLink from "@/components/ui/StyledNode/StyledLink";
 import StyledSection from "@/components/ui/StyledNode/StyledSection";
-
-import RewiewList from "./RewiewList";
 
 const RewiewSection = () => {
     return (
