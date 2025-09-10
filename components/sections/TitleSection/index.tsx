@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import MiniAdvantageList from "./MiniAdvantageList";
 
-import OpenDialogButton from "@/components/ui/DialogNode/OrderDialog/OpenDialogButton";
+import OpenDialogButton from "@/components/ui/DialogNode/DialogNode/OpenDialogButton";
 import StyledSection from "@/components/ui/StyledNode/StyledSection";
 
 const TitleSection = ({

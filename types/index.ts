@@ -60,6 +60,7 @@ export interface RequestFormProps {
 
 export interface DialogProps {
     onClose: () => void;
+    children: React.ReactNode;
 }
 
 export interface StyledInputProps {

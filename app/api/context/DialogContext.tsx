@@ -1,8 +1,11 @@
 "use client";
 
-import OrderDialog from "@/components/ui/DialogNode/OrderDialog";
 import React, { createContext, useContext, useRef, useCallback } from "react";
 
+import submitForm from "../actions/submitForm";
+
+import DialogNode from "@/components/ui/DialogNode/DialogNode";
+import RequestForm from "@/components/ui/FormNode/RequestForm";
 import { DialogContextType } from "@/types";
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined);
@@ -38,5 +41,13 @@ export const useDialog = () => {
 export const DialogContainer = () => {
     const { dialogRef, closeDialog } = useDialog();
 
-    return <OrderDialog ref={dialogRef} onClose={closeDialog} />;
+    return (
+        <DialogNode ref={dialogRef} onClose={closeDialog}>
+            <RequestForm
+                formAction={submitForm}
+                bgColor="bg-background-secondary"
+                formColor="bg-foreground-secondary"
+            />
+        </DialogNode>
+    );
 };

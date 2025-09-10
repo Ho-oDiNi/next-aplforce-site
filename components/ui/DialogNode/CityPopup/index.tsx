@@ -6,12 +6,12 @@ import React, { useEffect, useRef } from "react";
 
 import PopupNav from "./PopupNav";
 
-interface OrderDialogProps {
+interface DialogNodeProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-const CityPopup = ({ isOpen, onClose }: OrderDialogProps) => {
+const CityPopup = ({ isOpen, onClose }: DialogNodeProps) => {
     const dialogRef = useRef<HTMLDialogElement>(null);
 
     useEffect(() => {

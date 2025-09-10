@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import OpenPopupButton from "@/components/ui/DialogNode/CityPopup/OpenPopupButton";
-import OpenDialogButton from "@/components/ui/DialogNode/OrderDialog/OpenDialogButton";
+import OpenDialogButton from "@/components/ui/DialogNode/DialogNode/OpenDialogButton";
 import { SubdomainProps } from "@/types";
 
 const HeaderTop = (props: SubdomainProps) => {

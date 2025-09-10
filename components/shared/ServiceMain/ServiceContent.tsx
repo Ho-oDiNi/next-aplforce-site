@@ -5,7 +5,7 @@ import ServiceHeader from "./ServiceHeader";
 import ServiceInfoBadge from "./ServiceInfoBadge";
 import ServicePriceBadge from "./ServicePriceBadge";
 
-import OpenDialogButton from "@/components/ui/DialogNode/OrderDialog/OpenDialogButton";
+import OpenDialogButton from "@/components/ui/DialogNode/DialogNode/OpenDialogButton";
 
 interface ServiceContentProps {
     service: {

@@ -4,12 +4,10 @@ import closeIcon from "@icons/close-blue-dark.svg";
 import Image from "next/image";
 import React, { forwardRef } from "react";
 
-import submitForm from "@/app/api/actions/submitForm";
-import RequestForm from "@/components/ui/FormNode/RequestForm";
 import { DialogProps } from "@/types";
 
-const OrderDialog = forwardRef<HTMLDialogElement, DialogProps>(
-    ({ onClose }, ref) => {
+const DialogNode = forwardRef<HTMLDialogElement, DialogProps>(
+    ({ onClose, children }, ref) => {
         const handleBackdropClick = (
             e: React.MouseEvent<HTMLDialogElement>,
         ) => {
@@ -31,16 +29,11 @@ const OrderDialog = forwardRef<HTMLDialogElement, DialogProps>(
                 >
                     <Image src={closeIcon} alt="Закрыть" />
                 </button>
-
-                <RequestForm
-                    formAction={submitForm}
-                    bgColor="bg-background-secondary"
-                    formColor="bg-foreground-secondary"
-                />
+                {children}
             </dialog>
         );
     },
 );
 
-OrderDialog.displayName = "OrderDialog";
-export default OrderDialog;
+DialogNode.displayName = "DialogNode";
+export default DialogNode;
