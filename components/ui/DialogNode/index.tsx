@@ -7,10 +7,11 @@ import React, { forwardRef } from "react";
 interface DialogProps {
     onClose: () => void;
     children: React.ReactNode;
+    className?: string;
 }
 
 const DialogNode = forwardRef<HTMLDialogElement | null, DialogProps>(
-    ({ onClose, children }, ref) => {
+    ({ onClose, children, className = "" }, ref) => {
         const handleBackdropClick = (
             e: React.MouseEvent<HTMLDialogElement>,
         ) => {
@@ -23,11 +24,11 @@ const DialogNode = forwardRef<HTMLDialogElement | null, DialogProps>(
             <dialog
                 ref={ref}
                 onClick={handleBackdropClick}
-                className="fixed top-0 m-auto rounded-lg backdrop:bg-black backdrop:opacity-50"
+                className={`fixed top-0 m-auto rounded-lg backdrop:bg-black backdrop:opacity-50 ${className}`}
                 aria-labelledby="SEO"
             >
                 <button
-                    className="absolute top-6 right-6 cursor-pointer rounded-full"
+                    className="absolute top-6 right-6 cursor-pointer rounded-full border-2 border-blue-900"
                     onClick={onClose}
                 >
                     <Image src={closeIcon} alt="Закрыть" />

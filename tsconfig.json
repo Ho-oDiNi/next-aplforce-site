@@ -26,6 +26,7 @@
             "@layout/*": ["./components/layout/*"],
             "@icons/*": ["./public/icons/*"],
             "@images/*": ["./public/images/*"],
+            "@documents/*": ["./public/documents/*"],
             "@api/*": ["./app/api/*"],
             "@types": ["./types/index.ts"]
         }

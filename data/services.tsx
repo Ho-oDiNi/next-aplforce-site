@@ -2,6 +2,7 @@ import React from "react";
 
 import submitForm from "@/app/api/actions/submitForm";
 import RequestForm from "@/components/ui/FormNode/RequestForm";
+import ObjectPDF from "@/components/ui/ObjectPDF";
 
 export interface Service {
     id: number;

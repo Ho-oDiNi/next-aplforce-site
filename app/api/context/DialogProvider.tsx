@@ -11,20 +11,26 @@ export const DialogProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
     const dialogRef = useRef<HTMLDialogElement | null>(null);
     const [content, setContent] = useState<DialogContent | null>(null);
+    const [className, setClassName] = useState<string>("");
 
-    const openDialog = useCallback((content: DialogContent) => {
-        dialogRef.current?.showModal();
-        setContent(content);
-    }, []);
+    const openDialog = useCallback(
+        (content: DialogContent, className: string = "") => {
+            setClassName(className);
+            dialogRef.current?.showModal();
+            setContent(content);
+        },
+        [],
+    );
 
     const closeDialog = useCallback(() => {
         setContent(null);
+        setClassName("");
         dialogRef.current?.close();
     }, []);
 
     return (
         <DialogContext.Provider
-            value={{ dialogRef, openDialog, closeDialog, content }}
+            value={{ dialogRef, openDialog, closeDialog, content, className }}
         >
             {children}
         </DialogContext.Provider>

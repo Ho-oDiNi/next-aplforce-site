@@ -7,10 +7,10 @@ import { useDialog } from "./DialogProvider";
 import DialogNode from "@/components/ui/DialogNode";
 
 const DialogContainer = () => {
-    const { dialogRef, closeDialog, content } = useDialog();
+    const { dialogRef, closeDialog, className, content } = useDialog();
 
     return (
-        <DialogNode ref={dialogRef} onClose={closeDialog}>
+        <DialogNode ref={dialogRef} onClose={closeDialog} className={className}>
             {content && (
                 <>{React.createElement(content.component, content.props)}</>
             )}

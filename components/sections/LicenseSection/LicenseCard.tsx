@@ -1,7 +1,6 @@
 import { LicenseCardProps } from "@types";
 
-import OpenDialogButton from "@/components/ui/DialogNode/OpenDialogButton";
-import { dialogContentOrderForm } from "@/data/services";
+import LicenceDownload from "./LicenceDownload";
 
 const LicenseCard = (props: LicenseCardProps) => {
     return (
@@ -9,13 +8,7 @@ const LicenseCard = (props: LicenseCardProps) => {
             <h3 className="2xs:text-lg xs:text-xl text-base font-bold">
                 {props.title}
             </h3>
-            <OpenDialogButton
-                variant="secondary"
-                size="sm"
-                dialogContent={dialogContentOrderForm}
-            >
-                Скачать
-            </OpenDialogButton>
+            <LicenceDownload href={props.href} />
         </div>
     );
 };

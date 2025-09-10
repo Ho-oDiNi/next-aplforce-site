@@ -12,12 +12,14 @@ const LicenseSection = () => {
                 </p>
             </hgroup>
             <div className="grid w-full items-start gap-6 md:grid-cols-3">
-                <LicenseCard title="Допуск на высотные работы" href="" />
+                <LicenseCard
+                    title="Допуск на высотные работы"
+                    href="/documents/access-to-work.pdf"
+                />
                 <LicenseCard
                     title="Образец договора на оказание услуг"
-                    href=""
+                    href="/documents/service-agreement.pdf"
                 />
-                <LicenseCard title="Образец акта выполненных работ" href="" />
             </div>
         </StyledSection>
     );

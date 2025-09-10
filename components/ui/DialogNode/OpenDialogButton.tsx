@@ -7,17 +7,19 @@ import { StyledButtonProps, DialogContent } from "@/types";
 
 export interface OpenDialogButtonProps extends StyledButtonProps {
     dialogContent: DialogContent;
+    dialogClassName?: string;
 }
 
 const OpenDialogButton = ({
     dialogContent,
+    dialogClassName = "",
     children,
     ...buttonProps
 }: OpenDialogButtonProps) => {
     const { openDialog } = useDialog();
 
     const handleClick = () => {
-        openDialog(dialogContent);
+        openDialog(dialogContent, dialogClassName);
     };
 
     return (

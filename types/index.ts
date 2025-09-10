@@ -71,8 +71,9 @@ export interface DialogContent<P = any> {
 
 export interface DialogContextType {
     dialogRef: React.RefObject<HTMLDialogElement | null>;
-    openDialog: (content: DialogContent) => void;
+    openDialog: (content: DialogContent, className?: string) => void;
     closeDialog: () => void;
+    className?: string;
     content: DialogContent | null;
 }
 
