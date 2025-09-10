@@ -1,57 +1,30 @@
-import locationIcon from "@icons/location-blue-light.svg";
-import mockImage from "@images/mock-map-image.jpg";
-import StyledSection from "@/components/ui/StyledNode/StyledSection";
-import Image from "next/image";
+"use client";
 
-// Исправить - не работает + привязать Яндекс API
+import CityList from "./CityList";
+import YandexMap from "./YandexMap";
+
+import StyledSection from "@/components/ui/StyledNode/StyledSection";
+import { CityCoordinates } from "@/types";
+
+// Данные о городах с координатами
+const cities: CityCoordinates[] = [
+    { name: "Новосибирск", coordinates: [54.984, 82.896] },
+    { name: "Бердск", coordinates: [54.758, 83.107] },
+    { name: "Академгородок", coordinates: [54.847, 83.107] },
+    { name: "Обь", coordinates: [54.994, 82.693] },
+    { name: "Искитим", coordinates: [54.639, 83.305] },
+    { name: "Кольцово", coordinates: [54.937, 83.182] },
+    { name: "Краснообск", coordinates: [54.919, 82.99] },
+    { name: "Пригороды НСО", coordinates: [54.984, 82.896] },
+];
 
 const MapSection = () => {
     return (
         <StyledSection>
             <h2 className="m-0">География работ</h2>
             <div className="flex-between w-full flex-col lg:flex-row lg:gap-14">
-                <dl className="flex-center flex-col">
-                    <dt className="text-nowrap">Основные города</dt>
-                    <div className="mb-8 grid grid-cols-2 gap-x-8 gap-y-2 sm:grid-cols-3 lg:grid-cols-1">
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Новосибирск</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Бердск</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Академгородок</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Обь</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Искитим</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Кольцово</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd>Краснообск</dd>
-                        </div>
-                        <div className="flex-start gap-x-2 md:gap-x-4">
-                            <Image src={locationIcon} alt="" />
-                            <dd className="text-nowrap">Пригороды НСО</dd>
-                        </div>
-                    </div>
-                </dl>
-                <Image
-                    src={mockImage}
-                    alt=""
-                    className="w-full max-w-5xl rounded-2xl"
-                />
+                <CityList cities={cities} />
+                <YandexMap cities={cities} />
             </div>
         </StyledSection>
     );

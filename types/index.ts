@@ -163,3 +163,8 @@ export const prepositionalCityMap: Record<string, string> = {
     Академгородок: "Академгородке",
     "Новосибирская область": "Новосибирской области",
 };
+
+export interface CityCoordinates {
+    name: string;
+    coordinates: [number, number];
+}
