@@ -1,30 +1,50 @@
+// DialogContext.tsx
 "use client";
 
-import React, { createContext, useContext, useRef, useCallback } from "react";
-
-import submitForm from "../actions/submitForm";
+import React, {
+    createContext,
+    useContext,
+    useRef,
+    useState,
+    useCallback,
+} from "react";
 
 import DialogNode from "@/components/ui/DialogNode/DialogNode";
-import RequestForm from "@/components/ui/FormNode/RequestForm";
-import { DialogContextType } from "@/types";
+
+interface DialogContent {
+    component: React.ComponentType<any>;
+    props: any;
+}
+
+interface DialogContextType {
+    dialogRef: React.RefObject<HTMLDialogElement | null>;
+    openDialog: (content: DialogContent) => void;
+    closeDialog: () => void;
+    content: DialogContent | null;
+}
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined);
 
 export const DialogProvider: React.FC<{ children: React.ReactNode }> = ({
     children,
 }) => {
-    const dialogRef = useRef<HTMLDialogElement>(null);
+    const dialogRef = useRef<HTMLDialogElement | null>(null);
+    const [content, setContent] = useState<DialogContent | null>(null);
 
-    const openDialog = useCallback(() => {
+    const openDialog = useCallback((content: DialogContent) => {
         dialogRef.current?.showModal();
+        setContent(content);
     }, []);
 
     const closeDialog = useCallback(() => {
+        setContent(null);
         dialogRef.current?.close();
     }, []);
 
     return (
-        <DialogContext.Provider value={{ openDialog, closeDialog, dialogRef }}>
+        <DialogContext.Provider
+            value={{ dialogRef, openDialog, closeDialog, content }}
+        >
             {children}
         </DialogContext.Provider>
     );
@@ -39,15 +59,13 @@ export const useDialog = () => {
 };
 
 export const DialogContainer = () => {
-    const { dialogRef, closeDialog } = useDialog();
+    const { dialogRef, closeDialog, content } = useDialog();
 
     return (
         <DialogNode ref={dialogRef} onClose={closeDialog}>
-            <RequestForm
-                formAction={submitForm}
-                bgColor="bg-background-secondary"
-                formColor="bg-foreground-secondary"
-            />
+            {content && (
+                <>{React.createElement(content.component, content.props)}</>
+            )}
         </DialogNode>
     );
 };

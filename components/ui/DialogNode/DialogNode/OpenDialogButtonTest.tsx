@@ -5,17 +5,12 @@ import { useDialog } from "@api/context/DialogContext";
 
 import StyledButton from "../../StyledNode/StyledButton";
 
-import submitForm from "@/app/api/actions/submitForm";
-import RequestForm from "@/components/ui/FormNode/RequestForm";
+import LicenseSection from "@/components/sections/LicenseSection";
 import { StyledButtonProps } from "@/types";
 
 const defaultFormContent = {
-    component: RequestForm,
-    props: {
-        formAction: submitForm,
-        bgColor: "bg-background-secondary",
-        formColor: "bg-foreground-secondary",
-    },
+    component: LicenseSection,
+    props: {},
 };
 
 const OpenDialogButton = (props: StyledButtonProps) => {

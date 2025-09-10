@@ -1,12 +1,13 @@
-"use client";
-
 import closeIcon from "@icons/close-blue-dark.svg";
 import Image from "next/image";
 import React, { forwardRef } from "react";
 
-import { DialogProps } from "@/types";
+interface DialogProps {
+    onClose: () => void;
+    children: React.ReactNode;
+}
 
-const DialogNode = forwardRef<HTMLDialogElement, DialogProps>(
+const DialogNode = forwardRef<HTMLDialogElement | null, DialogProps>(
     ({ onClose, children }, ref) => {
         const handleBackdropClick = (
             e: React.MouseEvent<HTMLDialogElement>,

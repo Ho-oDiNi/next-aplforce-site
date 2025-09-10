@@ -1,6 +1,6 @@
 import { LicenseCardProps } from "@types";
 
-import StyledLink from "@/components/ui/StyledNode/StyledLink";
+import OpenDialogButtonTest from "@/components/ui/DialogNode/DialogNode/OpenDialogButtonTest";
 
 const LicenseCard = (props: LicenseCardProps) => {
     return (
@@ -8,9 +8,9 @@ const LicenseCard = (props: LicenseCardProps) => {
             <h3 className="2xs:text-lg xs:text-xl text-base font-bold">
                 {props.title}
             </h3>
-            <StyledLink href={props.href} variant="secondary" size="sm">
+            <OpenDialogButtonTest variant="secondary" size="sm">
                 Скачать
-            </StyledLink>
+            </OpenDialogButtonTest>
         </div>
     );
 };

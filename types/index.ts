@@ -63,6 +63,17 @@ export interface DialogProps {
     children: React.ReactNode;
 }
 
+export interface DialogContextType {
+    openDialog: (content: DialogContent) => void;
+    closeDialog: () => void;
+    dialogRef: React.RefObject<HTMLDialogElement | null>;
+    content: DialogContent | null;
+}
+
+export interface OpenDialogButtonProps extends StyledButtonProps {
+    dialogContent?: DialogContent;
+}
+
 export interface StyledInputProps {
     label: string;
     name: string;
@@ -108,12 +119,6 @@ export interface ConsultSectionProps {
 export interface AnswerCardProps {
     title: string;
     description: string;
-}
-
-export interface DialogContextType {
-    openDialog: () => void;
-    closeDialog: () => void;
-    dialogRef: React.RefObject<HTMLDialogElement | null>;
 }
 
 export interface ServiceSwitchLinkProps {

@@ -1,11 +1,12 @@
 import "./globals.css";
-import { DialogContainer, DialogProvider } from "@api/context/DialogContext";
-import RobotoFont from "@ui/RobotoFont";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import React from "react";
+
+import { DialogContainer, DialogProvider } from "./api/context/DialogContext";
 
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import RobotoFont from "@/components/ui/RobotoFont";
 import getCityFromHost from "@/utils/getCityFromHost";
 
 export const metadata: Metadata = {
