@@ -16,15 +16,16 @@ const FeatureCard = (props: FeatureCardProps) => {
                 </hgroup>
             </div>
             {props.commitmentArray && props.commitmentArray.length !== 0 && (
-                <div className="p-6">
+                <ul className="p-6">
                     {props.commitmentArray.map((commitment, key) => (
-                        <div className="flex-start mt-2" key={`${key}`}>
-                            <span className="relative ml-3 text-sm before:absolute before:-left-3 before:content-['•']">
-                                {commitment}
-                            </span>
-                        </div>
+                        <li
+                            className="flex-start relative mt-2 ml-3 text-sm before:absolute before:top-0 before:-left-3 before:content-['•']"
+                            key={`${key}`}
+                        >
+                            {commitment}
+                        </li>
                     ))}
-                </div>
+                </ul>
             )}
         </section>
     );

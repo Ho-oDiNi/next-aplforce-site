@@ -8,7 +8,7 @@ interface YandexMapProps {
 
 const YandexMap = ({ cities }: YandexMapProps) => {
     return (
-        <figure className="w-full max-w-5xl overflow-hidden rounded-2xl">
+        <figure className="w-full max-w-5xl overflow-hidden rounded-2xl shadow-md">
             <YMaps>
                 <Map
                     defaultState={{
