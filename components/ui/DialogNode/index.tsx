@@ -1,3 +1,5 @@
+"use client";
+
 import closeIcon from "@icons/close-blue-dark.svg";
 import Image from "next/image";
 import React, { forwardRef } from "react";

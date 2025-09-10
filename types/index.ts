@@ -63,15 +63,17 @@ export interface DialogProps {
     children: React.ReactNode;
 }
 
-export interface DialogContextType {
-    openDialog: (content: DialogContent) => void;
-    closeDialog: () => void;
-    dialogRef: React.RefObject<HTMLDialogElement | null>;
-    content: DialogContent | null;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export interface DialogContent<P = any> {
+    component: React.ComponentType<P>;
+    props: P;
 }
 
-export interface OpenDialogButtonProps extends StyledButtonProps {
-    dialogContent?: DialogContent;
+export interface DialogContextType {
+    dialogRef: React.RefObject<HTMLDialogElement | null>;
+    openDialog: (content: DialogContent) => void;
+    closeDialog: () => void;
+    content: DialogContent | null;
 }
 
 export interface StyledInputProps {

@@ -1,5 +1,8 @@
 import React from "react";
 
+import submitForm from "@/app/api/actions/submitForm";
+import RequestForm from "@/components/ui/FormNode/RequestForm";
+
 export interface Service {
     id: number;
     slug: string;
@@ -174,4 +177,13 @@ export const services: Service[] = [
 
 export const getServiceBySlug = (slug: string): Service | undefined => {
     return services.find((service) => service.slug === slug);
+};
+
+export const dialogContentOrderForm = {
+    component: RequestForm,
+    props: {
+        formAction: submitForm,
+        bgColor: "bg-background-secondary",
+        formColor: "bg-foreground-secondary",
+    },
 };

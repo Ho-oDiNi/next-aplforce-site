@@ -5,16 +5,16 @@ const StyledButton = (props: StyledButtonProps) => {
     const {
         variant = "primary",
         size = "lg",
-        className,
+        className = "",
         children,
         ...restProps
     } = props;
 
-    const baseClasses = "flex-center font-bold cursor-pointer text-sm";
+    const baseClasses = "flex-center cursor-pointer text-sm";
 
     const variantClasses = {
         primary:
-            "bg-red-500 text-foreground-secondary hover:bg-red-600 active:bg-red-400",
+            "bg-red-500 text-foreground-secondary hover:bg-red-600 active:bg-red-400 font-bold",
         secondary:
             "bg-blue-500 text-foreground-secondary hover:bg-blue-600 active:bg-blue-400",
     };

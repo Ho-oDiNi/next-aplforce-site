@@ -4,8 +4,9 @@ import Image from "next/image";
 
 import MiniAdvantageList from "./MiniAdvantageList";
 
-import OpenDialogButton from "@/components/ui/DialogNode/DialogNode/OpenDialogButton";
+import OpenDialogButton from "@/components/ui/DialogNode/OpenDialogButton";
 import StyledSection from "@/components/ui/StyledNode/StyledSection";
+import { dialogContentOrderForm } from "@/data/services";
 
 const TitleSection = ({
     title,
@@ -24,7 +25,12 @@ const TitleSection = ({
                 <p>{description}</p>
             </hgroup>
 
-            <OpenDialogButton variant="primary" size="lg" className="z-1">
+            <OpenDialogButton
+                variant="primary"
+                size="lg"
+                className="z-1"
+                dialogContent={dialogContentOrderForm}
+            >
                 Заказать консультацию
             </OpenDialogButton>
 

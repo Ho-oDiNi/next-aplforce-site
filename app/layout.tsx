@@ -2,7 +2,8 @@ import "./globals.css";
 import { Metadata } from "next";
 import React from "react";
 
-import { DialogContainer, DialogProvider } from "./api/context/DialogContext";
+import DialogContainer from "./api/context/DialogContainer";
+import { DialogProvider } from "./api/context/DialogProvider";
 
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";

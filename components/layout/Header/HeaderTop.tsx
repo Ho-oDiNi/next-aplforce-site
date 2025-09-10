@@ -3,8 +3,9 @@ import phoneIcon from "@icons/phone-blue-dark.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-import OpenPopupButton from "@/components/ui/DialogNode/CityPopup/OpenPopupButton";
-import OpenDialogButton from "@/components/ui/DialogNode/DialogNode/OpenDialogButton";
+import OpenPopupButton from "@/components/ui/CityPopup/OpenPopupButton";
+import OpenDialogButton from "@/components/ui/DialogNode/OpenDialogButton";
+import { dialogContentOrderForm } from "@/data/services";
 import { SubdomainProps } from "@/types";
 
 const HeaderTop = (props: SubdomainProps) => {
@@ -29,6 +30,7 @@ const HeaderTop = (props: SubdomainProps) => {
                         variant="primary"
                         size="md"
                         className="hidden md:block"
+                        dialogContent={dialogContentOrderForm}
                     >
                         Заказать консультацию
                     </OpenDialogButton>

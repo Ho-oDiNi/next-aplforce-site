@@ -5,7 +5,8 @@ import ServiceHeader from "./ServiceHeader";
 import ServiceInfoBadge from "./ServiceInfoBadge";
 import ServicePriceBadge from "./ServicePriceBadge";
 
-import OpenDialogButton from "@/components/ui/DialogNode/DialogNode/OpenDialogButton";
+import OpenDialogButton from "@/components/ui/DialogNode/OpenDialogButton";
+import { dialogContentOrderForm } from "@/data/services";
 
 interface ServiceContentProps {
     service: {
@@ -42,7 +43,11 @@ export default function ServiceContent({ service }: ServiceContentProps) {
                     </div>
                 </div>
 
-                <OpenDialogButton variant="primary" size="lg">
+                <OpenDialogButton
+                    variant="primary"
+                    size="lg"
+                    dialogContent={dialogContentOrderForm}
+                >
                     Заказать расчет
                 </OpenDialogButton>
             </div>
