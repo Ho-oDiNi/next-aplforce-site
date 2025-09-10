@@ -8,6 +8,7 @@ const StyledLink = (props: StyledLinkProps) => {
         size = "lg",
         className = "",
         children,
+        scroll = false,
         ...restProps
     } = props;
     const baseClasses = "flex-center text-sm";
@@ -37,7 +38,7 @@ const StyledLink = (props: StyledLinkProps) => {
     `;
 
     return (
-        <Link className={linkClasses} {...restProps}>
+        <Link className={linkClasses} scroll={scroll} {...restProps}>
             {children}
         </Link>
     );

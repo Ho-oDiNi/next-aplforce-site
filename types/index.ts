@@ -16,6 +16,13 @@ export interface StyledLinkProps
     size?: "sm" | "md" | "lg" | "max";
     className?: string;
     children: React.ReactNode;
+    scroll?: boolean;
+}
+
+export interface ServicePageProps {
+    params: {
+        slug: string;
+    };
 }
 
 export interface LicenseCardProps {
@@ -99,7 +106,7 @@ export interface MiniMiniAdvantageElementProps {
 
 export interface TitleSectionProps {
     title: string;
-    description: string;
+    description: string | React.ReactNode;
     hasMiniAdvantage?: boolean;
 }
 

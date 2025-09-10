@@ -27,6 +27,7 @@ const ServiceSwitchLink = (props: ServiceSwitchLinkProps) => {
             } ${commonClasses}`}
         >
             <StyledLink
+                scroll={false}
                 href={props.href}
                 variant={`${isActive ? "secondary" : "outline"}`}
                 size="max"

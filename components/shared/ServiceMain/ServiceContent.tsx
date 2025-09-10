@@ -12,6 +12,7 @@ interface ServiceContentProps {
     service: {
         title: string | React.ReactNode;
         description: string | React.ReactNode;
+        subTitle: string;
         mainText: string | React.ReactNode;
         price: number;
         priceUnit: string;
@@ -28,7 +29,7 @@ export default function ServiceContent({ service }: ServiceContentProps) {
             <div className="flex flex-col gap-8 md:gap-15">
                 <ServiceHeader
                     title={service.title}
-                    description={service.description}
+                    description={service.subTitle}
                 />
 
                 <div className="flex flex-col gap-4">
