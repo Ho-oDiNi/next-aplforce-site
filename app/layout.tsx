@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Metadata } from "next";
+import { Metadata, ResolvingMetadata } from "next";
 import React from "react";
 
 import DialogContainer from "./api/context/DialogContainer";
@@ -10,9 +10,15 @@ import Header from "@/components/layout/Header";
 import RobotoFont from "@/components/ui/RobotoFont";
 import getCityFromHost from "@/utils/getCityFromHost";
 
-export const metadata: Metadata = {
-    title: `Alpforce – высотные работы и ремонт многоквартирных домов по доступным ценам`,
-    description: `Команда профессиональных промышленных альпинистов Alpforce. Комплексное обслуживание МКД. Работа по ГОСТ с допусками и страховкой. Аварийный выезд 24/7`,
+export const generateMetadata = async (): Promise<Metadata> => {
+    const cityName = await getCityFromHost();
+    return {
+        title: {
+            default: `Alpforce – высотные работы и ремонт многоквартирных домов по доступным ценам`,
+            template: `%s | ${cityName}`,
+        },
+        description: `Команда профессиональных промышленных альпинистов Alpforce. Комплексное обслуживание МКД. Работа по ГОСТ с допусками и страховкой. Аварийный выезд 24/7`,
+    };
 };
 
 const RootLayout = async ({
