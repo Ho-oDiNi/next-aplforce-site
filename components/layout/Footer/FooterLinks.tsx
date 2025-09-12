@@ -13,7 +13,7 @@ interface FooterLinksProps {
 
 const FooterLinks = ({ links, className = "" }: FooterLinksProps) => {
     return (
-        <div className={`flex flex-col gap-4 ${className}`}>
+        <nav className={`flex flex-col gap-4 ${className}`}>
             {links.map((link, index) => (
                 <Link
                     key={index}
@@ -26,7 +26,7 @@ const FooterLinks = ({ links, className = "" }: FooterLinksProps) => {
                     {link.label}
                 </Link>
             ))}
-        </div>
+        </nav>
     );
 };
 

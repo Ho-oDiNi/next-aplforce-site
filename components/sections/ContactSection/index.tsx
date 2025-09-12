@@ -38,7 +38,7 @@ const ContactSection = () => {
                     <ContactCard icon={calendarIcon} title="Режим работы">
                         <ScheduleBlock
                             period="Понедельник - Пятница"
-                            time="8:00 - 22:00"
+                            time="8:00 - 20:00"
                         />
                         <ScheduleBlock
                             period="Аварийная служба"
