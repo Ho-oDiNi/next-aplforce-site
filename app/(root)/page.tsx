@@ -1,9 +1,8 @@
-import TitleSection from "@/components/sections/TitleSection";
-
 import AdvantageSection from "@/components/sections/AdvantageSection";
 import AnswerSection from "@/components/sections/AnswerSection";
 import ConsultSection from "@/components/sections/ConsultSection";
 import ServiceSection from "@/components/sections/ServiceSection";
+import TitleSection from "@/components/sections/TitleSection";
 import getCityFromHost from "@/utils/getCityFromHost";
 import getCityInPrepositional from "@/utils/getCityInPrepositional";
 

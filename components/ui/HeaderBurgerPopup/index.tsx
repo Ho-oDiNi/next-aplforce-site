@@ -4,14 +4,14 @@ import closeIcon from "@icons/close-blue-dark.svg";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
-import CityPopupNav from "./CityPopupNav";
+import HeaderBurgerPopupNav from "./HeaderBurgerPopupNav";
 
 interface DialogNodeProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-const CityPopup = ({ isOpen, onClose }: DialogNodeProps) => {
+const HeaderNavPopup = ({ isOpen, onClose }: DialogNodeProps) => {
     const dialogRef = useRef<HTMLDialogElement>(null);
 
     useEffect(() => {
@@ -33,7 +33,7 @@ const CityPopup = ({ isOpen, onClose }: DialogNodeProps) => {
 
     return (
         <dialog
-            className="backdrop:bg-unset absolute -top-2 -left-3 w-60 rounded-3xl bg-white p-8 shadow-2xl"
+            className="backdrop:bg-unset fixed top-2 left-2 z-99 w-11/12 rounded-3xl bg-white p-8 shadow-2xl"
             ref={dialogRef}
             onClick={handleBackdropClick}
             aria-labelledby="SEO"
@@ -45,9 +45,9 @@ const CityPopup = ({ isOpen, onClose }: DialogNodeProps) => {
                 <Image src={closeIcon} alt="Закрыть" />
             </button>
 
-            <CityPopupNav />
+            <HeaderBurgerPopupNav />
         </dialog>
     );
 };
 
-export default CityPopup;
+export default HeaderNavPopup;

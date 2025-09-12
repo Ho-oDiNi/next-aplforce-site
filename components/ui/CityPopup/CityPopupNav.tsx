@@ -13,7 +13,7 @@ interface CityData {
     otherEntries: [string, string][];
 }
 
-const PopupLink = () => {
+const CityPopupNav = () => {
     const [cityData, setCityData] = useState<CityData>({
         activeEntry: null,
         otherEntries: [],
@@ -54,4 +54,4 @@ const PopupLink = () => {
     );
 };
 
-export default PopupLink;
+export default CityPopupNav;

@@ -1,5 +1,6 @@
 import burgerIcon from "@icons/burger-blue-dark.svg";
 import logoIcon from "@icons/logo-main.svg";
+import OpenHeaderBurgerPopupButton from "@ui/HeaderBurgerPopup/OpenHeaderBurgerPopupButton";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,14 +19,14 @@ const HeaderBottom = () => {
                     <div className="hidden md:block">
                         <strong>ALPFORCE</strong>
                         <p className="text-sm text-nowrap">
-                            Ремонт многоквартирных домов
+                            Промышленный альпинизм
                         </p>
                     </div>
                 </Link>
                 <HeaderNavbar />
-                <button className="block md:hidden" aria-label="SEO">
+                <OpenHeaderBurgerPopupButton>
                     <Image src={burgerIcon} alt="" />
-                </button>
+                </OpenHeaderBurgerPopupButton>
             </div>
         </div>
     );

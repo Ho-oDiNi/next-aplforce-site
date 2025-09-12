@@ -10,7 +10,7 @@ const FooterMiddle = () => {
                     <div className="flex flex-col justify-center">
                         <strong>ALPFORCE</strong>
                         <p className="text-sm text-nowrap">
-                            Ремонт многоквартирных домов
+                            Промышленный альпинизм
                         </p>
                     </div>
                 </div>
