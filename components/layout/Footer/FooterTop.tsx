@@ -76,11 +76,11 @@ const FooterTop = async () => {
                         <ContactItem
                             icon={emailIcon}
                             alt="Email"
-                            href="mailto:info@remont-mkd-nsk.ru"
+                            href="mailto:info@alpforce.ru"
                         >
-                            info@remont-mkd-nsk.ru
+                            info@alpforce.ru
                         </ContactItem>
-                        <ContactItem
+                        {/* <ContactItem
                             icon={locationIcon}
                             alt="Адрес"
                             href="https://yandex.ru/maps/65/novosibirsk/house/ulitsa_lenina_15/bEsYfwZgSE0HQFtvfXxzeXpmYg==/?ll=82.910180%2C55.028656&z=16"
@@ -89,13 +89,13 @@ const FooterTop = async () => {
                             rel="noreferrer"
                         >
                             г.&nbsp;Новосибирск, ул.&nbsp;Ленина,&nbsp;15
-                        </ContactItem>
+                        </ContactItem> */}
                         <ContactItem
                             icon={warningIcon}
                             alt="Режим работы"
                             href="/contacts"
                         >
-                            Пн-Пт:&nbsp;8:00-18:00
+                            Пн-Пт:&nbsp;8:00-20:00
                             <br />
                             Аварийная служба:&nbsp;24/7
                         </ContactItem>

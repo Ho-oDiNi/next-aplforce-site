@@ -6,7 +6,7 @@ const MiniAdvantageList = () => {
             <MiniAdvantageElement title="100+" description="Объектов" />
             <MiniAdvantageElement title="8 лет" description="Опыта" />
             <MiniAdvantageElement title="24/7" description="Аварийный вызов" />
-            <MiniAdvantageElement title="5 лет" description="Гарантии" />
+            <MiniAdvantageElement title="2 года" description="Гарантии" />
         </dl>
     );
 };
