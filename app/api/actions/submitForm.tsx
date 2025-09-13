@@ -42,7 +42,7 @@ const submitForm = async (prevState: FormState, formData: FormData) => {
         );
 
         if (!telegramResponse.ok) {
-            throw new Error("Ошибка при отправке в Telegram ");
+            throw new Error("Ошибка при отправке письма");
         }
 
         return {
