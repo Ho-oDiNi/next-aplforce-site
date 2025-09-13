@@ -31,6 +31,7 @@ const CityPopup = ({ isOpen, onClose }: DialogNodeProps) => {
         }
     };
 
+    // TODO: раскомментировать onClick
     return (
         <dialog
             className="backdrop:bg-unset absolute -top-2 -left-3 w-60 rounded-3xl bg-white p-8 shadow-2xl"
@@ -40,7 +41,7 @@ const CityPopup = ({ isOpen, onClose }: DialogNodeProps) => {
         >
             <button
                 className="absolute top-4 right-4 cursor-pointer rounded-full"
-                onClick={onClose}
+                // onClick={onClose}
             >
                 <Image src={closeIcon} alt="Закрыть" />
             </button>

@@ -15,16 +15,17 @@ const FooterLinks = ({ links, className = "" }: FooterLinksProps) => {
     return (
         <nav className={`flex flex-col gap-4 ${className}`}>
             {links.map((link, index) => (
-                <Link
+                // TODO: заменить на Link
+                <p
                     key={index}
-                    href={link.href}
+                    // href={link.href}
                     className="hover:opacity-70"
-                    prefetch={link.prefetch}
-                    target={link.target}
-                    rel={link.rel}
+                    // prefetch={link.prefetch}
+                    // target={link.target}
+                    // rel={link.rel}
                 >
                     {link.label}
-                </Link>
+                </p>
             ))}
         </nav>
     );
