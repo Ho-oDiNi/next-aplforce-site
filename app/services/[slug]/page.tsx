@@ -11,13 +11,9 @@ import { ServicePageProps } from "@/types";
 import getCityFromHost from "@/utils/getCityFromHost";
 import getCityInPrepositional from "@/utils/getCityInPrepositional";
 
-type Props = {
-    params: Promise<{ slug: string }>;
-};
-
 export const generateMetadata = async ({
     params,
-}: Props): Promise<Metadata> => {
+}: ServicePageProps): Promise<Metadata> => {
     const { slug } = await params;
     const service = getServiceBySlug(slug);
 
@@ -65,4 +61,4 @@ export const generateStaticParams = async () => {
     ];
 };
 
-export const revalidate = 1;
+export const revalidate = 3600;

@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import React from "react";
 
 import DialogContainer from "./api/context/DialogContainer";

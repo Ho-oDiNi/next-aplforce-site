@@ -20,9 +20,7 @@ export interface StyledLinkProps
 }
 
 export interface ServicePageProps {
-    params: {
-        slug: string;
-    };
+    params: Promise<{ slug: string }>;
 }
 
 export interface LicenseCardProps {

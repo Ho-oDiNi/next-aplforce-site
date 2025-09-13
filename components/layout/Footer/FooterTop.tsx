@@ -1,5 +1,5 @@
 import emailIcon from "@icons/email-red-fill.svg";
-import locationIcon from "@icons/location-red-fill.svg";
+// import locationIcon from "@icons/location-red-fill.svg";
 import phoneIcon from "@icons/phone-red-fill.svg";
 import warningIcon from "@icons/warning-red-fill.svg";
 import { headers } from "next/headers";

@@ -3,7 +3,7 @@
     "useTabs": false,
     "overrides": [
         {
-            "files": ["*.css", "*.scss", "*.mjs"],
+            "files": ["*.css", "*.scss", "*.mjs", "*.json", "*.yaml"],
             "options": {
                 "tabWidth": 2
             }
